@@ -59,7 +59,7 @@ class MyApp extends StatelessWidget
 ```
 
 => Mỗi thành phần của Flutter có thể là một StatelessWidget hoặc một StatefulWidget. StatefulWidget có một đối tượng State liên kết với nó, cho phép nó không chỉ lưu trữ dữ liệu, mà còn để phản ứng với những thay đổi trong dữ liệu. StatelessWidget là một đối tượng đơn giản, không được thiết kế để lưu trữ cố định bất kỳ dữ liệu nào.  
-<span style="color: #999999;"><em>Chi tiết về StatelessWidget và StatefulWidget xem thêm</em></span> <a style="color: red;" href="https://anhkevin.github.io/posts/statelesswidget-va-statefulwidget-trong-flutter-la-gi/"><span style="color: #993300;">tại đây</span></a>.
+<span style="color: #999999;"><em>Chi tiết về StatelessWidget và StatefulWidget xem thêm</em></span> <a style="color: red;" href="https://anhkevin.github.io/statelesswidget-va-statefulwidget-trong-flutter-la-gi/"><span style="color: #993300;">tại đây</span></a>.
 
 ```
 @override

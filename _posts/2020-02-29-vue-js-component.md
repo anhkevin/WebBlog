@@ -15,7 +15,7 @@ tags: [component vuejs]
 
 Đây là ví dụ về một component trong Vue:
 
-```
+```html
 // Định nghĩa một component với tên là "button-counter"
 Vue.component('button-counter', {
   data: function () {
@@ -29,7 +29,7 @@ Vue.component('button-counter', {
 
 Sử dụng component
 
-```
+```html
 &lt;div id="components-demo"&gt;
   &lt;button-counter&gt;&lt;/button-counter&gt;
 &lt;/div&gt;
@@ -39,7 +39,7 @@ new Vue({ el: '#components-demo' })
 
 Có thể tái sử dụng component bao nhiêu lần tùy ý:
 
-```
+```html
 &lt;div id="components-demo"&gt;
   &lt;button-counter&gt;&lt;/button-counter&gt;
   &lt;button-counter&gt;&lt;/button-counter&gt;

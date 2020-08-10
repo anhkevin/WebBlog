@@ -18,7 +18,7 @@ Các phương thức có thể truyền tham số vào và có thể truy cập 
 
 Các phương thức trong Vue.js được định nghĩa trong thuộc tính **methods**
 
-```
+```html
 new Vue({
   methods: {
     handleClick: function() {
@@ -31,7 +31,7 @@ new Vue({
 
 Xem ví dụ về sự kiện click sẽ gọi phương thức xử lý
 
-```
+```html
 <div id="app">
   &lt;a @click="handleClick('Click')">Click me!&lt;/a>
   

@@ -17,7 +17,7 @@ Một directive trong Vue được bắt đầu với v- để chỉ định rõ
 
 Sử dụng lệnh v-text để truyền 1 đoạn text vào thẻ nào đó
 
-```
+```html
 <h1 v-text="Hello World!">
   
 </h1>
@@ -25,7 +25,7 @@ Sử dụng lệnh v-text để truyền 1 đoạn text vào thẻ nào đó
 
 Kết quả:
 
-```
+```html
 <h1>
   Hello World!
 </h1>
@@ -35,7 +35,7 @@ Kết quả:
 
 Sử dụng lệnh v-once để không cập nhật lại khi dữ liệu thay đổi
 
-```
+```html
 <span v-once>Thông điệp này sẽ không bao giờ thay đổi: {{ msg }}</span>
 ```
 
@@ -43,7 +43,7 @@ Sử dụng lệnh v-once để không cập nhật lại khi dữ liệu thay �
 
 Sử dụng lệnh v-html khi xuất HTML, giá trị trong v-html có thể chứa các thẻ HTML và vue.js sẽ tự động hiểu và xuất ra
 
-```
+```html
 <div v-html="<h1>Hello World!</h1>">
   
 </div>
@@ -51,7 +51,7 @@ Sử dụng lệnh v-html khi xuất HTML, giá trị trong v-html có thể ch�
 
 Kết quả:
 
-```
+```html
 <div>
   <h1>
     Hello World!
@@ -64,7 +64,7 @@ Kết quả:
 
 Sử dụng lệnh v-bind khi muốn truyền giá trị cho các thuộc tính của thẻ
 
-```
+```html
 v-bind:title="title"
 v-bind:href="url"
 .....
@@ -72,17 +72,16 @@ v-bind:href="url"
 
 v-bind: có thể viết tắt thành :
 
-```
+```html
 :title="title"
 :href="url"
-
 ```
 
 ## `v-model`
 
 v-model thường sử dụng trong các input, select,&#8230;có thể nhập hoặc thay đổi nôi dung dữ liệu và liên kết để gắn nội dung mới đó
 
-```
+```html
 <div id="app">
   <input type="text" v-model="name" />
       
@@ -105,8 +104,6 @@ v-model thường sử dụng trong các input, select,&#8230;có thể nhập h
   </p>
   
 </div>
-
-
 ```
 
 Khi nhập nội dung vào input và chọn nội dung select thì dữ liệu của name, gender sẽ là dữ liệu mới vừa nhập và vừa chọn
@@ -115,7 +112,7 @@ Khi nhập nội dung vào input và chọn nội dung select thì dữ liệu c
 
 là các directive cho phép thực hiện các điều kiện
 
-```
+```html
 <p v-if="isShow">
   Hey!
 </p>
@@ -127,7 +124,7 @@ isShow là một giá trị boolean có trong dữ liệu
 
 v-for cho phép hiển thị một danh sách
 
-```
+```html
 <div id="app">
   <ul>
     <li v-for="item in items">
@@ -143,7 +140,7 @@ v-for cho phép hiển thị một danh sách
 
 Mảng đối tượng
 
-```
+```html
 <div id="app">
   <!-- using interpolation -->
       
@@ -175,7 +172,7 @@ Mảng đối tượng
 
 v-on là directive sử dụng để kích hoạt các event DOM trong javascript
 
-```
+```html
 <div id="app">
   <a v-on:click="handleClick">Click me!</a>
   
@@ -186,7 +183,7 @@ v-on là directive sử dụng để kích hoạt các event DOM trong javascrip
 
 v-on là directive rất phổ biến, phổ biến đến nỗi nó có cú pháp viết tắt là @
 
-```
+```html
 <a v-on:click="handleClick">Click me!</a>
 &lt;a @click="handleClick">Click me!&lt;/a>
 
@@ -194,7 +191,7 @@ v-on là directive rất phổ biến, phổ biến đến nỗi nó có cú ph�
 
 Ngoài ra còn có các option khác để sử dụng kết hợp với v-on
 
-```
+```html
 v-on.prevent
 v-on.stop
 v-on.capture
@@ -209,7 +206,7 @@ Xem chi tiết [tại đây](https://vuejs.org/v2/guide/events.html#Event-Modifi
 
 là directive cho phép hiển thị hoặc ẩn phần tử HTML bằng display:none
 
-```
+```html
 <p v-show="isShow">
   Hey!
 </p>
@@ -230,7 +227,7 @@ v-slot: có thể viết tắt thành #
 
 v-pre là directive sẽ bỏ qua việc biên dịch cho phần tử này và tất cả các phần tử con của nó.
 
-```
+```html
 <div id="app">
   <span v-pre>{{ name }}</span>
   
@@ -241,7 +238,7 @@ v-pre là directive sẽ bỏ qua việc biên dịch cho phần tử này và t
 
 lúc này màn hình render ra hiển thị là
 
-```
+```html
 {{ name }}
 
 ```
@@ -250,7 +247,7 @@ lúc này màn hình render ra hiển thị là
 
 v-cloak là một directive có thể giúp bạn muốn ẩn phần tử này cho đến khi Vue hoàn thành quá trình biên dịch xong.
 
-```
+```html
 <div id="app">
   <div v-cloak>
     {{ message }}

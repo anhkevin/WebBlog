@@ -18,7 +18,7 @@ Filter được đặt ở cuối một biểu thức JavaScript, biểu thị b
 
 **Ví dụ 1:** hiển thị tên name sau chữ Hi 
 
-```
+```html
 &lt;div id="app"&gt;
   &lt;p&gt;Hi {{ name }}!&lt;/p&gt;
 &lt;/div&gt;
@@ -38,7 +38,7 @@ Kết quả như sau: Hi ABC -> ví dụ trên chưa sử dụng filter
 Nếu bạn muốn kiểm tra xem name có chứa giá trị hay không và không có thì hiển thị ra chữ &#8220;there&#8221; => Hi there  
 Sử dụng filters &#8220;fallback&#8221; như bên dưới:
 
-```
+```html
 &lt;div id="app"&gt;
   &lt;p&gt;Hi {{ name | fallback }}!&lt;/p&gt;
 &lt;/div&gt;
@@ -62,7 +62,7 @@ Ví dụ trên sử dụng cú pháp để áp dụng filters là &#8220;**| fil
 
 **Ví dụ 2:** In hoa chữ cái đầu tiên của một text
 
-```
+```html
 &lt;div id="app"&gt;
   &lt;p&gt;{{ message | capitalize }}&lt;/p&gt;
 &lt;/div&gt;
@@ -88,7 +88,7 @@ ví dụ trên sử dụng một filter được đặt tên là capitalize
 
 Ngoài ra có thể định nghĩa ở cấp toàn cục trước khi khởi tạo một đối tượng Vue như sau:
 
-```
+```html
 Vue.filter('capitalize', function (value) {
   if (!value) return ''
   value = value.toString()
