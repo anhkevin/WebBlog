@@ -20,7 +20,8 @@ tags:
 
 Xem ví dụ dưới:
 
-<pre class="lang:js decode:true ">function use_let() {
+```
+function use_let() {
 	let x = 1;
 	if (true) {
 		let x = 2;
@@ -30,13 +31,15 @@ Xem ví dụ dưới:
 	}
 	console.log(x); // hiển thị 1
 	console.log(y); // báo lỗi “not defined”
-}</pre>
+}
+```
 
 **&#8211; var:** khai báo biến sử dụng var có phạm vi truy xuất xuyên suốt hàm số chứa nó
 
 Xem ví dụ dưới:
 
-<pre class="lang:js decode:true ">function use_var() {
+```
+function use_var() {
 	var x = 1;
 	if (true) {
 		var x = 2;
@@ -46,4 +49,5 @@ Xem ví dụ dưới:
 	}
 	console.log(x); // hiển thị 2
 	console.log(y); // hiển thị 3
-}</pre>
+}
+```

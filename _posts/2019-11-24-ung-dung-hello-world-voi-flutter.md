@@ -15,7 +15,8 @@ tags:
 ---
 Xóa hết nội dụng ở file <span style="color: #ff0000;">lib/main.dart</span> và gõ đoạn code phía dưới vào
 
-<pre>import 'package:flutter/material.dart';
+```
+import 'package:flutter/material.dart';
 
 void main()=>runApp(MyApp());
 
@@ -34,65 +35,84 @@ class MyApp extends StatelessWidget{
         )
     );
   }
-}</pre>
+}
+```
 
 <span style="font-size: 14pt;"><strong>Cùng xem xét đoạn code phía trên có gì?</strong></span>
 
-<pre>import 'package:flutter/material.dart';</pre>
+```
+import 'package:flutter/material.dart';
+```
 
 => Import thư viện Material design
 
 &nbsp;
 
-<pre>void main()=>runApp(MyApp());</pre>
+```
+void main()=>runApp(MyApp());
+```
 
 => Đây là phương thức gọi để run ứng dụng
 
 &nbsp;
 
-<pre>class MyApp extends StatelessWidget</pre>
+```
+class MyApp extends StatelessWidget
+```
 
 => Mỗi thành phần của Flutter có thể là một StatelessWidget hoặc một StatefulWidget. StatefulWidget có một đối tượng State liên kết với nó, cho phép nó không chỉ lưu trữ dữ liệu, mà còn để phản ứng với những thay đổi trong dữ liệu. StatelessWidget là một đối tượng đơn giản, không được thiết kế để lưu trữ cố định bất kỳ dữ liệu nào.  
 <span style="color: #999999;"><em>Chi tiết về StatelessWidget và StatefulWidget xem thêm</em></span> <a style="color: red;" href="https://anhkevin.github.io/posts/statelesswidget-va-statefulwidget-trong-flutter-la-gi/"><span style="color: #993300;">tại đây</span></a>.
 
-<pre>@override
-  Widget build(BuildContext context) </pre>
+```
+@override
+  Widget build(BuildContext context) 
+```
 
 => Override phương thức build để bắt đầu tạo ra giao diện người dùng của ứng dụng.
 
 &nbsp;
 
-<pre>return MaterialApp</pre>
+```
+return MaterialApp
+```
 
 => Đây là khởi tạo để áp dụng thiết kế Material design cho ứng dụng
 
 &nbsp;
 
-<pre>title: "Demo App"</pre>
+```
+title: "Demo App"
+```
 
 => Tiêu đề của App
 
 &nbsp;
 
-<pre>home: Scaffold</pre>
+```
+home: Scaffold
+```
 
 => home là trang chủ. Scaffold là layout có sẵn cung cấp appBar, &#8230;
 
 &nbsp;
 
-<pre>appBar: AppBar(
+```
+appBar: AppBar(
             title: Text("Hello World"),
           ),
-</pre>
+
+```
 
 => Tạo title cho app bar
 
 &nbsp;
 
-<pre>body: Center(
+```
+body: Center(
             child: Text("Content Body"),
           )
-</pre>
+
+```
 
 => Bên dưới app bar hiển thị 1 body. Body ở đây ta thiết lập ví trị center và đặt một text ở thằng child
 

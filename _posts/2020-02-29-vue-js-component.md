@@ -17,7 +17,8 @@ tags:
 
 Đây là ví dụ về một component trong Vue:
 
-<pre class="lang:default decode:true ">// Định nghĩa một component với tên là "button-counter"
+```
+// Định nghĩa một component với tên là "button-counter"
 Vue.component('button-counter', {
   data: function () {
     return {
@@ -25,22 +26,27 @@ Vue.component('button-counter', {
     }
   },
   template: '&lt;button v-on:click="count++"&gt;Bạn đã bấm {{ count }} lần.&lt;/button&gt;'
-})</pre>
+})
+```
 
 Sử dụng component
 
-<pre class="lang:default decode:true ">&lt;div id="components-demo"&gt;
+```
+&lt;div id="components-demo"&gt;
   &lt;button-counter&gt;&lt;/button-counter&gt;
 &lt;/div&gt;
 
-new Vue({ el: '#components-demo' })</pre>
+new Vue({ el: '#components-demo' })
+```
 
 Có thể tái sử dụng component bao nhiêu lần tùy ý:
 
-<pre class="lang:default decode:true ">&lt;div id="components-demo"&gt;
+```
+&lt;div id="components-demo"&gt;
   &lt;button-counter&gt;&lt;/button-counter&gt;
   &lt;button-counter&gt;&lt;/button-counter&gt;
   &lt;button-counter&gt;&lt;/button-counter&gt;
-&lt;/div&gt;</pre>
+&lt;/div&gt;
+```
 
 Tham khảo code chạy thực tế: <https://codepen.io/anh-kevin/pen/rNVmJbj>

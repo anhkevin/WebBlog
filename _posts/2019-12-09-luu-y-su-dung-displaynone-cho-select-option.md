@@ -19,21 +19,25 @@ tags:
 
 VD dưới đây là ẩn option 2 trong select đi, nhưng nếu sử dụng display=none thì trên safari vẫn hiển thị ra
 
-<pre class="lang:default decode:true ">&lt;select&gt; 
+```
+&lt;select&gt; 
 	&lt;option&gt; option 1 &lt;/option&gt; 
 	&lt;option style="display: none"&gt; option 2 &lt;/option&gt; 
 	&lt;option&gt; option 3 &lt;/option&gt; 
 	&lt;option&gt; option 4 &lt;/option&gt; 
 	&lt;option&gt; option 5 &lt;/option&gt; 
-&lt;/select&gt;</pre>
+&lt;/select&gt;
+```
 
 **Cách giải quyết:**  
 **1:** Xóa option đó khỏi select nếu không muốn hiển thị, trường hợp ngược lại thì add option đó vào hoặc load lại dữ liệu trong select  
 **2:** Sử dụng disabled đối với option không muốn cho chọn, lúc này sẽ không chọn được option đó nữa  
 Có thể kết hợp css để ẩn luôn option đó
 
-<pre class="lang:default decode:true " >select option[disabled] { 
+```
+select option[disabled] { 
 	display: none; 
-}</pre>
+}
+```
 
 &#8230;

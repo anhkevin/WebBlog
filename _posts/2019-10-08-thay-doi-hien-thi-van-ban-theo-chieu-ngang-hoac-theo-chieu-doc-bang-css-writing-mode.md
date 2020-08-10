@@ -17,17 +17,21 @@ tags:
 
 **1. horizontal-tb: hiển thị chiều ngang từ trái sang phải, từ trên xuống dưới (đây là giá trị mặc định)**
 
-<pre>writing-mode: horizontal-tb;
+```
+writing-mode: horizontal-tb;
 -ms-writing-mode: horizontal-tb;
 -webkit-writing-mode: horizontal-tb;
-</pre>
+
+```
 
 **2. vertical-rl: hiển thị chiều dọc từ trên xuống dưới, từ phải sang trái**
 
-<pre>writing-mode: vertical-rl;
+```
+writing-mode: vertical-rl;
 -ms-writing-mode: vertical-rl;
 -webkit-writing-mode: vertical-rl;
-</pre>
+
+```
 
 Tôi gặp một số dự án bên Nhật yêu cầu chỉnh hiển thị một số text từ trên xuống dưới từ phải sang trái, một phần do đặc trưng ngôn ngữ của họ nên hiển thị như vậy họ vẫn đọc được. Từ đó tôi biết đến **&#8220;writing-mode&#8221;**.  
 **Tham khảo ví dụ dưới:**
@@ -36,21 +40,27 @@ Tôi gặp một số dự án bên Nhật yêu cầu chỉnh hiển thị một
 
 **3. vertical-lr: hiển thị chiều dọc từ trên xuống dưới, từ trái sang phải**
 
-<pre>writing-mode: vertical-lr;
+```
+writing-mode: vertical-lr;
 -ms-writing-mode: vertical-lr;
 -webkit-writing-mode: vertical-lr;
-</pre>
+
+```
 
 **4. sideways-rl: hiển thị giống (2. vertical-rl) nhưng chữ cũng bị xoay theo 90°**
 
-<pre>writing-mode: sideways-rl;
+```
+writing-mode: sideways-rl;
 -ms-writing-mode: sideways-rl;
 -webkit-writing-mode: sideways-rl;
-</pre>
+
+```
 
 **5. sideways-lr: hiển thị giống (3. vertical-lr) nhưng chữ cũng bị xoay theo 90°**
 
-<pre>writing-mode: sideways-lr;
+```
+writing-mode: sideways-lr;
 -ms-writing-mode: sideways-lr;
 -webkit-writing-mode: sideways-lr;
-</pre>
+
+```

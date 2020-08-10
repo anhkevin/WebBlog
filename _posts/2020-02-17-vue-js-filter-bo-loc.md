@@ -20,7 +20,8 @@ Filter được đặt ở cuối một biểu thức JavaScript, biểu thị b
 
 **Ví dụ 1:** hiển thị tên name sau chữ Hi 
 
-<pre class="lang:default decode:true " >&lt;div id="app"&gt;
+```
+&lt;div id="app"&gt;
   &lt;p&gt;Hi {{ name }}!&lt;/p&gt;
 &lt;/div&gt;
 
@@ -31,14 +32,16 @@ new Vue ({
     name: 'ABC'
   }
 })
-&lt;/script&gt;</pre>
+&lt;/script&gt;
+```
 
 Kết quả như sau: Hi ABC -> ví dụ trên chưa sử dụng filter
 
 Nếu bạn muốn kiểm tra xem name có chứa giá trị hay không và không có thì hiển thị ra chữ &#8220;there&#8221; => Hi there  
 Sử dụng filters &#8220;fallback&#8221; như bên dưới:
 
-<pre class="lang:xhtml decode:true ">&lt;div id="app"&gt;
+```
+&lt;div id="app"&gt;
   &lt;p&gt;Hi {{ name | fallback }}!&lt;/p&gt;
 &lt;/div&gt;
 
@@ -54,13 +57,15 @@ new Vue ({
     }
   }
 })
-&lt;/script&gt;</pre>
+&lt;/script&gt;
+```
 
 Ví dụ trên sử dụng cú pháp để áp dụng filters là &#8220;**| filterName**&#8220;.
 
 **Ví dụ 2:** In hoa chữ cái đầu tiên của một text
 
-<pre class="lang:default decode:true " >&lt;div id="app"&gt;
+```
+&lt;div id="app"&gt;
   &lt;p&gt;{{ message | capitalize }}&lt;/p&gt;
 &lt;/div&gt;
 
@@ -78,14 +83,17 @@ new Vue ({
     }
   }
 })
-&lt;/script&gt;</pre>
+&lt;/script&gt;
+```
 
 ví dụ trên sử dụng một filter được đặt tên là capitalize
 
 Ngoài ra có thể định nghĩa ở cấp toàn cục trước khi khởi tạo một đối tượng Vue như sau:
 
-<pre class="lang:default decode:true " >Vue.filter('capitalize', function (value) {
+```
+Vue.filter('capitalize', function (value) {
   if (!value) return ''
   value = value.toString()
   return value.charAt(0).toUpperCase() + value.slice(1)
-})</pre>
+})
+```

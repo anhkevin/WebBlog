@@ -21,7 +21,8 @@ Nên website được tải thì sẽ được đọc từ trên xuống dưới
 
 Tham khảo ví dụ Filter: clean_url :
 
-<pre class="lang:php decode:true " >&lt;?php
+```
+&lt;?php
 
 function defer_parsing_of_javascript ( $url ) { 
 	if(is_admin() || 
@@ -30,7 +31,8 @@ function defer_parsing_of_javascript ( $url ) {
 		return $url; 
 	return "$url' defer "; 
 } 
-add_filter( 'clean_url', 'defer_parsing_of_javascript', 11, 1 );</pre>
+add_filter( 'clean_url', 'defer_parsing_of_javascript', 11, 1 );
+```
 
 Ví dụ trên có nghĩa như sau:  
 + Nếu trang admin thì giữ nguyên  

@@ -40,7 +40,8 @@ Khi một **widget** thay đổi trạng thái, chẳng hạn như do người d
 
 File: main.dart
 
-<pre class="lang:default decode:true " >import 'package:flutter/material.dart';
+```
+import 'package:flutter/material.dart';
 
 void main()=&gt;runApp(MyApp());
 
@@ -106,4 +107,5 @@ class MyApp extends StatelessWidget{
         )
     );
   }
-}</pre>
+}
+```

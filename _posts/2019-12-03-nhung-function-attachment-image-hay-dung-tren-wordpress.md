@@ -17,36 +17,46 @@ tags:
 
 **1. Lấy $attachment_id từ 1 link hình ảnh trên web**
 
-<pre>attachment_url_to_postid( string $url )
-</pre>
+```
+attachment_url_to_postid( string $url )
+
+```
 
 Tham khảo: <a href="https://developer.wordpress.org/reference/functions/attachment_url_to_postid/" target="_blank" rel="noopener noreferrer">https://developer.wordpress.org/reference/functions/attachment_url_to_postid/</a>
 
 **2. Lấy thông tin array(url, width, height, is\_intermediate) từ 1 $attachment\_id**
 
-<pre>wp_get_attachment_image_src( int $attachment_id, string|array $size = 'thumbnail')
-</pre>
+```
+wp_get_attachment_image_src( int $attachment_id, string|array $size = 'thumbnail')
+
+```
 
 Tham khảo: <a href="https://developer.wordpress.org/reference/functions/wp_get_attachment_image_src/" target="_blank" rel="noopener noreferrer">https://developer.wordpress.org/reference/functions/wp_get_attachment_image_src/</a>
 
 **3. Lấy HTML img từ 1 $attachment_id**
 
-<pre>wp_get_attachment_image( int $attachment_id, string|array $size = 'thumbnail')
-</pre>
+```
+wp_get_attachment_image( int $attachment_id, string|array $size = 'thumbnail')
+
+```
 
 Tham khảo: <a href="https://developer.wordpress.org/reference/functions/wp_get_attachment_image/" target="_blank" rel="noopener noreferrer">https://developer.wordpress.org/reference/functions/wp_get_attachment_image/</a>
 
 **4. Lấy $thumbnail_id của post, page**
 
-<pre>get_post_thumbnail_id( int|WP_Post $post = null )
-</pre>
+```
+get_post_thumbnail_id( int|WP_Post $post = null )
+
+```
 
 Tham khảo: <a href="https://developer.wordpress.org/reference/functions/get_post_thumbnail_id/" target="_blank" rel="noopener noreferrer">https://developer.wordpress.org/reference/functions/get_post_thumbnail_id/</a>
 
 **5. Lấy thumbnail URL của post, page**
 
-<pre>get_the_post_thumbnail_url( int|WP_Post $post = null, string|array $size = 'post-thumbnail' )
-</pre>
+```
+get_the_post_thumbnail_url( int|WP_Post $post = null, string|array $size = 'post-thumbnail' )
+
+```
 
 Tham khảo: <a href="https://developer.wordpress.org/reference/functions/get_the_post_thumbnail_url/" target="_blank" rel="noopener noreferrer">https://developer.wordpress.org/reference/functions/get_the_post_thumbnail_url/</a>
 

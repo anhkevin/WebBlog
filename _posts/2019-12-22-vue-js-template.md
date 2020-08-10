@@ -18,21 +18,26 @@ Vue.js sử dụng một cú pháp template dựa trên HTML. Tất cả các te
 
 &#8211; HTML hợp lệ
 
-<pre class="lang:default decode:true " >&lt;div&gt;Hello&lt;/div&gt;</pre>
+```
+&lt;div&gt;Hello&lt;/div&gt;
+```
 
 &#8211; Khởi tạo Vue.js có template name là app
 
-<pre class="lang:js decode:true " >&lt;div id="app"&gt;Hello&lt;/div&gt;
+```
+&lt;div id="app"&gt;Hello&lt;/div&gt;
 
 &lt;script&gt;
 new Vue ({
   el: '#app',
 })
-&lt;/script&gt;</pre>
+&lt;/script&gt;
+```
 
 &#8211; Hiển thị tên phía sau chữ Hello bằng cách sử dụng phép nội suy dữ liệu từ vue, đó là thêm data vào vue và sử dụng {{ name }} là mẫu nội suy để hiển thị dữ liệu
 
-<pre class="lang:default decode:true " >&lt;div id="app"&gt;Hello {{ name }}&lt;/div&gt;
+```
+&lt;div id="app"&gt;Hello {{ name }}&lt;/div&gt;
 
 &lt;script&gt;
 new Vue ({
@@ -41,21 +46,27 @@ new Vue ({
     name: 'Anh'
   }
 })
-&lt;/script&gt;</pre>
+&lt;/script&gt;
+```
 
 => Lúc này html render ra là
 
-<pre class="lang:default decode:true " >&lt;div id="app"&gt;Hello Anh&lt;/div&gt;</pre>
+```
+&lt;div id="app"&gt;Hello Anh&lt;/div&gt;
+```
 
 => Và trên trình duyệt sẽ hiển thị
 
-<pre>Hello Anh</pre>
+```
+Hello Anh
+```
 
 &nbsp;
 
 **&#8211; Ví dụ thêm dữ liệu là html**
 
-<pre class="lang:default decode:true " >&lt;div id="app"&gt;
+```
+&lt;div id="app"&gt;
     Hello {{ name }}
     &lt;div v-html = "htmlcontent"&gt;&lt;/div&gt;
 &lt;/div&gt;
@@ -68,15 +79,18 @@ new Vue ({
     htmlcontent : "&lt;h1&gt;Vue Js Template&lt;/h1&gt;"
   }
 })
-&lt;/script&gt;</pre>
+&lt;/script&gt;
+```
 
 => Lúc này html render ra là
 
-<pre class="lang:default decode:true " >&lt;div id="app"&gt;
+```
+&lt;div id="app"&gt;
     Hello Anh
     &lt;div&gt;&lt;h1&gt;Vue Js Template&lt;/h1&gt;&lt;/div&gt;
 &lt;/div&gt;
-</pre>
+
+```
 
 **Note:** nếu dữ liệu data là html không thể sử dụng {{ htmlcontent }} mà phải sử dụng v-html = &#8220;htmlcontent&#8221; thì mới hiểu đó là html và render ra html được.
 

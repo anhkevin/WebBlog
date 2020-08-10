@@ -20,23 +20,27 @@ Các phương thức có thể truyền tham số vào và có thể truy cập 
 
 Các phương thức trong Vue.js được định nghĩa trong thuộc tính **methods**
 
-<pre>new Vue({
+```
+new Vue({
   methods: {
     handleClick: function() {
       alert('test')
     }
   }
 })
-</pre>
+
+```
 
 Xem ví dụ về sự kiện click sẽ gọi phương thức xử lý
 
-<pre><div id="app">
+```
+<div id="app">
   &lt;a @click="handleClick('Click')">Click me!&lt;/a>
   
 </div>
 
-</pre>
+
+```
 
 Kết quả hiển thị khi nhấp chuột vào &#8220;Click me!&#8221; là: Anh, Click  
 **Phân tích ví dụ trên**  

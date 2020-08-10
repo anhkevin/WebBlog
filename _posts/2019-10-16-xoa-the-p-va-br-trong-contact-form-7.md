@@ -18,7 +18,9 @@ Nhưng khi sử dụng **plugin Contact Form 7** mặc định tự động tạ
 
 Dưới đây là cách tắt tính năng tự động thêm đó, bằng cách thêm đoạn mã dưới vào file **wp-config.php**
 
-<pre>define('WPCF7_AUTOP', false );</pre>
+```
+define('WPCF7_AUTOP', false );
+```
 
 <div id="gtx-trans" style="position: absolute; left: 236px; top: 175px;">
   <div class="gtx-trans-icon">

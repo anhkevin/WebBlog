@@ -19,9 +19,11 @@ tags:
 => Lúc đầu không hiểu 26MB và 30MB thì liên quan gì nhau?  
 Sau đó tôi tìm hiểu ra vấn đề là do thiết lập giới hạn max_size trên php.ini như sau:
 
-<pre>upload_max_filesize = 20M
+```
+upload_max_filesize = 20M
 post_max_size = 30M
-</pre>
+
+```
 
 Do trên code đã check nếu upload file lớn hơn thiết lập **upload\_max\_filesize** trên php.ini thì báo lỗi, nhưng khi **$_POST** vượt quá thiết lập **post\_max\_size** trên php.ini thì lúc này **count($_POST)** lại bằng 0
 

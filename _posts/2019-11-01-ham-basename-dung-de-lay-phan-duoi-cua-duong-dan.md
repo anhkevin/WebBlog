@@ -17,7 +17,9 @@ Hàm **basename()** thường dùng để lấy tên của một tệp nào đó
 
 <span style="font-size: 14pt;"><strong>Cú pháp:</strong></span>
 
-<pre>basename($path, $suffix)</pre>
+```
+basename($path, $suffix)
+```
 
 &#8211; **$path**: là đường dẫn chỉ định cần lấy phần đuôi  
 &#8211; **$suffix**: phần đuôi cuối cùng có $suffix này sẽ bị cắt đi

@@ -18,8 +18,10 @@ tags:
 
 **Chèn đoạn mã dưới đây vào file .htaccess**
 
-<pre class="lang:default decode:true " >&lt;IfModule mod_rewrite.c&gt;
+```
+&lt;IfModule mod_rewrite.c&gt;
 	RewriteEngine on
 	RewriteCond %{HTTPS} !=on [NC]
 	RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
-&lt;/IfModule&gt;</pre>
+&lt;/IfModule&gt;
+```

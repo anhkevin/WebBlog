@@ -38,7 +38,8 @@ tags:
 
 <span>Sau đó thêm đoạn code bên dưới vào trong file:</span>
 
-<pre class="lang:default decode:true " >&lt;VirtualHost *:80&gt;
+```
+&lt;VirtualHost *:80&gt;
 	ServerAdmin webmaster@domain.com
 	DocumentRoot "&lt;đường dẫn thư mục khi truy cập domain.com sẽ gọi tới&gt;"
 	ServerName domain.com
@@ -50,7 +51,8 @@ tags:
 		DirectoryIndex index.php
 		Require all granted
 	&lt;/Directory&gt;
-&lt;/VirtualHost&gt;</pre>
+&lt;/VirtualHost&gt;
+```
 
 <span>+<strong> VirtualHost *:80</strong>: đang sử dụng port 80 nếu Apache là port khác thì phải đổi port.</span>
 

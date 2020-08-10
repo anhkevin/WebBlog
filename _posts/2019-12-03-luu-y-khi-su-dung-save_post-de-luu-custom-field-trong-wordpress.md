@@ -19,13 +19,15 @@ tags:
 
 **VD:** Sử dụng đoạn code phía dưới để thêm hay cập nhật dữ liệu post meta cho post type
 
-<pre>function update_post($post_id) {
+```
+function update_post($post_id) {
     //[START][CODING] - post meta
     $link_download = $_POST['link_download'];
     update_post_meta( $post_id, '_link_download', $link_download );
     //[END][CODING] - post meta
 }
-add_action( 'save_post', 'update_post' );</pre>
+add_action( 'save_post', 'update_post' );
+```
 
 Khi đó mọi hình thức update đều vào action &#8216;save_post&#8217; này.  
 Trường hợp sử dụng chức năng khác để update dữ liệu nhưng chức năng đó không có dữ liệu custom field, chẳng hạn như sử dụng chức năng &#8220;Quick edit&#8221;, &#8220;Revision&#8221; => lúc này không có dữ liệu post meta, nếu bạn chỉ get dữ liệu _POST về rồi update thì lúc này dữ liệu sẽ bị update thành dữ liệu trống
@@ -33,10 +35,12 @@ Trường hợp sử dụng chức năng khác để update dữ liệu nhưng c
 **&#8211; Trường hợp này có nhiều cách giải quyết**  
 1. Kiểm tra isset trước khi xử lý
 
-<pre>if(isset($_POST['link_download'])) {
+```
+if(isset($_POST['link_download'])) {
 ...
 }
-</pre>
+
+```
 
 2. Check thêm điều kiện trường hợp ở màn hình add hoặc edit mới xử lý  
 &#8230;  

@@ -20,51 +20,71 @@ tags:
 
 + Thiết lập cho toàn bộ dự án thì có chữ **`--global`**
 
-<pre>$ git config --global user.name "username"
-$ git config --global user.email "username@domain.com"</pre>
+```
+$ git config --global user.name "username"
+$ git config --global user.email "username@domain.com"
+```
 
 + Thiết lập riêng project đó thì bỏ chữ **`--global`**
 
-<pre>$ git config user.name "username"
-$ git config user.email "username@domain.com"</pre>
+```
+$ git config user.name "username"
+$ git config user.email "username@domain.com"
+```
 
 **<span style="font-size: 14pt;">&#8211; Clone một remote về</span>**
 
-<pre>$ git clone https://github.com/user/repository.git</pre>
+```
+$ git clone https://github.com/user/repository.git
+```
 
 **<span style="font-size: 14pt;">&#8211; Lệnh liên quan Branch</span>**
 
 + Xem các nhánh hiện tại ở local
 
-<pre>$ git branch</pre>
+```
+$ git branch
+```
 
 + Xem tất cả các nhánh
 
-<pre>$ git branch - a</pre>
+```
+$ git branch - a
+```
 
 + Tạo mới một nhánh
 
-<pre>$ git branch &lt;name_branch></pre>
+```
+$ git branch &lt;name_branch>
+```
 
 + Xóa một branch
 
-<pre>$ git branch -d &lt;name_branch></pre>
+```
+$ git branch -d &lt;name_branch>
+```
 
 **<span style="font-size: 14pt;">&#8211; Chuyển nhánh</span>**
 
-<pre>$ git checkout &lt;name_branch></pre>
+```
+$ git checkout &lt;name_branch>
+```
 
 **<span style="font-size: 14pt;">&#8211; Kéo những thay đổi về nhánh hiện tại</span>**
 
-<pre>$ git pull origin &lt;name_branch></pre>
+```
+$ git pull origin &lt;name_branch>
+```
 
 **<span style="font-size: 14pt;">&#8211; Cập nhật thay đổi</span>**
 
 **Bước 1:** Add các file trước khi commit
 
-<pre>$ git add .
+```
+$ git add .
 $ git add change_file.txt
-$ git add folder_change/</pre>
+$ git add folder_change/
+```
 
 Dòng 1: add tất cả  
 Dòng 2: chỉ add file thay đổi muốn commit  
@@ -72,16 +92,22 @@ Dòng 3: chỉ add folder thay đổi muốn commit
 
 **Bước 2:** Commit những thay đổi lên local
 
-<pre>$ git commit - m "commit message"</pre>
+```
+$ git commit - m "commit message"
+```
 
 **Bước 3:** Cập nhật các commit trên local lên server (nếu ko muốn cập nhật lên server thì bỏ qua bước này)
 
-<pre>$ git push origin &lt;name_branch></pre>
+```
+$ git push origin &lt;name_branch>
+```
 
 **<span style="font-size: 14pt;">&#8211; Gộp nhánh</span>**  
 Muốn gộp nhánh branch\_1 vào branch\_2 thì làm như sau:  
 + checkout vào nhánh branch_2  
 + sau đó merge nhánh branch_1 vào
 
-<pre>$ git checkout &lt;branch_2>
-$ git merge &lt;branch_1></pre>
+```
+$ git checkout &lt;branch_2>
+$ git merge &lt;branch_1>
+```

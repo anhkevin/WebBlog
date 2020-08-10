@@ -34,15 +34,21 @@ Ngoài ra crontab -h sẽ hiện hướng dẫn các lệnh còn lại.
 
 **Trên Ubuntu/Debian:**
 
-<pre class="lang:default decode:true">sudo apt-get install cron</pre>
+```
+sudo apt-get install cron
+```
 
 **Trên CentOS/Red Hat Linux:**
 
-<pre class="lang:default decode:true">yum install cronie</pre>
+```
+yum install cronie
+```
 
 Sau khi cài đặt xong, thử kiểm tra xem nó đã cài đặt thành công rồi hay chưa bằng lệnh:
 
-<pre class="lang:default decode:true">service crond status</pre>
+```
+service crond status
+```
 
 Nếu output như dưới đây thì là OK.
 
@@ -50,18 +56,23 @@ Nếu output như dưới đây thì là OK.
 
 Nếu crontab vẫn chưa chạy thì bạn tự khởi động crontab và thiết lập tự động chạy mỗi khi reboot như sau:
 
-<pre class="lang:default decode:true">service crond start
-chkconfig crond on</pre>
+```
+service crond start
+chkconfig crond on
+```
 
 ### <span id="cai-dat-crobtab">Thiết lập chạy Crobtab</span>
 
 **Bước 1**: Vào file quản lý crontab bằng lệnh:
 
-<pre class="lang:default decode:true">crontab -e</pre>
+```
+crontab -e
+```
 
 **Bước 2**: Thiết lập theo cú pháp bên dưới và thêm vào cuối file crontab
 
-<pre class="">SHELL=/bin/bash
+```
+SHELL=/bin/bash
 PATH=/sbin:/bin:/usr/sbin:/usr/bin
 MAILTO=root
 
@@ -74,10 +85,13 @@ MAILTO=root
 # |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
 # |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
 # |  |  |  |  |
-# *  *  *  *  * user-name  command to be executed</pre>
+# *  *  *  *  * user-name  command to be executed
+```
 
 Sau khi thêm xong: bấm Esc -> nhấp Enter và gõ **:wq** (write and quit)
 
 **Bước 3**: restart lại là xong
 
-<pre class="lang:default decode:true ">service crond restart</pre>
+```
+service crond restart
+```

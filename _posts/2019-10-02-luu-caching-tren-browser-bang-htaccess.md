@@ -21,7 +21,8 @@ Như vậy sẽ không phải request tới server để lấy dữ liệu làm 
 
 **Đặt đoạn mã dưới vào file .htaccess của trang web**
 
-<pre class="lang:default decode:true " >&lt;ifModule mod_expires.c&gt;
+```
+&lt;ifModule mod_expires.c&gt;
 	ExpiresActive On
 	ExpiresDefault "access plus 7 days"
 	ExpiresByType text/html "access plus 7 days"
@@ -35,4 +36,5 @@ Như vậy sẽ không phải request tới server để lấy dữ liệu làm 
 	ExpiresByType text/javascript "access plus 1 month"
 	ExpiresByType application/x-javascript "access plus 1 month"
 	ExpiresByType application/x-shockwave-flash "access plus 1 month"
-&lt;/ifModule&gt;</pre>
+&lt;/ifModule&gt;
+```

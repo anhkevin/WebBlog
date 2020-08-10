@@ -25,7 +25,8 @@ Nén Gzip rất có ích của cho môi trường web vì HTML, CSS files sử d
 
 **Bật nén gzip thông qua `mod_deflate`:**
 
-<pre class="lang:default decode:true " >&lt;IfModule mod_deflate.c&gt;
+```
+&lt;IfModule mod_deflate.c&gt;
 	AddOutputFilterByType DEFLATE text/html
 	AddOutputFilterByType DEFLATE text/css
 	AddOutputFilterByType DEFLATE text/javascript
@@ -51,11 +52,13 @@ Nén Gzip rất có ích của cho môi trường web vì HTML, CSS files sử d
 	BrowserMatch ^Mozilla/4 gzip-only-text/html
 	BrowserMatch ^Mozilla/4\.0[678] no-gzip
 	BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
-&lt;/IfModule&gt;</pre>
+&lt;/IfModule&gt;
+```
 
 **Nếu server bạn không hỗ trợ mod_deflate thì sử dụng `mod_gzip`:**
 
-<pre class="lang:default decode:true " >&lt;ifModule mod_gzip.c&gt;
+```
+&lt;ifModule mod_gzip.c&gt;
 	mod_gzip_on Yes
 	mod_gzip_dechunk Yes
 	mod_gzip_item_include file .(html?|txt|css|js|php|pl)$
@@ -64,7 +67,8 @@ Nén Gzip rất có ích của cho môi trường web vì HTML, CSS files sử d
 	mod_gzip_item_include mime ^application/x-javascript.*
 	mod_gzip_item_exclude mime ^image/.*
 	mod_gzip_item_exclude rspheader ^Content-Encoding:.*gzip.*
-&lt;/ifModule&gt;</pre>
+&lt;/ifModule&gt;
+```
 
 Có thể kiểm tra trang web bật Gzip chưa bằng cách nhấn F12 trên web:  
 <img class="aligncenter wp-image-124 size-full" src="https://anhkevin.github.io/assets/img/uploads/2019/10/content_encoding_gzip.png" alt="" width="1198" height="487" srcset="https://anhkevin.github.io/assets/img/uploads/2019/10/content_encoding_gzip.png 1198w, https://anhkevin.github.io/assets/img/uploads/2019/10/content_encoding_gzip-300x122.png 300w, https://anhkevin.github.io/assets/img/uploads/2019/10/content_encoding_gzip-768x312.png 768w, https://anhkevin.github.io/assets/img/uploads/2019/10/content_encoding_gzip-1024x416.png 1024w, https://anhkevin.github.io/assets/img/uploads/2019/10/content_encoding_gzip-150x61.png 150w" sizes="(max-width: 1198px) 100vw, 1198px" />

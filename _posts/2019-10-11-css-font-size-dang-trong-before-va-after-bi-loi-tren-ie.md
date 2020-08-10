@@ -21,11 +21,14 @@ tags:
 **Xem ví dụ dưới dễ hiểu hơn:**  
 **<span style="color: #800000;">&#8211; Html</span>**
 
-<pre class="lang:xhtml decode:true " >&lt;h1&gt;Money&lt;/h1&gt;</pre>
+```
+&lt;h1&gt;Money&lt;/h1&gt;
+```
 
 **<span style="color: #800000;">&#8211; Css</span>**
 
-<pre class="lang:css decode:true " >h1 {
+```
+h1 {
 	font-size: 100px;
 }
 h1:after {
@@ -34,7 +37,8 @@ h1:after {
 }
 h1:after {
 	font-size: 60%;
-}</pre>
+}
+```
 
 **&#8211; Kết quả hiển thị html trên là:** <span style="color: #800000;">Money($)</span>
 

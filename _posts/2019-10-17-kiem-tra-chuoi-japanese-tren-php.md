@@ -20,11 +20,15 @@ Cách sử dụng **Regular Expression** để kiểm tra input tiếng nhật t
 
 **Ví dụ:** kiểm tra chuỗi từ đầu đến cuối có phải là số hay không?
 
-<pre>preg_match("/^[0-9]+$/", $input)</pre>
+```
+preg_match("/^[0-9]+$/", $input)
+```
 
 Vậy kiểm tra chuỗi trong tiếng nhập sử dụng code dưới:
 
-<pre>preg_match("/^[xxx]+$/u", $input)</pre>
+```
+preg_match("/^[xxx]+$/u", $input)
+```
 
 &#8211;**  /u** : để xác định chuỗi là unicode  
 &#8211;**  [xxx]** : chứa các đoạn mã kiểm tra tiếng nhật  
@@ -36,4 +40,6 @@ Ngoài ra tùy vào mục đích thì thêm những đoạn regex khác nhau và
 
 VD: Kiểm tra một chuỗi là chữ cái, số, hiragana, katakana và kanji
 
-<pre>preg_match("/^[a-zA-Z0-9\x{3041}-\x{3096}\x{30a1}-\x{30fc}\x{4e00}-\x{9faf}]+$/u",$input)</pre>
+```
+preg_match("/^[a-zA-Z0-9\x{3041}-\x{3096}\x{30a1}-\x{30fc}\x{4e00}-\x{9faf}]+$/u",$input)
+```

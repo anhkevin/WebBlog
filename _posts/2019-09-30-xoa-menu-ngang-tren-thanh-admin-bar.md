@@ -19,7 +19,8 @@ tags:
 
 Để xóa menu trên thanh **admin bar** sử dụng action: **wp\_before\_admin\_bar\_render**
 
-<pre class="lang:php decode:true " ><?php
+```
+<?php
 
 function remove_menu_in_admin_bar() { 
 	global $wp_admin_bar; 
@@ -40,7 +41,8 @@ function remove_menu_in_admin_bar() {
 	$wp_admin_bar->remove_menu('my-account'); // Remove the user details tab 
 } 
 add_action( 'wp_before_admin_bar_render', 'remove_menu_in_admin_bar' );
-</pre>
+
+```
 
 <span style="color: #ff0000;"><strong>Lưu ý:</strong></span> Cách nhận biết **NAME_MENU**
 

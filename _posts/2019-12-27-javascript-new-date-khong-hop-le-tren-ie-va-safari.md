@@ -18,7 +18,9 @@ Trong Javascript có cung cấp một đối tượng xử lý thời gian là *
 Tôi đã từng gặp phải một lỗi với IE và Safari khi tôi đang làm việc với hàm **Date()** của JavaScript.  
 **Hàm có nội dung như sau:**
 
-<pre></pre>
+```
+
+```
 
 &#8211; Đoạn code trên chạy trên Chrome thì chạy OK  
 &#8211; Nhưng khi chạy trên IE và Safari thì bị lỗi &#8220;Invalid Date&#8221; or &#8220;NaN&#8221;
@@ -27,6 +29,8 @@ Tôi đã từng gặp phải một lỗi với IE và Safari khi tôi đang là
 
 **Giải pháp:** Ngày và giờ cho phân cách bằng chữ T đó là yyyy-mm-ddThh:mm:ss
 
-<pre></pre>
+```
+
+```
 
 => Nó đã hoạt động OK với format trên trong các trình duyệt IE, Safari, Chrome, Firefox.

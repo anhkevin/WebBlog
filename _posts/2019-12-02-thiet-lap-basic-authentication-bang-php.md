@@ -17,7 +17,8 @@ Xác thực truy cập cơ bản (**Basic Authentication**) là một trong nh�
 
 <span style="font-size: 13pt;"><strong>&#8211; Thiết lập hàm basic_auth</strong></span>
 
-<pre>function basic_auth($auth_list){ 
+```
+function basic_auth($auth_list){ 
     if (isset($_SERVER['PHP_AUTH_USER']) and isset($auth_list[$_SERVER['PHP_AUTH_USER']])){
         if (md5($auth_list[$_SERVER['PHP_AUTH_USER']]) == $_SERVER['PHP_AUTH_PW']){
             return $_SERVER['PHP_AUTH_USER'];
@@ -30,21 +31,26 @@ Xác thực truy cập cơ bản (**Basic Authentication**) là một trong nh�
 
 	exit();
 }
-</pre>
+
+```
 
 <span style="font-size: 13pt;"><strong>&#8211; Sử dụng hàm này để thiết lập Basic auth</strong></span>  
 + user: admin  
 + pass: password (md5 = 5f4dcc3b5aa765d61d8327deb882cf99)
 
-<pre class="">basic_auth(array("admin" => "5f4dcc3b5aa765d61d8327deb882cf99"));
-</pre>
+```
+basic_auth(array("admin" => "5f4dcc3b5aa765d61d8327deb882cf99"));
+
+```
 
 <span style="font-size: 13pt;"><strong>&#8211; Hạn chế những IP cố định hiển thị Basic auth</strong></span>
 
-<pre>if(!in_array($_SERVER['REMOTE_ADDR'], array("1.1.1.1", "2.2.2.2"))){
+```
+if(!in_array($_SERVER['REMOTE_ADDR'], array("1.1.1.1", "2.2.2.2"))){
       basic_auth(array("admin" => "5f4dcc3b5aa765d61d8327deb882cf99"));
 }
-</pre>
+
+```
 
 <div>
 </div>

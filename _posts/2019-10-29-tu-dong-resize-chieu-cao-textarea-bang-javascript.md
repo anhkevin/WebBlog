@@ -15,11 +15,13 @@ tags:
 ---
 ##### **<span style="color: #000000;">1. Thêm CSS cho textarea</span>**
 
-<pre class="lang:js decode:true " >textarea { 
+```
+textarea { 
 	resize: none; 
 	overflow: hidden; 
 	box-sizing: border-box; 
-}</pre>
+}
+```
 
 &#8211; **resize**: none => không cho thay đổi chiều ngang textarea  
 &#8211; **overflow**: hidden => làm ẩn thanh scroll  
@@ -27,13 +29,15 @@ tags:
 
 ##### **<span style="color: #000000;">2. Đoạn javascript xử lý thay đổi chiều cao textarea</span>**
 
-<pre class="lang:js decode:true " >var textarea = document.querySelectorAll('textarea'); 
+```
+var textarea = document.querySelectorAll('textarea'); 
 textarea.forEach(function(item) { 
 	item.style.height = item.scrollHeight + "px"; 
 	if (item.clientHeight &lt; item.scrollHeight) { 
 		item.style.height = (item.scrollHeight * 2 - item.clientHeight) + "px"; 
 	} 
-});</pre>
+});
+```
 
 &#8211; **clientHeight**: chiều cao hiển thị tại thời điểm đó của Textarea  
 &#8211; **scrollHeight**: chiều cao tối thiểu hiển thị tất cả nội dung trong Textarea mà không cần scroll  

@@ -15,7 +15,8 @@ Có thể tải trực tiếp một file có định dạng khác nhau xuống m
 
 **Đoạn mã dưới có thể áp dụng để download file trong PHP:**
 
-<pre>function download_file_by_path($file_path) {
+```
+function download_file_by_path($file_path) {
     if(file_exists($file_path)) {
         // HTTP header
         header('Content-Description: File Transfer');
@@ -31,4 +32,5 @@ Có thể tải trực tiếp một file có định dạng khác nhau xuống m
         readfile($file_path);
         exit;
     }
-}</pre>
+}
+```
