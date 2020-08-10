@@ -8,10 +8,8 @@ layout: post
 permalink: /ung-dung-hello-world-voi-flutter/
 post_views_count:
   - "141"
-categories:
-  - Mobile App
-tags:
-  - Flutter
+categories: [Mobile App]
+tags: [Flutter]
 ---
 Xóa hết nội dụng ở file <span style="color: #ff0000;">lib/main.dart</span> và gõ đoạn code phía dưới vào
 

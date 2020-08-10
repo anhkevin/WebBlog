@@ -7,11 +7,8 @@ layout: post
 permalink: /xoa-menu-ngang-tren-thanh-admin-bar/
 post_views_count:
   - "208"
-categories:
-  - Lập Trình
-  - PHP
-tags:
-  - wordpress
+categories: [PHP, Wordpress]
+tags: [admin bar wp]
 ---
 **Admin bar** là một khu vực ở trên cùng của màn hình được hiển thị cho người dùng đã đăng nhập vào WordPress. Đây là một thanh ngang dài có chứa các phím tắt tới các phần khác nhau của màn hình WordPress admin.
 

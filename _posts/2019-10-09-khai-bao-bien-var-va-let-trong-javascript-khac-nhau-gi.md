@@ -10,11 +10,8 @@ layout: post
 permalink: /khai-bao-bien-var-va-let-trong-javascript-khac-nhau-gi/
 post_views_count:
   - "75"
-categories:
-  - Frontend
-tags:
-  - ES6
-  - javascript
+categories: [Frontend, Javascript]
+tags: [let, var, ES6]
 ---
 **&#8211; let: **khai báo biến sử dụng let chỉ được phép sử dụng trong block bao quanh nó, nếu gọi biến đó ngoài block thì sẽ bị lỗi
 

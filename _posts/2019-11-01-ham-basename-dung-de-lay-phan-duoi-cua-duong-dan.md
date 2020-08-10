@@ -7,10 +7,8 @@ layout: post
 permalink: /ham-basename-dung-de-lay-phan-duoi-cua-duong-dan/
 post_views_count:
   - "76"
-categories:
-  - Lập Trình
-tags:
-  - PHP Filesystem
+categories: [PHP]
+tags: [Filesystem]
 ---
 Hàm **basename()** thường dùng để lấy tên của một tệp nào đó từ một đường dẫn được chỉ định.  
 <span style="color: #800000;"><strong>Chý ý:</strong></span> Đường dẫn chỉ định được ngăn cách bằng dấu &#8220;/&#8221; hoặc &#8220;\&#8221; và **basename()** chỉ lấy phần cuối cùng dựa vào dấu ngăn cách trên

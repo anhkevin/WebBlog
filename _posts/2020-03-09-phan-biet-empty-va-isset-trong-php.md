@@ -10,10 +10,8 @@ layout: post
 permalink: /phan-biet-empty-va-isset-trong-php/
 post_views_count:
   - "110"
-categories:
-  - PHP
-tags:
-  - php
+categories: [PHP]
+tags: [isset, empty]
 ---
 **Hàm isset** &#8211; Xác định nếu một biến được khai báo và không phải là NULL. Nói cách khác, nó trả về true chỉ khi biến không phải là NULL.  
 **Hàm empty** &#8211; Xác định xem một biến có trống không.  

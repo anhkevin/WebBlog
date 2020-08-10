@@ -7,12 +7,8 @@ layout: post
 permalink: /cach-su-dung-smartgit-mien-phi/
 post_views_count:
   - "1323"
-categories:
-  - Orther
-tags:
-  - git
-  - smartgit
-  - svn
+categories: [Orther]
+tags: [git, smartgit, svn]
 ---
 **SmartGit** là phần mềm giúp kiểm soát phiên bản Git, Mercurial và SVN tốt nhất trong các phần mềm mà mình từng sử dụng. Nhưng nó là một phần mềm có phí sử dụng và chỉ được dùng thử trong 30 ngày. 
 

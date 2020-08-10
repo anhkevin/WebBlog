@@ -7,12 +7,8 @@ layout: post
 permalink: /kiem-tra-chuoi-japanese-tren-php/
 post_views_count:
   - "160"
-categories:
-  - Regex
-tags:
-  - Japanese
-  - Unicode
-  - Validation
+categories: [Orther]
+tags: [Regex Japanese, preg_match]
 ---
 Cách sử dụng **Regular Expression** để kiểm tra input tiếng nhật trên PHP
 

@@ -7,12 +7,8 @@ layout: post
 permalink: /cach-them-ten-mien-ao-thiet-lap-virtual-host-tren-xampp/
 post_views_count:
   - "163"
-categories:
-  - Server
-tags:
-  - apache
-  - web server
-  - xampp
+categories: [Server]
+tags: [apache, web server, xampp]
 ---
 <span>Thiết lập <strong>Virtual Host</strong> là cách thêm tên miền ảo trên localhost. Có rất nhiều chương trình hỗ trợ Apache, nhưng bài viết này chỉ hướng dẫn trên Xampp.</span>
 

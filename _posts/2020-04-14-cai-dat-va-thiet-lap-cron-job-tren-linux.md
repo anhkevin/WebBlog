@@ -7,10 +7,8 @@ layout: post
 permalink: /cai-dat-va-thiet-lap-cron-job-tren-linux/
 post_views_count:
   - "75"
-categories:
-  - Server
-tags:
-  - linux
+categories: [Server, Linux]
+tags: [crontab]
 ---
 **Cron Job** là chương trình lập lịch tự động trong hệ thống Linux, để chạy 1 ứng dụng, thực thi 1 script… Với Cron Job bạn có thể lập lịch chạy tại 1 thời điểm nhất định, mỗi giờ (daily), mỗi ngày (daily) &#8230;
 

@@ -7,11 +7,8 @@ layout: post
 permalink: /mot-so-lenh-command-line-cua-mysql-nen-biet/
 post_views_count:
   - "78"
-categories:
-  - SQL
-tags:
-  - linux
-  - mysql
+categories: [SQL]
+tags: [linux, mysql]
 ---
 #### <span style="color: #000000;">Một số lệnh Command Line thao tác với MySQL</span>
 

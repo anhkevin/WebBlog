@@ -10,10 +10,8 @@ wpb_post_views_count:
   - "1"
 post_views_count:
   - "110"
-categories:
-  - Frontend
-tags:
-  - html css
+categories: [Frontend, CSS]
+tags: [option, select]
 ---
 <span style="color: #000000; font-size: 14pt;"><strong><span style="color: #ff0000;">Lưu ý:</span></strong> khi sử dụng <span style="color: #ff0000;">display=none</span> cho option trong select sẽ không hoạt động trên <span style="color: #ff0000;">safari</span> của <span style="color: #ff0000;">MAC</span> và <span style="color: #ff0000;">IOS</span></span>
 

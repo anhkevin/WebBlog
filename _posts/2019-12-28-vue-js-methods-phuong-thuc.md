@@ -10,10 +10,8 @@ layout: post
 permalink: /vue-js-methods-phuong-thuc/
 post_views_count:
   - "141"
-categories:
-  - Vuejs
-tags:
-  - vuejs
+categories: [Frontend, Javascript, Vuejs]
+tags: [methods vuejs]
 ---
 Methods trong Vue.js là các phương thức của component  
 Các phương thức có thể truyền tham số vào và có thể truy cập data dữ liệu

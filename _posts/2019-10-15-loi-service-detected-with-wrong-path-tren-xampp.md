@@ -11,10 +11,8 @@ layout: post
 permalink: /loi-service-detected-with-wrong-path-tren-xampp/
 post_views_count:
   - "158"
-categories:
-  - Server
-tags:
-  - xampp
+categories: [Server]
+tags: [xampp]
 ---
 **Lỗi không tìm được path trên Xampp**  
 &#8211; Apache Service detected with wrong path  

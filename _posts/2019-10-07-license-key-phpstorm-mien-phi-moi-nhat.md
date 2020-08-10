@@ -7,10 +7,8 @@ layout: post
 permalink: /license-key-phpstorm-mien-phi-moi-nhat/
 post_views_count:
   - "5483"
-categories:
-  - Orther
-tags:
-  - PhpStorm
+categories: [Orther]
+tags: [PhpStorm]
 ---
 **PhpStorm** là một IDE PHP chuyên nghiệp và cực kỳ thông minh, tập trung vào hiệu quả năng suất của nhà phát triển, như am hiểu từng đoạn code của bạn. **PhpStorm** cung cấp bộ code completion thông minh, dể dàng điều hướng và kiểm tra lỗi nhanh chóng. **PhpStorm** hỗ trợ tốt nhiều framework của PHP. Một lợi thế khác của PHP là Cross Platform có thể chạy được trên nhiều nền tảng khác nhau.
 

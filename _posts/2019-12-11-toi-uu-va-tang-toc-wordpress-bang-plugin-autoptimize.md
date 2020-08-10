@@ -8,10 +8,8 @@ layout: post
 permalink: /toi-uu-va-tang-toc-wordpress-bang-plugin-autoptimize/
 post_views_count:
   - "133"
-categories:
-  - Lập Trình
-tags:
-  - wordpress
+categories: [PHP, Wordpress]
+tags: [autoptimize]
 ---
 <span style="font-size: 13pt;"><strong>Autoptimize</strong> là plugin giúp nén và giảm dung lượng file hỗ trợ cải thiện thời gian tải trang thông qua các yếu tố chính sau:</span>  
 <span style="font-size: 13pt;">&#8211; Nén, gộp, và tối ưu file CSS</span>  

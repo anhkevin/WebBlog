@@ -7,11 +7,8 @@ layout: post
 permalink: /xoa-cac-muc-menu-tren-wordpress/
 post_views_count:
   - "209"
-categories:
-  - Lập Trình
-  - PHP
-tags:
-  - wordpress
+categories: [PHP, Wordpress]
+tags: [menu wp]
 ---
 **Khi code dự án sử dụng WordPress, sẽ có trường hợp bạn muốn ẩn một số menu nào đó vì một số lý do:**  
 &#8211; Chức năng menu đó không sử dụng đến.  

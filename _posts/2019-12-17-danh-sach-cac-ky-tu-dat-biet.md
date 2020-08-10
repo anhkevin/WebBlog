@@ -7,10 +7,8 @@ layout: post
 permalink: /danh-sach-cac-ky-tu-dat-biet/
 post_views_count:
   - "113"
-categories:
-  - Orther
-tags:
-  - character
+categories: [Orther]
+tags: [character]
 ---
 <div id="box-special-char">
   <h3>

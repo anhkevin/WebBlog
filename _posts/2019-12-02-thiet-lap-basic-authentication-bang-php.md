@@ -8,10 +8,8 @@ layout: post
 permalink: /thiet-lap-basic-authentication-bang-php/
 post_views_count:
   - "93"
-categories:
-  - PHP
-tags:
-  - header
+categories: [PHP]
+tags: [header, basic auth]
 ---
 Xác thực truy cập cơ bản (**Basic Authentication**) là một trong những phương pháp xác thực đơn giản khi cần hạn chế truy cập vào một website hoặc link nào đó.
 

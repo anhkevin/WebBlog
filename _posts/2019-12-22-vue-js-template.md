@@ -8,10 +8,8 @@ layout: post
 permalink: /vue-js-template/
 post_views_count:
   - "108"
-categories:
-  - Vuejs
-tags:
-  - vuejs
+categories: [Frontend, Javascript, Vuejs]
+tags: [template vuejs]
 ---
 Vue.js sử dụng một cú pháp template dựa trên HTML. Tất cả các template của Vue đều là code HTML hợp lệ và có thể được parse bởi các trình duyệt và parser chuẩn. Ngoài ra Vue.js cung cấp hai thứ mạnh mẽ: nội suy và directive.  
 **Note:** _muốn biết directive là gì thì xem [ở đây](https://anhkevin.github.io/posts/directive-trong-vue-js/) còn nội suy là gì thì xem tiếp bài dưới sẽ rõ_.

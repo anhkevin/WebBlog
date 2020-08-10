@@ -8,10 +8,8 @@ layout: post
 permalink: /vue-js-directive-tuy-bien/
 post_views_count:
   - "182"
-categories:
-  - Vuejs
-tags:
-  - vuejs
+categories: [Frontend, Javascript, Vuejs]
+tags: [directive vuejs]
 ---
 Một directive trong Vue được bắt đầu với v- để chỉ định rõ rằng đây là một thuộc tính riêng do Vue cung cấp, đồng thời thuộc tính này sẽ áp dụng một hành vi (behavior) đặc biệt lên kết quả DOM được render ra.
 

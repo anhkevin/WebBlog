@@ -8,10 +8,8 @@ layout: post
 permalink: /widget-tren-flutter-la-gi/
 post_views_count:
   - "134"
-categories:
-  - Mobile App
-tags:
-  - Flutter
+categories: [Mobile App]
+tags: [Flutter]
 ---
 **<span style="font-size: 13pt;">Widget miêu tả một phần của giao diện người dùng. Tất cả các component như text, image, button hay animation, theme, layout hay thậm chí app cũng là 1 widget. Trong Flutter tất cả các widget hay giao diện đều được code bằng dart</span>**
 

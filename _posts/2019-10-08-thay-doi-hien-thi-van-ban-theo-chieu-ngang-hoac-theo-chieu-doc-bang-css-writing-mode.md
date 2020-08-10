@@ -7,11 +7,8 @@ layout: post
 permalink: /thay-doi-hien-thi-van-ban-theo-chieu-ngang-hoac-theo-chieu-doc-bang-css-writing-mode/
 post_views_count:
   - "125"
-categories:
-  - Frontend
-tags:
-  - css
-  - css3
+categories: [Frontend, CSS]
+tags: [writing-mode, css3]
 ---
 **CSS writing-mode** có thể thay đổi sự căn chỉnh của văn bản hiển thị từ trên xuống dưới hoặc từ trái sang phải hoặc từ phải sang trái, tùy thuộc vào ngôn ngữ và mục đích sử dụng.
 

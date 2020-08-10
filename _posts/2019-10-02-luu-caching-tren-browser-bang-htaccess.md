@@ -7,11 +7,8 @@ layout: post
 permalink: /luu-caching-tren-browser-bang-htaccess/
 post_views_count:
   - "107"
-categories:
-  - Lập Trình
-tags:
-  - caching
-  - htaccess
+categories: [Orther]
+tags: [caching, htaccess]
 ---
 ### <span id="browser-caching-la-gi" class="ez-toc-section" style="font-size: 14pt;">Caching trình duyệt như thế nào?</span>
 

@@ -7,14 +7,8 @@ layout: post
 permalink: /css-font-size-dang-trong-before-va-after-bi-loi-tren-ie/
 post_views_count:
   - "64"
-categories:
-  - Frontend
-tags:
-  - :after
-  - :before
-  - css
-  - font-size
-  - IE
+categories: [Frontend, CSS]
+tags: [:after, :before, font-size]
 ---
 **Vấn đề:** Mình từng fix 1 lỗi khá khó chịu cho khách hàng trên IE đó là khi viết **element:before** hoặc **element:after** chứa **font-size** là **%** nhưng trên css có nhiều chỗ **font-size %** cho cùng 1 element thì trên IE nó tính font-size cho element đó bằng cách nhân lên từng đó số lần %
 

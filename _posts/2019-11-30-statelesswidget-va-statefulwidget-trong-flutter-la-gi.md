@@ -8,10 +8,8 @@ layout: post
 permalink: /statelesswidget-va-statefulwidget-trong-flutter-la-gi/
 post_views_count:
   - "280"
-categories:
-  - Mobile App
-tags:
-  - Flutter
+categories: [Mobile App]
+tags: [Flutter]
 ---
 **StatelessWidget** và **StatefulWidget** là gì?
 

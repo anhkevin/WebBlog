@@ -7,10 +7,8 @@ layout: post
 permalink: /tien-to-webkit-moz-o-ms-trong-css-la-gi/
 post_views_count:
   - "235"
-categories:
-  - Frontend
-tags:
-  - css3
+categories: [Frontend, CSS]
+tags: [css3]
 ---
 #### <span style="color: #333333;"><strong>Thường khi code css sẽ thấy một số thuộc tính có tiền tố -webkit-, -moz-, -o-, -ms- là vì sao?</strong></span>
 
