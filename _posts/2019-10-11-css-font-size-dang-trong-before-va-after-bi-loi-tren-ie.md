@@ -1,6 +1,6 @@
 ---
 id: 216
-title: 'Css font-size dạng % trong :before và :after bị lỗi trên IE'
+title: Css font-size dạng % trong element (before, after) bị lỗi trên IE
 date: 2019-10-11T16:14:57+07:00
 author: Ime Share
 layout: post
@@ -8,20 +8,20 @@ permalink: /css-font-size-dang-trong-before-va-after-bi-loi-tren-ie/
 post_views_count:
   - "64"
 categories: [Frontend, CSS]
-tags: [:after, :before, font-size]
+tags: [font-size]
 ---
 **Vấn đề:** Mình từng fix 1 lỗi khá khó chịu cho khách hàng trên IE đó là khi viết **element:before** hoặc **element:after** chứa **font-size** là **%** nhưng trên css có nhiều chỗ **font-size %** cho cùng 1 element thì trên IE nó tính font-size cho element đó bằng cách nhân lên từng đó số lần %
 
 **Xem ví dụ dưới dễ hiểu hơn:**  
 **<span style="color: #800000;">&#8211; Html</span>**
 
-```
+```html
 &lt;h1&gt;Money&lt;/h1&gt;
 ```
 
 **<span style="color: #800000;">&#8211; Css</span>**
 
-```
+```html
 h1 {
 	font-size: 100px;
 }
