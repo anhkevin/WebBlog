@@ -1,6 +1,5 @@
 /*!
   Aggregation of common JS.
-  Chirpy@2.3
   github
   © 2020 Coding
   MIT License

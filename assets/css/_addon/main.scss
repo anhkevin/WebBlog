@@ -489,7 +489,7 @@ footer {
     border-top: 1px solid var(--main-border-color);
     margin-bottom: 1rem;
     >div {
-      width: 350px;
+      width: 100%;
     }
   }
   a {
@@ -502,8 +502,8 @@ footer {
       @include no-text-decoration;
     }
   }
-  .footer-right {
-    text-align: right;
+  .footer-center {
+    text-align: center;
   }
 }
 
@@ -973,9 +973,6 @@ table {
       -ms-flex-pack: distribute!important;
       justify-content: space-around!important;
     }
-    .footer-left, .footer-right {
-      text-align: center;
-    }
   }
 
 }
@@ -1104,14 +1101,6 @@ table {
     }
   }
 }
-
-
-@media all and (min-width: 577px) and (max-width: 1199px) {
-  footer>.d-flex>div {
-    width: 312px;
-  }
-}
-
 
 /* Sidebar visible */
 @media all and (min-width: 831px) {

@@ -1,6 +1,5 @@
 /*!
   JS group for layout Home or Post
-  Chirpy version 1
   github
   © 2020 Coding
   MIT License
