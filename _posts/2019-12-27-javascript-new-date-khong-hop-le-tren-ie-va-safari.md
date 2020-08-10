@@ -19,7 +19,10 @@ Tôi đã từng gặp phải một lỗi với IE và Safari khi tôi đang là
 **Hàm có nội dung như sau:**
 
 ```
-
+<script type="text/javascript">
+	var valDate = "2019-12-26 20:10:06";
+	var getDate = new Date(valDate);
+</script>
 ```
 
 &#8211; Đoạn code trên chạy trên Chrome thì chạy OK  
@@ -30,7 +33,10 @@ Tôi đã từng gặp phải một lỗi với IE và Safari khi tôi đang là
 **Giải pháp:** Ngày và giờ cho phân cách bằng chữ T đó là yyyy-mm-ddThh:mm:ss
 
 ```
-
+<script type="text/javascript">
+	var valDate = "2019-12-26T20:10:06";
+	var getDate = new Date(valDate);
+</script>
 ```
 
 => Nó đã hoạt động OK với format trên trong các trình duyệt IE, Safari, Chrome, Firefox.
