@@ -18,7 +18,7 @@ Trong Javascript có cung cấp một đối tượng xử lý thời gian là *
 Tôi đã từng gặp phải một lỗi với IE và Safari khi tôi đang làm việc với hàm **Date()** của JavaScript.  
 **Hàm có nội dung như sau:**
 
-```
+```html
 <script type="text/javascript">
 	var valDate = "2019-12-26 20:10:06";
 	var getDate = new Date(valDate);
@@ -32,7 +32,7 @@ Tôi đã từng gặp phải một lỗi với IE và Safari khi tôi đang là
 
 **Giải pháp:** Ngày và giờ cho phân cách bằng chữ T đó là yyyy-mm-ddThh:mm:ss
 
-```
+```html
 <script type="text/javascript">
 	var valDate = "2019-12-26T20:10:06";
 	var getDate = new Date(valDate);
