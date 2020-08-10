@@ -7,8 +7,8 @@ layout: post
 permalink: /cai-dat-flutter-sdk/
 post_views_count:
   - "108"
-categories: [Mobile App]
-tags: [Flutter]
+categories: [Orther]
+tags: [mobile app, flutter]
 ---
 Nếu muốn biết **Flutter** là gì thì tự google nha. Để cài đặt môi trường phát triển thì thực hiện các thao tác phía dưới:
 
