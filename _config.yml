@@ -10,7 +10,7 @@ url: 'https://anhkevin.github.io'
 
 author: anhkevin                  # change to your full name
 
-avatar: /assets/img/sample/avatar.jpg   # support internet resources
+avatar: /assets/img/main/anhkevin_logo.png   # support internet resources
 
 github:
   username: anhkevin             # change to your github username
@@ -29,7 +29,7 @@ social:
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
 
-google_site_verification: google_meta_tag_verification # change to your verification string
+google_site_verification: sAiFYDR4QKocuQTaJG2zD4iSFf46F8RTAURyPwjOEtg # change to your verification string
 
 #--------------------------
 
