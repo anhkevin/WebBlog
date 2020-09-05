@@ -20,34 +20,32 @@ tags: [apache, web server, xampp]
 
 <span>Vào đường dẫn: <strong>C:\Windows\System32\drivers\etc</strong> (trên window) </span>
 
-<img class="aligncenter wp-image-50 size-full" src="https://anhkevin.github.io/assets/img/uploads/2019/09/hosts_imeshare.png" alt="" width="717" height="190" srcset="https://anhkevin.github.io/assets/img/uploads/2019/09/hosts_imeshare.png 717w, https://anhkevin.github.io/assets/img/uploads/2019/09/hosts_imeshare-300x79.png 300w, https://anhkevin.github.io/assets/img/uploads/2019/09/hosts_imeshare-150x40.png 150w" sizes="(max-width: 717px) 100vw, 717px" /> 
+![hosts_imeshare.png]({{ "/assets/img/uploads/2019/09/hosts_imeshare.png" | relative_url }})
 
 <span>Mở file <strong>hosts</strong> và trỏ domain ảo về IP của localhost (ví dụ domain dưới hình là: domain.com)</span>
 
-<img class="aligncenter wp-image-53 size-full" src="https://anhkevin.github.io/assets/img/uploads/2019/09/domain_hosts_imeshare.png" alt="" width="562" height="359" srcset="https://anhkevin.github.io/assets/img/uploads/2019/09/domain_hosts_imeshare.png 562w, https://anhkevin.github.io/assets/img/uploads/2019/09/domain_hosts_imeshare-300x192.png 300w, https://anhkevin.github.io/assets/img/uploads/2019/09/domain_hosts_imeshare-150x96.png 150w" sizes="(max-width: 562px) 100vw, 562px" /> 
+![domain_hosts_imeshare.png]({{ "/assets/img/uploads/2019/09/domain_hosts_imeshare.png" | relative_url }})
 
 <span><strong>Bước 3:</strong> Cấu hình vhosts trên Xampp</span>
 
 <span>Vào đường dẫn: <strong>C:\xampp\apache\conf\extra</strong> (do khi cài đặt Xampp đặt tên thư mục là xampp, nếu đặt tên khác thì phải thay đổi tên thư mục) và mở file <strong>httpd-vhosts</strong> lên</span>
 
-<img class="aligncenter wp-image-56 size-full" src="https://anhkevin.github.io/assets/img/uploads/2019/09/vhosts_imeshare.png" alt="" width="758" height="420" srcset="https://anhkevin.github.io/assets/img/uploads/2019/09/vhosts_imeshare.png 758w, https://anhkevin.github.io/assets/img/uploads/2019/09/vhosts_imeshare-300x166.png 300w, https://anhkevin.github.io/assets/img/uploads/2019/09/vhosts_imeshare-150x83.png 150w" sizes="(max-width: 758px) 100vw, 758px" /> 
+![vhosts_imeshare.png]({{ "/assets/img/uploads/2019/09/vhosts_imeshare.png" | relative_url }})
 
 <span>Sau đó thêm đoạn code bên dưới vào trong file:</span>
 
-```
-&lt;VirtualHost *:80&gt;
+```html
+<VirtualHost *:80>
 	ServerAdmin webmaster@domain.com
-	DocumentRoot "&lt;đường dẫn thư mục khi truy cập domain.com sẽ gọi tới&gt;"
+	DocumentRoot "[SOURCE]"
 	ServerName domain.com
-	ErrorLog "logs/domain.com-error.log"
-	CustomLog "logs/domain.com-access.log" common
-	&lt;Directory "&lt;đường dẫn thư mục&gt;"&gt;
+	<Directory "[SOURCE]">
 		Options FollowSymLinks
 		AllowOverride All
 		DirectoryIndex index.php
 		Require all granted
-	&lt;/Directory&gt;
-&lt;/VirtualHost&gt;
+	</Directory>
+</VirtualHost>
 ```
 
 <span>+<strong> VirtualHost *:80</strong>: đang sử dụng port 80 nếu Apache là port khác thì phải đổi port.</span>
@@ -62,14 +60,12 @@ tags: [apache, web server, xampp]
 
 <span>+ <strong>CustomLog</strong>: ghi log lại tất cả các Uri mà người dùng request (không bắt buộc), /apache/logs là thư mục chứa file log.</span>
 
-<span>+ <strong><Directory &#8220;<đường dẫn thư mục&#8221;></strong>: khai báo thư mục mà bạn muốn domain truy cập để tiến hành cấp quyền cho thư mục đó.</span>
+<span>+ <strong>Directory "[SOURCE]"</strong>: khai báo thư mục mà bạn muốn domain truy cập để tiến hành cấp quyền cho thư mục đó.</span>
 
 <span>+ <strong>Options FollowSymLinks</strong>: cho phép bạn truy cập theo symbolic link (trỏ đến vị trí của file).</span>
 
 <span>+ <strong>AllowOverride All</strong>: cho phép bạn overwrite các config bằng file htaccess.</span>
 
 <span>+ <strong>Require all granted</strong>: cho phép tất cả các máy khác được truy cập vào thư mục đang được cấu hình</span>
-
-&nbsp;
 
 <span>Bây giờ khởi động lại Apache là được, truy cập vào domain ảo vừa thiết lập để xem kết quả. </span>
