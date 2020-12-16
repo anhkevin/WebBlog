@@ -6,16 +6,15 @@ tags: [PHP]
 math: true
 ---
 
-# PHP 8.0 là bản cập nhật lớn của PHP
-
 ## PHP JIT (Trình biên dịch Just in Time)
 
 ***
 
-Đây là một trong các tính năng được mong đợi nhất ở lần cập nhật này.
+<p>Đây là một trong các tính năng được mong đợi nhất ở lần cập nhật này.
 PHP JIT được thực hiện gần như độc lập, nó có thể được bật / tắt vào lúc biên dịch mã code PHP. Khi được bật, mã PHP được lưu trữ trong một vùng nhớ cache và sẽ được chạy khi có yêu cầu.
-=> Như vậy thì JIT sẽ giúp PHP biên dịch nhanh hơn.
-Dưới đây là bảng so sánh hiệu suất của JIT trong PHP
+</p>
+<p>=> Như vậy thì JIT sẽ giúp PHP biên dịch nhanh hơn.</p>
+<p>Dưới đây là bảng so sánh hiệu suất của JIT trong PHP</p>
 ![Desktop View]({{ "https://www.php.net/images/php8/scheme.svg" | relative_url }})
 
 ***
