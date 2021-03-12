@@ -39,7 +39,7 @@ google_site_verification: VFwsFln5L0OvdhrurvM387vBBdo8FI-l10NX4A-4rt8 # change t
 
 # Only if your site type is GitHub Project sites and doesn't have a custom domain,
 # change below value to '/projectname'.
-baseurl: 'https://anhkevin.github.io'
+baseurl: ''
 
 # Change to your timezone › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
 timezone: Asia/Ho_Chi_Minh
