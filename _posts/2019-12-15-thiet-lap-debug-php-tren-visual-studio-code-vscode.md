@@ -26,7 +26,6 @@ tags: [VSCode]
 zend_extension=C:\xampp\php\ext\php_xdebug-xxx.dll 
 xdebug.remote_enable = 1 
 xdebug.remote_autostart = 1
-
 ```
 
 php_xdebug-xxx.dll: là file vừa download ở bước 1
@@ -52,10 +51,14 @@ Link: <https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-debu
 
 **Bước 1.** Cài đặt **Xdebug:**   
 // Install Xdebug through PECL on Linux
+```shell
 pecl install Xdebug
+```
 
 Nếu PHP 5.3 thì chạy lệnh:
+```shell
 pecl install xdebug-2.2.7
+```
 
 **Bước 2.** Thêm cấu hình Xdebug vào php.ini
 
