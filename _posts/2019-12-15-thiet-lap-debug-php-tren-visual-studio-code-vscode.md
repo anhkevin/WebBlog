@@ -46,7 +46,7 @@ Link: <https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-debu
 
 [<img class="wp-image-655 size-full aligncenter" src="https://anhkevin.github.io/assets/img/uploads/2019/10/Xdebug3.jpg" alt="" width="1090" height="377" srcset="https://anhkevin.github.io/assets/img/uploads/2019/10/Xdebug3.jpg 1090w, https://anhkevin.github.io/assets/img/uploads/2019/10/Xdebug3-300x104.jpg 300w, https://anhkevin.github.io/assets/img/uploads/2019/10/Xdebug3-1024x354.jpg 1024w, https://anhkevin.github.io/assets/img/uploads/2019/10/Xdebug3-768x266.jpg 768w, https://anhkevin.github.io/assets/img/uploads/2019/10/Xdebug3-150x52.jpg 150w" sizes="(max-width: 1090px) 100vw, 1090px" />](https://anhkevin.github.io/assets/img/uploads/2019/10/Xdebug3.jpg)
 
-# Cấu hình để XDebug cho phép Remote Debug
+# Cài đặt XDebug để Remote Debug
 
 **Bước 1.** Cài đặt **Xdebug:**   
 // Install Xdebug through PECL on Linux
