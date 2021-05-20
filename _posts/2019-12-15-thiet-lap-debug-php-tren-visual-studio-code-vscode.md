@@ -19,7 +19,7 @@ tags: [VSCode]
 
 **Bước 2.** Thêm cấu hình Xdebug vào php.ini (\xampp\php\php.ini)
 
-```
+```shell
 [XDebug] 
 zend_extension=C:\xampp\php\ext\php_xdebug-xxx.dll 
 xdebug.remote_enable = 1 
@@ -45,3 +45,63 @@ Link: <https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-debu
 &#8211; Bây giờ có thể đặt breakpoint và bấm vào nút mũi tên xanh để bắt đầu debug.
 
 [<img class="wp-image-655 size-full aligncenter" src="https://anhkevin.github.io/assets/img/uploads/2019/10/Xdebug3.jpg" alt="" width="1090" height="377" srcset="https://anhkevin.github.io/assets/img/uploads/2019/10/Xdebug3.jpg 1090w, https://anhkevin.github.io/assets/img/uploads/2019/10/Xdebug3-300x104.jpg 300w, https://anhkevin.github.io/assets/img/uploads/2019/10/Xdebug3-1024x354.jpg 1024w, https://anhkevin.github.io/assets/img/uploads/2019/10/Xdebug3-768x266.jpg 768w, https://anhkevin.github.io/assets/img/uploads/2019/10/Xdebug3-150x52.jpg 150w" sizes="(max-width: 1090px) 100vw, 1090px" />](https://anhkevin.github.io/assets/img/uploads/2019/10/Xdebug3.jpg)
+
+# Cấu hình để XDebug cho phép Remote Debug
+
+**Bước 1.** Cài đặt **Xdebug:**   
+// Install Xdebug through PECL on Linux
+pecl install Xdebug
+
+Nếu PHP 5.3 thì chạy lệnh:
+pecl install xdebug-2.2.7
+
+**Bước 2.** Thêm cấu hình Xdebug vào php.ini
+
+```shell
+;xDebug: Configuration starts
+
+zend_extension = PATH_TO_LIBRARY_PHP/xdebug.so
+xdebug.remote_enable = 1
+; <IP Host>: Linux type command: ifconfig | grep "inet " | grep -v 127.0.0.1
+; <IP Host>: Windows type command: ipconfig in cmd
+xdebug.remote_host="<IP Host>"
+xdebug.remote_port=9000
+xdebug.profiler_output_dir = PATH_TO_PROFILER_OUTPUT_DIR
+xdebug.profiler_enable = 1
+xdebug.remote_log=PATH_TO_LOG/xdebug.log
+
+; The Linux way
+xdebug.remote_connect_back = 1
+
+; idekey value is specific to VSCODE
+xdebug.idekey=VSCODE
+
+; Optional: Set to true to always auto-start xdebug
+xdebug.remote_autostart = 1
+
+;xDebug: Configuration ends
+```
+
+**Bước 3.** Cài đặt PHP Debug Extension trong VS Code như phía trên
+
+**Bước 4.** ở bước này thay đổi thiết lập như sau
+
+```shell
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "remote XDebug",
+            "type": "php",
+            "request": "launch",
+            "program": "${file}",
+            "cwd": "${fileDirname}",
+            "pathMappings": {
+                // server -> local
+                "/var/www/html": "${workspaceRoot}/",
+            },
+            "port": 9000,
+        }
+    ]
+}
+```
