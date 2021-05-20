@@ -15,11 +15,11 @@ tags: [VSCode]
 
 # Cài đặt Xdebug PHP trên Windows
 
-**Bước 1.** Cài đặt **Xdebug:**   
+## **Bước 1.** Cài đặt **Xdebug:**   
 &#8211; Download file DLL đúng phiên bản PHP đang cài đặt tại đây <https://xdebug.org/download>  
 &#8211; Copy file DLL vừa download vào thư mục **C:\xampp\php\ext\**
 
-**Bước 2.** Thêm cấu hình Xdebug vào php.ini (\xampp\php\php.ini)
+## **Bước 2.** Thêm cấu hình Xdebug vào php.ini (\xampp\php\php.ini)
 
 ```shell
 [XDebug] 
@@ -32,16 +32,36 @@ php_xdebug-xxx.dll: là file vừa download ở bước 1
 
 Sử dụng phpinfo() hoặc vào CMD gõ php -v để xem Xdebug đã cấu hình chưa.
 
-**Bước 3.** Cài đặt PHP Debug Extension trong VS Code
+## **Bước 3.** Cài đặt PHP Debug Extension trong VS Code
 
 Link: <https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-debug>  
 [<img class="aligncenter wp-image-653 size-full" src="https://anhkevin.github.io/assets/img/uploads/2019/10/Xdebug.jpg" alt="" width="1070" height="323" srcset="https://anhkevin.github.io/assets/img/uploads/2019/10/Xdebug.jpg 1070w, https://anhkevin.github.io/assets/img/uploads/2019/10/Xdebug-300x91.jpg 300w, https://anhkevin.github.io/assets/img/uploads/2019/10/Xdebug-1024x309.jpg 1024w, https://anhkevin.github.io/assets/img/uploads/2019/10/Xdebug-768x232.jpg 768w, https://anhkevin.github.io/assets/img/uploads/2019/10/Xdebug-150x45.jpg 150w" sizes="(max-width: 1070px) 100vw, 1070px" />](https://anhkevin.github.io/assets/img/uploads/2019/10/Xdebug.jpg)
 
-**Bước 4.** Add config cho project PHP và sử dụng
+## **Bước 4.** Add config cho project PHP và sử dụng
 
 &#8211; Chọn hình cọn bọ và bấm vào chỗ bánh xe để add config cho project cần debug -> sau khi add xong sẽ tạo ra 1 file **launch.json** giống như hình dưới
 
-[<img class="aligncenter wp-image-656 size-full" src="https://anhkevin.github.io/assets/img/uploads/2019/10/Xdebug2.jpg" alt="" width="1178" height="496" srcset="https://anhkevin.github.io/assets/img/uploads/2019/10/Xdebug2.jpg 1178w, https://anhkevin.github.io/assets/img/uploads/2019/10/Xdebug2-300x126.jpg 300w, https://anhkevin.github.io/assets/img/uploads/2019/10/Xdebug2-1024x431.jpg 1024w, https://anhkevin.github.io/assets/img/uploads/2019/10/Xdebug2-768x323.jpg 768w, https://anhkevin.github.io/assets/img/uploads/2019/10/Xdebug2-150x63.jpg 150w" sizes="(max-width: 1178px) 100vw, 1178px" />](https://anhkevin.github.io/assets/img/uploads/2019/10/Xdebug2.jpg)
+```shell
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Listen for Xdebug",
+            "type": "php",
+            "request": "launch",
+            "port": 9000
+        },
+        {
+            "name": "Launch currently open script",
+            "type": "php",
+            "request": "launch",
+            "program": "${file}",
+            "cwd": "${fileDirname}",
+            "port": 9000
+        }
+    ]
+}
+```
 
 &#8211; Bây giờ có thể đặt breakpoint và bấm vào nút mũi tên xanh để bắt đầu debug.
 
@@ -49,7 +69,7 @@ Link: <https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-debu
 
 # Cài đặt XDebug để Remote Debug
 
-**Bước 1.** Cài đặt **Xdebug:**   
+## **Bước 1.** Cài đặt **Xdebug:**   
 // Install Xdebug through PECL on Linux
 ```shell
 pecl install Xdebug
@@ -60,7 +80,7 @@ Nếu PHP 5.3 thì chạy lệnh:
 pecl install xdebug-2.2.7
 ```
 
-**Bước 2.** Thêm cấu hình Xdebug vào php.ini
+## **Bước 2.** Thêm cấu hình Xdebug vào php.ini
 
 ```shell
 ;xDebug: Configuration starts
@@ -87,9 +107,9 @@ xdebug.remote_autostart = 1
 ;xDebug: Configuration ends
 ```
 
-**Bước 3.** Cài đặt PHP Debug Extension trong VS Code như phía trên
+## **Bước 3.** Cài đặt PHP Debug Extension trong VS Code như phía trên
 
-**Bước 4.** ở bước này thay đổi thiết lập như sau
+## **Bước 4.** ở bước này thay đổi thiết lập như sau
 
 ```shell
 {
