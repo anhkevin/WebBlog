@@ -2,7 +2,7 @@
 title: Cài đặt SSL trên Amazon Lightsail sử dụng bncert Bitnami
 date: 2021-07-07 21:30:00 +0700
 categories: [Orther]
-tags: [amazon]
+tags: [Amazon]
 math: true
 ---
 
