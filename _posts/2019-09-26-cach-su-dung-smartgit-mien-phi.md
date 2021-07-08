@@ -42,7 +42,8 @@ Sau đó chọn thư mục là phiên bản SmartGit đang dùng (_thường là
 
 **Bước 2:** Xóa file: `settings.xml`
 
-Từ <span style="color: #ff0000;">version 19</span> trở lên thì đã thay đổi file thành <span style="color: #ff0000;"><code>preferences.yml</code></span> => hãy xóa file <span style="color: #ff0000;"><code>preferences.yml</code></span>
+- Từ <span style="color: #ff0000;">version 19</span> thì đã thay đổi file thành <span style="color: #ff0000;"><code>preferences.yml</code></span> => hãy xóa file <span style="color: #ff0000;"><code>preferences.yml</code></span>
+- Từ <span style="color: #ff0000;">version 20</span> trở đi thì giữ lại file "smartgit.vmoptions" và xóa hết các Folder khác
 
 <!-- /wp:paragraph -->
 
