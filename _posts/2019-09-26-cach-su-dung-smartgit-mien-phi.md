@@ -40,10 +40,15 @@ Sau đó chọn thư mục là phiên bản SmartGit đang dùng (_thường là
 
 <!-- wp:paragraph -->
 
-**Bước 2:** Xóa file: `settings.xml`
-
-- Từ <span style="color: #ff0000;">version 19</span> thì đã thay đổi file thành <span style="color: #ff0000;"><code>preferences.yml</code></span> => hãy xóa file <span style="color: #ff0000;"><code>preferences.yml</code></span>
-- Từ <span style="color: #ff0000;">version 20</span> trở đi thì giữ lại file "smartgit.vmoptions" và xóa hết các Folder khác
+**Bước 2:** Xóa file license
+* Trước <span style="color: #ff0000;">version 19</span>: <code>%APPDATA%\syntevo\SmartGit\<smart-git-version></code> xóa file: 
+  * <span style="color: #ff0000;"><code>setting.xml</code></span>
+* Từ <span style="color: #ff0000;">version 19</span> trở đi:  
+  * Thư mục: <code>%APPDATA%\syntevo\SmartGit\<smart-git-version></code> xóa file:
+    * <span style="color: #ff0000;"><code>preferences.yml</code></span>
+    * <span style="color: #ff0000;"><code>license file</code></span>
+  * Thư mục: <code>%APPDATA%\syntevo\SmartGit\<smart-git-version>\.backup</code> xóa file:
+    * <span style="color: #ff0000;"><code>preferences.yml</code></span>
 
 <!-- /wp:paragraph -->
 
