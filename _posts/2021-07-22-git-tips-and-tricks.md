@@ -1,6 +1,6 @@
 ---
 title: Git Tips and Tricks
-date: 2021-07-22 21:30:00 +0700
+date: 2021-07-21 21:30:00 +0700
 categories: [Orther]
 tags: [GIT]
 math: true
