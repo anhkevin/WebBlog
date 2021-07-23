@@ -8,7 +8,7 @@ permalink: /tang-kich-thuoc-upload-size-cua-php/
 post_views_count:
   - "53"
 categories: [PHP]
-tags: [php.ini]
+tags: [PHP]
 ---
 **<span style="font-size: 13pt;">Tôi từng gặp lỗi liên quan đến thiết lập max_size trên php như sau:</span>**  
 &#8211; Khi tôi up 1 file lớn hơn 30MB thì nó không báo lỗi gì cả và refresh lại trang nhưng không lưu vào database  

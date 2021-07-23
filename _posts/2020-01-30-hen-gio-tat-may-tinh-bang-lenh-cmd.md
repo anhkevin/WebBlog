@@ -8,7 +8,7 @@ permalink: /hen-gio-tat-may-tinh-bang-lenh-cmd/
 post_views_count:
   - "94"
 categories: [Orther]
-tags: [shutdown]
+tags: [Windows]
 ---
 <span style="font-size: 14pt;"><strong>Mở CMD bằng tổ hợp phím tắt Windows + R và nhập lệnh sau:</strong></span>
 

@@ -8,8 +8,8 @@ layout: post
 permalink: /vue-js-component/
 post_views_count:
   - "89"
-categories: [Frontend, Vuejs]
-tags: [component vuejs]
+categories: [JavaScript]
+tags: [Vue]
 ---
 **Component** là các đối tượng Vue có thể sử dụng lại được, có thể dùng component như là một phần tử bên trong đối tượng Vue gốc được tạo bởi new Vue
 

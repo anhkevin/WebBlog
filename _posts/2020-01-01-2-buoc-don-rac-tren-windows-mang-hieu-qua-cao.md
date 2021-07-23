@@ -8,7 +8,7 @@ permalink: /2-buoc-don-rac-tren-windows-mang-hieu-qua-cao/
 post_views_count:
   - "86"
 categories: [Orther]
-tags: [cleanup]
+tags: [Windows]
 ---
 **Ổ đĩa C đầy sẽ ảnh hưởng rất nhiều đến tốc độ xử lý của <a href="https://fptshop.com.vn/may-tinh-xach-tay" target="_blank" rel="noopener noreferrer">máy tính</a> và các phần mềm.**  
 Bài viết sau sẽ giúp bạn dọn dẹp rác ở ổ đĩa để mang lại nhiều dung lượng trống trên Windows.

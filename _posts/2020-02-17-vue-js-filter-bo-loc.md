@@ -8,8 +8,8 @@ layout: post
 permalink: /vue-js-filter-bo-loc/
 post_views_count:
   - "134"
-categories: [Frontend, Vuejs]
-tags: [filter vuejs]
+categories: [JavaScript]
+tags: [Vue]
 ---
 Vue cho phép định nghĩa các **filter** trong các định dạng văn bản hiển thị.  
 Filter được đặt ở cuối một biểu thức JavaScript, biểu thị bằng kí hiệu |

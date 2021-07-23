@@ -8,8 +8,8 @@ layout: post
 permalink: /nhung-function-attachment-image-hay-dung-tren-wordpress/
 post_views_count:
   - "102"
-categories: [PHP, Wordpress]
-tags: [attachment image]
+categories: [PHP]
+tags: [Wordpress]
 ---
 **attachment image**: là những tệp hình ảnh được tải lên và lưu trữ trên wordpress bằng công cụ Media trên wordpress. Từ hình thức Media hoặc từ bài post, page, &#8230; vv
 

@@ -7,8 +7,8 @@ layout: post
 permalink: /tu-dong-resize-chieu-cao-textarea-bang-javascript/
 post_views_count:
   - "107"
-categories: [Frontend, Javascript]
-tags: [resize textarea]
+categories: [JavaScript]
+tags: [JavaScript]
 ---
 ##### **<span style="color: #000000;">1. Thêm CSS cho textarea</span>**
 

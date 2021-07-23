@@ -7,8 +7,8 @@ layout: post
 permalink: /xoa-the-p-va-br-trong-contact-form-7/
 post_views_count:
   - "133"
-categories: [PHP, Wordpress]
-tags: [contact form wp]
+categories: [PHP]
+tags: [Wordpress]
 ---
 **Plugin Contact Form 7** là một plugin được cộng đồng wordpress sử dụng rất nhiều để tạo form trên web, form liên hệ,&#8230; plugin có hỗ trợ gửi mail và đặc biệt là miễn phí  
 Nhưng khi sử dụng **plugin Contact Form 7** mặc định tự động tạo thêm thẻ <span style="color: #800000;"><strong><p></strong></span> và <span style="color: #800000;"><strong><br></strong></span> trên form làm ảnh hưởng đến giao diện đã thiết kế trước đó.

@@ -8,7 +8,7 @@ permalink: /tao-project-flutter-bang-vs-code/
 post_views_count:
   - "274"
 categories: [Orther]
-tags: [mobile app, flutter]
+tags: [Flutter]
 ---
 **VS Code** là một trình biên tập mã tương đối nhẹ và hỗ trợ tốt, đặc biệt nó miễn phí. Trong VS Code có extension hỗ trợ Flutter.
 

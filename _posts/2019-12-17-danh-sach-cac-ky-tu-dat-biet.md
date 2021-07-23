@@ -8,7 +8,7 @@ permalink: /danh-sach-cac-ky-tu-dat-biet/
 post_views_count:
   - "113"
 categories: [Orther]
-tags: [character]
+tags: [Orther]
 ---
 <div id="box-special-char">
   <h3>

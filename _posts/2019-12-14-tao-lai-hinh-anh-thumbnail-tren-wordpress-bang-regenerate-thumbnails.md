@@ -8,8 +8,8 @@ layout: post
 permalink: /tao-lai-hinh-anh-thumbnail-tren-wordpress-bang-regenerate-thumbnails/
 post_views_count:
   - "79"
-categories: [PHP, Wordpress]
-tags: [thumbnail]
+categories: [PHP]
+tags: [Wordpress]
 ---
 <span style="font-size: 14pt;">Plugin <strong>Regenerate Thumbnails</strong> có thể giúp tạo lại hình ảnh thumbnail của tất cả hình ảnh đã up lên wordpress trên thư viện Media.</span>
 

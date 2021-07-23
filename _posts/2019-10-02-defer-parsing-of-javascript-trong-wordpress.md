@@ -7,8 +7,8 @@ layout: post
 permalink: /defer-parsing-of-javascript-trong-wordpress/
 post_views_count:
   - "110"
-categories: [Frontend, Javascript]
-tags: [defer parsing]
+categories: [JavaScript]
+tags: [Wordpress]
 ---
 <span style="font-size: 14pt;">Khi nào thì <strong>Defer Parsing of JavaScript</strong> cho trang web:</span>
 

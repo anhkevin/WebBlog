@@ -8,7 +8,7 @@ permalink: /kich-hoat-nen-bang-gzip-tren-htaccess/
 post_views_count:
   - "109"
 categories: [Orther]
-tags: [gzip, htaccess]
+tags: [Htaccess]
 ---
 **Gzip** là một phương pháp nén tập tin hay tìm những chuỗi tương tự nhau trong file text và thay thế những chuỗi đó bằng ký tự ngắn gọn hơn, kết quả là sẽ giúp file nhỏ hơn.
 

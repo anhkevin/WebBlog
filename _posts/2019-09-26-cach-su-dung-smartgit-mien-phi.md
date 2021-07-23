@@ -8,7 +8,7 @@ permalink: /cach-su-dung-smartgit-mien-phi/
 post_views_count:
   - "1323"
 categories: [Orther]
-tags: [git, smartgit, svn]
+tags: [GIT, Smartgit]
 ---
 **SmartGit** là phần mềm giúp kiểm soát phiên bản Git, Mercurial và SVN tốt nhất trong các phần mềm mà mình từng sử dụng. Nhưng nó là một phần mềm có phí sử dụng và chỉ được dùng thử trong 30 ngày. 
 
@@ -40,9 +40,15 @@ Sau đó chọn thư mục là phiên bản SmartGit đang dùng (_thường là
 
 <!-- wp:paragraph -->
 
-**Bước 2:** Xóa file: `settings.xml`
-
-Từ <span style="color: #ff0000;">version 19</span> trở lên thì đã thay đổi file thành <span style="color: #ff0000;"><code>preferences.yml</code></span> => hãy xóa file <span style="color: #ff0000;"><code>preferences.yml</code></span>
+**Bước 2:** Xóa file license
+* Trước <span style="color: #ff0000;">version 19</span> ở thư mục <code>\smart-git-version\ </code> xóa file: 
+  * <span style="color: #ff0000;"><code>setting.xml</code></span>
+* Từ <span style="color: #ff0000;">version 19</span> trở đi:  
+  * Thư mục: <code>\smart-git-version\ </code> xóa file:
+    * <span style="color: #ff0000;"><code>preferences.yml</code></span>
+    * <span style="color: #ff0000;"><code>license</code></span>
+  * Thư mục: <code>\smart-git-version\ .backup</code> xóa file:
+    * <span style="color: #ff0000;"><code>preferences.yml</code></span>
 
 <!-- /wp:paragraph -->
 

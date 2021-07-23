@@ -9,7 +9,7 @@ permalink: /download-file-tren-php-su-dung-header-http/
 post_views_count:
   - "68"
 categories: [PHP]
-tags: [header, download]
+tags: [PHP]
 ---
 Có thể tải trực tiếp một file có định dạng khác nhau xuống máy tính của người dùng bằng hàm readfile() của PHP thông qua header http
 

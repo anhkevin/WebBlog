@@ -1,8 +1,8 @@
 ---
 title: Thiết lập HTTPS trên XAMPP
 date: 2020-09-05 21:30:00 +0700
-categories: [Server]
-tags: [xampp]
+categories: [Orther]
+tags: [Xampp]
 math: true
 ---
 

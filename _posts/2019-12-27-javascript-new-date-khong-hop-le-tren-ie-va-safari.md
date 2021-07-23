@@ -8,8 +8,8 @@ layout: post
 permalink: /javascript-new-date-khong-hop-le-tren-ie-va-safari/
 post_views_count:
   - "113"
-categories: [Frontend, Javascript]
-tags: [date js]
+categories: [JavaScript]
+tags: [JavaScript]
 ---
 Trong Javascript có cung cấp một đối tượng xử lý thời gian là **new Date()**, đây là hàm được cho là sử dụng rất nhiều để xử lý thời gian ngoài frontend.
 

@@ -8,8 +8,8 @@ layout: post
 permalink: /luu-y-khi-su-dung-save_post-de-luu-custom-field-trong-wordpress/
 post_views_count:
   - "87"
-categories: [PHP, Wordpress]
-tags: [save_post]
+categories: [PHP]
+tags: [Wordpress]
 ---
 **save_post** là action được kích hoạt bất cứ khi nào đăng bài mới và cập nhật post theo mọi hình thức đều sẽ đi qua action này.
 
