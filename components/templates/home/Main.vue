@@ -9,7 +9,7 @@
                         <div id="post-list">
                             <div v-for="article of articles" :key="article.slug" class="post-preview">
                                 <div class="d-flex justify-content-between pr-xl-2">
-                                    <h1><a :href="setUrlPost(article.path)">{{ article.title }}</a></h1>
+                                    <h1><a :href="setUrlPost(article.slug)">{{ article.title }}</a></h1>
                                 </div>
                                 <div class="post-content">
                                     <p>{{ article.description }}</p>
@@ -60,14 +60,11 @@ export default {
             if (!path) {
                 return path;
             }
-            const url = path.replace('/articles', '')
+            const url = "/" + path
             return url;
         }
     },
     computed: {
-        baseUrl() {
-            return process.env.baseUrl
-        },
         slogan() {
             return process.env.slogan
         },

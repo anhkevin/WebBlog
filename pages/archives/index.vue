@@ -14,7 +14,7 @@
                                   <span class="lead">{{archives[0]}}</span>
                                   <ul class="list-unstyled">
                                       <li v-for="(item, id2) in archives[1]" :key="id2">
-                                        <div> <span class="date day">{{formatDateByLocale(item.date, { day: 'numeric' })}}</span> <span class="date month small text-muted">{{formatDateByLocale(item.date, { month: 'short' })}}</span> <a :href="setUrlPost(item.path)">{{ item.title }}</a></div>
+                                        <div> <span class="date day">{{formatDateByLocale(item.date, { day: 'numeric' })}}</span> <span class="date month small text-muted">{{formatDateByLocale(item.date, { month: 'short' })}}</span> <a :href="setUrlPost(item.slug)">{{ item.title }}</a></div>
                                       </li>
                                   </ul>
                                 </div>
@@ -56,7 +56,7 @@
     },
     async fetch() {
       this.listPost = await this.$content('articles')
-        .only(['title', 'description', 'date'])
+        .only(['title', 'description', 'date', 'slug'])
         .sortBy('date', 'desc')
         .fetch()
       if(this.listPost) {
@@ -94,7 +94,7 @@
             if (!path) {
                 return path;
             }
-            const url = path.replace('/articles', '')
+            const url = "/" + path
             return url;
         }
     }, 

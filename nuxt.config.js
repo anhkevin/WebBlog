@@ -99,7 +99,7 @@ export default {
   },
 
   env: {
-    baseUrl: process.env.BASE_URL || 'http://localhost:3000',
+    baseUrl: (process.env.NODE_ENV == 'production') ? 'https://tiandev.net' : 'http://localhost:3000',
     namePage: 'TianDev',
     description: 'A blog or notebook for the developer in my experience, TianDev',
     slogan: 'Sống Để Trải Nghiệm - Cứ Cho Đi Sẽ Nhận Lại Được Hơn Thế !'

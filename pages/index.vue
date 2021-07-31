@@ -31,7 +31,7 @@
       };
 
       const articles = await $content('articles')
-        .only(['title', 'description', 'date'])
+        .only(['title', 'description', 'date', 'slug'])
         .sortBy('date', 'desc')
         .limit(perPage)
         .skip(skipNumber())

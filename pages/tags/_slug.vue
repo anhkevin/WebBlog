@@ -11,7 +11,7 @@
                             <h1 class="pl-lg-2"> <i class="fa fa-tag fa-fw text-muted"></i> {{ tagName }} <span class="lead text-muted pl-2">{{ totalArticles }}</span></h1>
                             <ul class="post-content pl-0">
                                 <li v-for="article of articles" :key="article.slug" class="d-flex justify-content-between pl-md-3 pr-md-3"> 
-                                    <a :href="setUrlPost(article.path)">{{ article.title }}</a> 
+                                    <a :href="setUrlPost(article.slug)">{{ article.title }}</a> 
                                     <span class="dash flex-grow-1"></span> 
                                     <span class="text-muted small">{{ formatDateByLocale(article.date) }}</span>
                                 </li>
@@ -71,7 +71,7 @@
         };
 
         const articles = await $content('articles')
-            .only(['title', 'description', 'date'])
+            .only(['title', 'description', 'date', 'slug'])
             .sortBy('date', 'desc')
             .limit(perPage)
             .skip(skipNumber())
@@ -108,7 +108,7 @@
             if (!path) {
                 return path;
             }
-            const url = path.replace('/articles', '')
+            const url = "/" + path
             return url;
         }
     },
