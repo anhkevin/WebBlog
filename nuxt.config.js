@@ -88,30 +88,11 @@ export default {
   },
 
   generate: {
-    fallback: false,
-    routes: async () => {
-      if (process.env.NODE_ENV !== 'production') return
-
+    async routes () {
       const { $content } = require('@nuxt/content')
-    
-      const router_post = await $content('articles').fetch()
-      const router_video = await $content('video').fetch()
-    
-      // Setup an empty array we will push to.
-      const routes = []
-    
-      // Add an entry for the item including lastmod and priorty
-      router_video.forEach((w) =>
-        routes.push('/' + w.path)
-      )
-    
-      router_post.forEach((p) =>
-        routes.push('/' + p.path)
-      )
-    
-      // return all routes
-      return routes
-    }
+      const dynamicRoutes = await $content('articles').only(['slug']).fetch()
+      return dynamicRoutes.map(myroute => myroute.slug === '/index' ? '/' : '/' + myroute.slug)
+    },
   },
 
   pwa: {
