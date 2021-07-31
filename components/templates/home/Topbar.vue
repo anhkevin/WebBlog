@@ -26,7 +26,7 @@
             <div class="col-12 col-xl-11 post-content">
                 <div v-if="articles_search.length" id="search-results" class="d-flex flex-wrap justify-content-center text-muted mt-3">
                     <div v-for="article_search of articles_search" :key="article_search.slug" class="pl-1 pr-1 pl-sm-2 pr-sm-2 pl-lg-4 pr-lg-4 pl-xl-0 pr-xl-0">
-                        <a :href="article_search.path.replace('/articles', '')">{{ article_search.title }}</a>
+                        <a :href="setUrlPost(article_search.path)">{{ article_search.title }}</a>
                         <div class="post-meta d-flex flex-column flex-sm-row text-muted mt-1 mb-1">
                             <div><i class="fa fa-tag fa-fw"></i>{{ article_search.tags.join(", ") }}</div>
                         </div>
@@ -65,6 +65,13 @@ export default {
     methods: {
         clearInput: function(event) {
             this.searchQuery = '';
+        },
+        setUrlPost(path) {
+            if (!path) {
+                return path;
+            }
+            const url = path.replace('/articles', '')
+            return url;
         }
     },
     data() {

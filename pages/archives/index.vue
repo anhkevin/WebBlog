@@ -14,7 +14,7 @@
                                   <span class="lead">{{archives[0]}}</span>
                                   <ul class="list-unstyled">
                                       <li v-for="(item, id2) in archives[1]" :key="id2">
-                                        <div> <span class="date day">{{formatDateByLocale(item.date, { day: 'numeric' })}}</span> <span class="date month small text-muted">{{formatDateByLocale(item.date, { month: 'short' })}}</span> <a :href="item.path.replace('/articles', '')">{{ item.title }}</a></div>
+                                        <div> <span class="date day">{{formatDateByLocale(item.date, { day: 'numeric' })}}</span> <span class="date month small text-muted">{{formatDateByLocale(item.date, { month: 'short' })}}</span> <a :href="setUrlPost(item.path)">{{ item.title }}</a></div>
                                       </li>
                                   </ul>
                                 </div>
@@ -90,6 +90,13 @@
       formatDateByLocale(d, options) {
             return new Date(d).toLocaleDateString('en', options)
         },
+        setUrlPost(path) {
+            if (!path) {
+                return path;
+            }
+            const url = path.replace('/articles', '')
+            return url;
+        }
     }, 
 
     head() {
