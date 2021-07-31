@@ -92,14 +92,22 @@ export default {
       const { $content } = require('@nuxt/content')
 
       // post
-      const data_post = await $content('articles').only(['slug']).fetch()
+      const data_post = await $content('articles').only(['slug', 'tags']).fetch()
       const route_post = data_post.map(myroute => myroute.slug === '/index' ? '/' : '/' + myroute.slug)
       
       // video
       const data_video = await $content('video').only(['slug']).fetch()
       const route_video = data_video.map(myroute => myroute.slug === '/index' ? '/' : '/video/' + myroute.slug)
 
-      const dynamicRoutes = route_post.concat(route_video);
+      // tags
+      const get_post_tag = data_post.map(
+        myroute => myroute.tags === '/index' ? '/' : '/tags/' + myroute.tags
+      )
+      var route_tag = get_post_tag.filter(function(elem, index, self) {
+        return index === self.indexOf(elem);
+      })
+
+      const dynamicRoutes = route_post.concat(route_video, route_tag);
       return dynamicRoutes
     },
   },
