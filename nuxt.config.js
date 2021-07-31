@@ -100,10 +100,13 @@ export default {
       const route_video = data_video.map(myroute => myroute.slug === '/index' ? '/' : '/video/' + myroute.slug)
 
       // tags
-      const get_post_tag = data_post.map(
-        myroute => myroute.tags === '/index' ? '/' : '/tags/' + myroute.tags
-      )
-      var route_tag = get_post_tag.filter(function(elem, index, self) {
+      const postTags = [];
+      data_post.forEach(data => {
+        data.tags.forEach(tag => {
+          postTags.push('/tags/' + tag);
+        });
+      });
+      const route_tag = postTags.filter(function(elem, index, self) {
         return index === self.indexOf(elem);
       })
 
