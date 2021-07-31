@@ -90,8 +90,17 @@ export default {
   generate: {
     async routes () {
       const { $content } = require('@nuxt/content')
-      const dynamicRoutes = await $content('articles').only(['slug']).fetch()
-      return dynamicRoutes.map(myroute => myroute.slug === '/index' ? '/' : '/' + myroute.slug)
+
+      // post
+      const data_post = await $content('articles').only(['slug']).fetch()
+      const route_post = data_post.map(myroute => myroute.slug === '/index' ? '/' : '/' + myroute.slug)
+      
+      // video
+      const data_video = await $content('video').only(['slug']).fetch()
+      const route_video = data_video.map(myroute => myroute.slug === '/index' ? '/' : '/video/' + myroute.slug)
+
+      const dynamicRoutes = route_post.concat(route_video);
+      return dynamicRoutes
     },
   },
 
