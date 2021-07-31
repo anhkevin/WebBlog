@@ -1,0 +1,84 @@
+html, body {
+  background: #121212 !important;
+}
+
+.main-about-youtube {
+  background: #333;
+  padding-left: 30px;
+  margin-left: 4%;
+}
+.main-about-youtube a:hover{
+  text-decoration: none;
+}
+
+.profile-image {
+  max-width: 50px !important;
+}
+
+.profile-image img {
+  max-width: 50px;
+  border-radius: 50%;
+}
+
+.profile-name {
+  font-size: 1.5rem;
+  color: #ffffff;
+  font-weight: 500;
+  padding-left: 15px !important;
+}
+
+.profile-recomended {
+  font-size: 0.8rem;
+  color: #aaaaaa;
+}
+
+.subscribe {
+  background-color: #cc0000;
+  border-radius: 2px;
+  color: #FFFFFF;
+  padding: 10px 2px;
+  font-size: 0.9rem;
+  outline: none;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+  margin-right: 13px;
+  cursor: pointer;
+}
+
+.profile-delete img {
+  width: 16px;
+  cursor: pointer;
+}
+
+.profile-delete button {
+  background-color: transparent;
+  border: none;
+  padding: 5px 12px;
+  cursor: pointer;
+}
+
+.profile-video {
+  width: 210px;
+  cursor: pointer;
+}
+
+.profile-video_title {
+  color: #ffffff;
+  width: 13rem;
+  cursor: pointer;
+}
+
+.profile-video_name {
+  color: #aaaaaa;
+  font-size: 0.8rem;
+  padding-top: 10px;
+  cursor: pointer;
+}
+
+.profile-video_stats {
+  color: #aaaaaa;
+  font-size: 0.8rem;
+  cursor: pointer;
+}

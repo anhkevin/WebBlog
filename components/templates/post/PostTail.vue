@@ -1,0 +1,6 @@
+<template>
+    <div class="post-tail-wrapper text-muted">
+        <div class="post-tags mb-3"> <i class="fa fa-tags fa-fw mr-1"></i> <a href="/tags/php/" class="post-tag no-text-decoration">PHP</a></div>
+        <div class="share-wrapper"> <span class="share-label text-muted mr-1">Share</span> <span class="share-icons"> <a href="https://twitter.com/intent/tweet?text=PHP 8 có gì mới ? - Ánh Kevin&amp;url=https://anhkevin.github.io/php-8-co-gi-moi/" data-toggle="tooltip" data-placement="top" title="" target="_blank" data-original-title="Twitter"> <i class="fa-fw fab fa-twitter"></i> </a> <a href="https://www.facebook.com/sharer/sharer.php?title=PHP 8 có gì mới ? - Ánh Kevin&amp;u=https://anhkevin.github.io/php-8-co-gi-moi/" data-toggle="tooltip" data-placement="top" title="" target="_blank" data-original-title="Facebook"> <i class="fa-fw fab fa-facebook-square"></i> </a> <a href="https://telegram.me/share?text=PHP 8 có gì mới ? - Ánh Kevin&amp;url=https://anhkevin.github.io/php-8-co-gi-moi/" data-toggle="tooltip" data-placement="top" title="" target="_blank" data-original-title="Telegram"> <i class="fa-fw fab fa-telegram"></i> </a> <i class="fa-fw fas fa-link small" onclick="copyLink()" data-toggle="tooltip" data-placement="top" title="" data-original-title="Copy link"></i> </span></div>
+    </div>
+</template>
