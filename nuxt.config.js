@@ -87,6 +87,33 @@ export default {
   build: {
   },
 
+  generate: {
+    fallback: false,
+    routes: async () => {
+      if (process.env.NODE_ENV !== 'production') return
+
+      const { $content } = require('@nuxt/content')
+    
+      const router_post = await $content('articles').fetch()
+      const router_video = await $content('video').fetch()
+    
+      // Setup an empty array we will push to.
+      const routes = []
+    
+      // Add an entry for the item including lastmod and priorty
+      router_video.forEach((w) =>
+        routes.push('/' + w.path)
+      )
+    
+      router_post.forEach((p) =>
+        routes.push('/' + p.path)
+      )
+    
+      // return all routes
+      return routes
+    }
+  },
+
   pwa: {
     manifest: {
       name: 'TianDev',
