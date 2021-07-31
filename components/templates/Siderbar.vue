@@ -4,7 +4,7 @@
             <div id="profile-wrapper" class="d-flex flex-column">
                 <div id="avatar" class="d-flex justify-content-center"> <a :href="baseUrl" alt="avatar"> <img src="/img/tiandev_logo.png" alt="avatar"> </a></div>
                 <div class="profile-text mt-3">
-                    <div class="site-title"> <a :href="baseUrl">{{ namePage }}</a></div>
+                    <div class="site-title"><h1><a :href="baseUrl">{{ namePage }}</a></h1></div>
                     <div class="site-subtitle font-italic">Developer notes</div>
                 </div>
             </div>

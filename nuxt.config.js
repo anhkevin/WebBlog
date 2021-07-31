@@ -7,7 +7,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'TianDev',
+    title: 'TianDev | Developer Blog',
     htmlAttrs: {
       lang: 'en'
     },
@@ -17,7 +17,7 @@ export default {
       { hid: 'description', name: 'description', content: 'A blog or notebook for the developer in my experience, TianDev' },
       { name: 'format-detection', content: 'telephone=no' },
       { name: 'google-site-verification', content: 'VFwsFln5L0OvdhrurvM387vBBdo8FI-l10NX4A-4rt8' },
-      { hid: 'og:site_name', property: 'og:site_name', content: 'TianDev' },
+      { hid: 'og:site_name', property: 'og:site_name', content: 'TianDev | Developer Blog' },
       { hid: 'og:type', property: 'og:type', content: 'website' },
       { hid: 'twitter:site', name: 'twitter:site', content: '@TianDev' },
       {
@@ -118,7 +118,7 @@ export default {
   pwa: {
     manifest: {
       name: 'TianDev',
-      description: 'TianDev official website',
+      description: 'Developer Blog',
       theme_color: '#00C58E'
     }
   },
