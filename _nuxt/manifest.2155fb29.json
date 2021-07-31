@@ -1,7 +1,7 @@
 {
   "name": "TianDev",
   "short_name": "tiandev.net",
-  "description": "TianDev official website",
+  "description": "Developer Blog",
   "icons": [
     {
       "src": "/_nuxt/icons/icon_64x64.06844b.png",
