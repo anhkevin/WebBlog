@@ -80,8 +80,21 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     '@nuxt/content',
-    'vue-social-sharing/nuxt'
+    'vue-social-sharing/nuxt',
+    '@nuxtjs/robots',
+    '@nuxtjs/sitemap'
   ],
+
+  robots: {
+    UserAgent: '*',
+    Disallow: '/norobots',
+    Sitemap: 'https://tiandev.net/sitemap.xml'
+  },
+
+  sitemap: {
+    hostname: 'https://tiandev.net',
+    gzip: true,
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
