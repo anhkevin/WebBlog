@@ -9,7 +9,7 @@
                         <div id="post-list">
                             <div v-for="article of articles" :key="article.slug" class="post-preview">
                                 <div class="d-flex justify-content-between pr-xl-2">
-                                    <h1><a :href="article.path.replace('/articles', '')">{{ article.title }}</a></h1>
+                                    <h1><a :href="setUrlPost(article.path)">{{ article.title }}</a></h1>
                                 </div>
                                 <div class="post-content">
                                     <p>{{ article.description }}</p>
@@ -56,6 +56,13 @@ export default {
             const options = { year: 'numeric', month: 'long', day: 'numeric' }
             return new Date(d).toLocaleDateString('en', options)
         },
+        setUrlPost(path) {
+            if (!path) {
+                return path;
+            }
+            const url = path.replace('/articles', '')
+            return url;
+        }
     },
     computed: {
         baseUrl() {

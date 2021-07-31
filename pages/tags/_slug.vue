@@ -11,7 +11,7 @@
                             <h1 class="pl-lg-2"> <i class="fa fa-tag fa-fw text-muted"></i> {{ tagName }} <span class="lead text-muted pl-2">{{ totalArticles }}</span></h1>
                             <ul class="post-content pl-0">
                                 <li v-for="article of articles" :key="article.slug" class="d-flex justify-content-between pl-md-3 pr-md-3"> 
-                                    <a :href="article.path.replace('/articles', '')">{{ article.title }}</a> 
+                                    <a :href="setUrlPost(article.path)">{{ article.title }}</a> 
                                     <span class="dash flex-grow-1"></span> 
                                     <span class="text-muted small">{{ formatDateByLocale(article.date) }}</span>
                                 </li>
@@ -104,6 +104,13 @@
             const options = { year: 'numeric', month: 'long', day: 'numeric' }
             return new Date(d).toLocaleDateString('en', options)
         },
+        setUrlPost(path) {
+            if (!path) {
+                return path;
+            }
+            const url = path.replace('/articles', '')
+            return url;
+        }
     },
     head() {
       const title = this.tagName + " - Tags | " + process.env.namePage
