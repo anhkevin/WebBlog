@@ -1,0 +1,1 @@
+window.__NUXT__=(function(a){return {staticAssetsBase:"\u002F_nuxt\u002Fstatic\u002F1627836078",layout:"default",error:a,state:{search:""},serverRendered:true,routePath:"\u002Ftao-lai-hinh-anh-thumbnail-tren-wordpress-bang-regenerate-thumbnails",config:{_app:{basePath:"\u002F",assetsPath:"\u002F_nuxt\u002F",cdnURL:a},content:{dbHash:"d3ab071a"}}}}(null));
