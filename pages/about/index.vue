@@ -137,6 +137,11 @@
           },
           // Open Graph
           {
+            hid: "og:url",
+            property: "og:url",
+            content: process.env.baseUrl + "/about",
+          },
+          {
             hid: 'og:title',
             property: 'og:title',
             content: title

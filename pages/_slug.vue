@@ -9,10 +9,29 @@
 <script>
 
   export default {
-    async asyncData({ $content, params }) {
-      const article = await $content('articles', params.slug).fetch()
+    async asyncData({ 
+      $content,
+      $contributors,
+      store,
+      app,
+      params,
+      error,
+      router,
+      redirect
+    }) {
+      let article
+      try {
+        article = await $content('articles', params.slug).fetch()
+      } catch (e) {
+        redirect('/404')
+      }
 
       return { article }
+    },
+    middleware ({ params, redirect }) {
+      if (params.slug === 'index') {
+        redirect('/')
+      }
     },
     head() {
       const title = this.article.title + " | TianDev"
@@ -26,6 +45,11 @@
             content: description
           },
           // Open Graph
+          {
+            hid: "og:url",
+            property: "og:url",
+            content: process.env.baseUrl + "/" + this.article.slug,
+          },
           {
             hid: 'og:title',
             property: 'og:title',

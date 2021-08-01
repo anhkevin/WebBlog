@@ -19,11 +19,17 @@ export default {
       { name: 'google-site-verification', content: 'VFwsFln5L0OvdhrurvM387vBBdo8FI-l10NX4A-4rt8' },
       { hid: 'og:site_name', property: 'og:site_name', content: 'TianDev | Developer Blog' },
       { hid: 'og:type', property: 'og:type', content: 'website' },
+      { hid: 'fb:app_id', property: 'fb:app_id', content: '399524598269268' },
       { hid: 'twitter:site', name: 'twitter:site', content: '@TianDev' },
       {
         hid: 'twitter:card',
         name: 'twitter:card',
         content: 'summary_large_image'
+      },
+      {
+        hid: "og:url",
+        property: "og:url",
+        content: "https://tiandev.net",
       },
       {
         hid: 'og:image',
@@ -107,40 +113,15 @@ export default {
   },
 
   generate: {
-    fallback: true
-    // async routes () {
-    //   const { $content } = require('@nuxt/content')
-
-    //   // post
-    //   const data_post = await $content('articles').only(['slug', 'tags']).fetch()
-    //   const route_post = data_post.map(myroute => myroute.slug === '/index' ? '/' : '/' + myroute.slug)
-      
-    //   // video
-    //   const data_video = await $content('video').only(['slug']).fetch()
-    //   const route_video = data_video.map(myroute => myroute.slug === '/index' ? '/' : '/video/' + myroute.slug)
-
-    //   // tags
-    //   const postTags = [];
-    //   data_post.forEach(data => {
-    //     data.tags.forEach(tag => {
-    //       postTags.push('/tags/' + tag);
-    //     });
-    //   });
-    //   const route_tag = postTags.filter(function(elem, index, self) {
-    //     return index === self.indexOf(elem);
-    //   })
-
-    //   const dynamicRoutes = route_post.concat(route_video, route_tag);
-    //   return dynamicRoutes
-    // },
+    fallback: true,
+    routes: ['/', '404']
   },
 
   pwa: {
     manifest: {
       name: 'TianDev',
       description: 'Developer Blog',
-      theme_color: '#00C58E',
-      display: 'standalone',
+      theme_color: '#00C58E'
     }
   },
 
