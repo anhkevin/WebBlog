@@ -1,1 +1,0 @@
-window.__NUXT__=(function(a){return {staticAssetsBase:"\u002F_nuxt\u002Fstatic\u002F1627836078",layout:"default",error:a,state:{search:""},serverRendered:true,routePath:"\u002Fcach-su-dung-smartgit-mien-phi",config:{_app:{basePath:"\u002F",assetsPath:"\u002F_nuxt\u002F",cdnURL:a},content:{dbHash:"d3ab071a"}}}}(null));
