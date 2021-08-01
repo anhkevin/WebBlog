@@ -8,8 +8,8 @@
 
 <script>
   export default {
-    async asyncData({ $content }) {
-      const currentPage = $nuxt.$route.query.page ? parseInt($nuxt.$route.query.page) : 1;
+    async asyncData({ $content, route }) {
+      const currentPage = route.query.page ? parseInt(route.query.page) : 1;
       const perPage = 10;
       const allArticles = await $content("articles").fetch();
       const totalArticles = allArticles.length;

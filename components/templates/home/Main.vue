@@ -72,7 +72,7 @@ export default {
             return Math.floor(this.total / this.perPage);
         },
         currentPage() {
-            return parseInt($nuxt.$route.query.page) || 1;
+            return parseInt(this.$route.query.page) || 1;
         },
         isHideMain() {
             if (this.$store.state.search) {
