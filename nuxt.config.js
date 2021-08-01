@@ -134,13 +134,15 @@ export default {
     },
   },
 
-  // pwa: {
-  //   manifest: {
-  //     name: 'TianDev',
-  //     description: 'Developer Blog',
-  //     theme_color: '#00C58E'
-  //   }
-  // },
+  pwa: {
+    manifest: {
+      name: 'TianDev',
+      description: 'Developer Blog',
+      theme_color: '#00C58E',
+      display: 'standalone',
+    }
+  },
+
   googleAnalytics: {
     id: 'UA-148797549-3'
   },
