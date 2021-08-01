@@ -107,6 +107,7 @@ export default {
   },
 
   generate: {
+    fallback: true
     // async routes () {
     //   const { $content } = require('@nuxt/content')
 
@@ -132,16 +133,6 @@ export default {
     //   const dynamicRoutes = route_post.concat(route_video, route_tag);
     //   return dynamicRoutes
     // },
-    routes: function() {
-      const fs = require('fs');
-      const path = require('path');
-      return fs.readdirSync('./content/articles').map(file => {
-        return {
-          route: `/${path.parse(file).name}`, // Return the slug
-          payload: require(`./content/articles/${file}`),
-        };
-      });
-    },
   },
 
   pwa: {
