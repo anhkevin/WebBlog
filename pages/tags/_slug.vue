@@ -117,6 +117,7 @@
       const description = process.env.description
       return {
         title,
+        link: [{ rel: 'canonical', href: process.env.baseUrl + "/tags/" + this.tagName + "/" }],
         meta: [
           {
             hid: 'description',
