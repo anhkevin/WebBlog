@@ -38,7 +38,7 @@
       const description = this.article.description
       return {
         title,
-        link: [{ rel: 'canonical', href: process.env.baseUrl + "/" + this.article.slug + "/" }],
+        link: [{ hid: 'canonical', rel: 'canonical', href: process.env.baseUrl + "/" + this.article.slug + "/" }],
         meta: [
           {
             hid: 'description',

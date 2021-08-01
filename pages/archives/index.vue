@@ -104,7 +104,7 @@
       const description = process.env.description
       return {
         title,
-        link: [{ rel: 'canonical', href: process.env.baseUrl + "/archives/" }],
+        link: [{ hid: 'canonical', rel: 'canonical', href: process.env.baseUrl + "/archives/" }],
         meta: [
           {
             hid: 'description',
