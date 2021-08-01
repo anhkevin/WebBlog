@@ -139,7 +139,7 @@
           {
             hid: "og:url",
             property: "og:url",
-            content: process.env.baseUrl + "/about",
+            content: process.env.baseUrl + "/about/",
           },
           {
             hid: 'og:title',

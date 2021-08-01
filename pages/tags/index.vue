@@ -102,7 +102,7 @@
           {
             hid: "og:url",
             property: "og:url",
-            content: process.env.baseUrl + "/tags",
+            content: process.env.baseUrl + "/tags/",
           },
           {
             hid: 'og:title',

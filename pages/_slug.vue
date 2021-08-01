@@ -48,7 +48,7 @@
           {
             hid: "og:url",
             property: "og:url",
-            content: process.env.baseUrl + "/" + this.article.slug,
+            content: process.env.baseUrl + "/" + this.article.slug + "/",
           },
           {
             hid: 'og:title',

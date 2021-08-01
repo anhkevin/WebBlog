@@ -60,7 +60,7 @@ export default {
             if (!path) {
                 return path;
             }
-            const url = "/" + path
+            const url = "/" + path + "/"
             return url;
         }
     },

@@ -108,7 +108,7 @@
             if (!path) {
                 return path;
             }
-            const url = "/" + path
+            const url = "/" + path + "/"
             return url;
         }
     },
@@ -127,7 +127,7 @@
           {
             hid: "og:url",
             property: "og:url",
-            content: process.env.baseUrl + "/tags/" + this.tagName,
+            content: process.env.baseUrl + "/tags/" + this.tagName + "/",
           },
           {
             hid: 'og:title',
