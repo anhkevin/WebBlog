@@ -1,7 +1,7 @@
 {
-  "name": "tiandev.net",
+  "name": "TianDev",
   "short_name": "tiandev.net",
-  "description": "## Build Setup",
+  "description": "Developer Blog",
   "icons": [
     {
       "src": "/_nuxt/icons/icon_64x64.06844b.png",
@@ -49,5 +49,6 @@
   "start_url": "/?standalone=true",
   "display": "standalone",
   "background_color": "#ffffff",
+  "theme_color": "#00C58E",
   "lang": "en"
 }
