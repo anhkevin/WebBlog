@@ -59,6 +59,12 @@ export default {
     '@/assets/css/lib/bootstrap-toc.min.css'
   ],
 
+  content: {
+    // Only search in title and description
+    fullTextSearchFields: ['title', 'description'],
+    liveEdit: false
+  },
+
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
   ],
@@ -128,13 +134,13 @@ export default {
     },
   },
 
-  pwa: {
-    manifest: {
-      name: 'TianDev',
-      description: 'Developer Blog',
-      theme_color: '#00C58E'
-    }
-  },
+  // pwa: {
+  //   manifest: {
+  //     name: 'TianDev',
+  //     description: 'Developer Blog',
+  //     theme_color: '#00C58E'
+  //   }
+  // },
   googleAnalytics: {
     id: 'UA-148797549-3'
   },
