@@ -23,19 +23,19 @@ Replace tất cả "{{DOMAIN}}" => domain muốn thiết lập
 - Nhấp chuột để chạy file "make-cert.bat" và nhập domain vào
 
 
-![make-cert.bat](img/uploads/2020/09/anhkevin_make_cert.png)
+![make-cert.bat](/img/uploads/2020/09/anhkevin_make_cert.png)
 
 ## 4. Cài đặt cert trên Windows
 
 <p>B1: Vào thư mục "C:\xampp\apache\crt\[DOMAIN]" và nhấp vào file "server.crt" và bấm [Install Certificate...]</p>
 
-![anhkevin_install_cert.png](img/uploads/2020/09/anhkevin_install_cert.png)
+![anhkevin_install_cert.png](/img/uploads/2020/09/anhkevin_install_cert.png)
 <p>B2: Chọn "Local Machine" để cài đặt chứng chỉ local tất cả người dùng trên máy tính hoặc chọn "Current User" để cài đặt chứng chỉ local cho tài khoản người dùng hiện tại và bấm Next</p>
 
-![anhkevin_local_machine.png](img/uploads/2020/09/anhkevin_local_machine.png)
+![anhkevin_local_machine.png](/img/uploads/2020/09/anhkevin_local_machine.png)
 <p>B3: Chọn "Place all certificate in the following store" -> Chọn "Trusted Root Certificate Authorities" và bấm OK</p>
 
-![anhkevin_cert_author.png](img/uploads/2020/09/anhkevin_cert_author.png)
+![anhkevin_cert_author.png](/img/uploads/2020/09/anhkevin_cert_author.png)
 <p>B4: Bấm "Next" và bấm "Finish" để hoàn tất</p>
 
 ## 5. Tạo Virtual Host trong Apache

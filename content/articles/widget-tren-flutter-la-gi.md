@@ -36,7 +36,7 @@ Khi một **widget** thay đổi trạng thái, chẳng hạn như do người d
 
 **Ví dụ cơ bản về Widget:**
 
-[<img class="aligncenter wp-image-548 size-full" src="img/uploads/2019/11/flutter-widget-base-ime-share-blog.png" alt="" width="797" height="611" srcset="img/uploads/2019/11/flutter-widget-base-ime-share-blog.png 797w, img/uploads/2019/11/flutter-widget-base-ime-share-blog-300x230.png 300w, img/uploads/2019/11/flutter-widget-base-ime-share-blog-768x589.png 768w, img/uploads/2019/11/flutter-widget-base-ime-share-blog-150x115.png 150w" sizes="(max-width: 797px) 100vw, 797px" />](img/uploads/2019/11/flutter-widget-base-ime-share-blog.png)
+[<img class="aligncenter wp-image-548 size-full" src="/img/uploads/2019/11/flutter-widget-base-ime-share-blog.png" alt="" width="797" height="611" srcset="/img/uploads/2019/11/flutter-widget-base-ime-share-blog.png 797w, /img/uploads/2019/11/flutter-widget-base-ime-share-blog-300x230.png 300w, /img/uploads/2019/11/flutter-widget-base-ime-share-blog-768x589.png 768w, /img/uploads/2019/11/flutter-widget-base-ime-share-blog-150x115.png 150w" sizes="(max-width: 797px) 100vw, 797px" />](/img/uploads/2019/11/flutter-widget-base-ime-share-blog.png)
 
 File: main.dart
 

@@ -27,7 +27,7 @@ Khi **Flutter** xây dựng **StatefulWidget**, nó sẽ tạo một đối tư�
 - Khi sử dụng một **StatefulWidget**, ta cần một State tương ứng với nó, và trỏ vào StatefulWidget**#createState**. Phần render giao diện sẽ do State quản lí.  
 - Trong State class, để cập nhật dữ liệu được hiển thị của một Widget, cũng như những đối tượng liên quan tới một member nào đó, ta cần dùng **setState(VoidCallback)**.
 
-[<img class="alignnone wp-image-563 size-full" src="img/uploads/2019/11/flutter-stateful-ime-share-blog.png" alt="" width="637" height="431" />](img/uploads/2019/11/flutter-stateful-ime-share-blog.png)
+[<img class="alignnone wp-image-563 size-full" src="/img/uploads/2019/11/flutter-stateful-ime-share-blog.png" alt="" width="637" height="431" />](/img/uploads/2019/11/flutter-stateful-ime-share-blog.png)
 
 <span style="font-size: 14pt;"><strong>2. StatelessWidget</strong></span>
 
@@ -38,7 +38,7 @@ Khi **Flutter** xây dựng **StatefulWidget**, nó sẽ tạo một đối tư�
 - Khi tạo một Stateless class phải **extends StatelessWidget**  
 - **StatelessWidget** không có State. Bản thân nó không có hàm createState, mà thay vào đó, hàm build(BuildContext) nằm trực tiếp trong nó luôn
 
-[<img class="alignnone wp-image-563 size-full" src="img/uploads/2019/11/flutter-stateless-ime-share-blog-1.png" alt="" width="637" height="431" />](img/uploads/2019/11/flutter-stateless-ime-share-blog-1.png)
+[<img class="alignnone wp-image-563 size-full" src="/img/uploads/2019/11/flutter-stateless-ime-share-blog-1.png" alt="" width="637" height="431" />](/img/uploads/2019/11/flutter-stateless-ime-share-blog-1.png)
 
 <div id="gtx-trans" style="position: absolute; left: -15px; top: 33px;">
   <div class="gtx-trans-icon">

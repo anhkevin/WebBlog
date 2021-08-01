@@ -117,4 +117,4 @@ body: Center(
 => Bên dưới app bar hiển thị 1 body. Body ở đây ta thiết lập ví trị center và đặt một text ở thằng child
 
 <span style="font-size: 14pt;"><strong>Kết quả khi build đoạn code trên:</strong></span>  
-[<img class="aligncenter wp-image-521 size-full" src="img/uploads/2019/11/flutter-run-hello-work-share-blog.png" alt="" width="689" height="415" srcset="img/uploads/2019/11/flutter-run-hello-work-share-blog.png 689w, img/uploads/2019/11/flutter-run-hello-work-share-blog-300x181.png 300w, img/uploads/2019/11/flutter-run-hello-work-share-blog-150x90.png 150w" sizes="(max-width: 689px) 100vw, 689px" />](img/uploads/2019/11/flutter-run-hello-work-share-blog.png)
+[<img class="aligncenter wp-image-521 size-full" src="/img/uploads/2019/11/flutter-run-hello-work-share-blog.png" alt="" width="689" height="415" srcset="/img/uploads/2019/11/flutter-run-hello-work-share-blog.png 689w, /img/uploads/2019/11/flutter-run-hello-work-share-blog-300x181.png 300w, /img/uploads/2019/11/flutter-run-hello-work-share-blog-150x90.png 150w" sizes="(max-width: 689px) 100vw, 689px" />](/img/uploads/2019/11/flutter-run-hello-work-share-blog.png)

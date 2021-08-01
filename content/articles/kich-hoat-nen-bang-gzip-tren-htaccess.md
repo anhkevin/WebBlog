@@ -71,4 +71,4 @@ Nén Gzip rất có ích của cho môi trường web vì HTML, CSS files sử d
 ```
 
 Có thể kiểm tra trang web bật Gzip chưa bằng cách nhấn F12 trên web:  
-<img class="aligncenter wp-image-124 size-full" src="img/uploads/2019/10/content_encoding_gzip.png" alt="" width="1198" height="487" srcset="img/uploads/2019/10/content_encoding_gzip.png 1198w, img/uploads/2019/10/content_encoding_gzip-300x122.png 300w, img/uploads/2019/10/content_encoding_gzip-768x312.png 768w, img/uploads/2019/10/content_encoding_gzip-1024x416.png 1024w, img/uploads/2019/10/content_encoding_gzip-150x61.png 150w" sizes="(max-width: 1198px) 100vw, 1198px" />
+<img class="aligncenter wp-image-124 size-full" src="/img/uploads/2019/10/content_encoding_gzip.png" alt="" width="1198" height="487" srcset="/img/uploads/2019/10/content_encoding_gzip.png 1198w, /img/uploads/2019/10/content_encoding_gzip-300x122.png 300w, /img/uploads/2019/10/content_encoding_gzip-768x312.png 768w, /img/uploads/2019/10/content_encoding_gzip-1024x416.png 1024w, /img/uploads/2019/10/content_encoding_gzip-150x61.png 150w" sizes="(max-width: 1198px) 100vw, 1198px" />

@@ -37,7 +37,7 @@ Sử dụng phpinfo() hoặc vào CMD gõ php -v để xem Xdebug đã cấu hì
 ### **Bước 3.** Cài đặt PHP Debug Extension trong VS Code
 
 Link: <https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-debug>  
-[<img class="aligncenter wp-image-653 size-full" src="img/uploads/2019/10/Xdebug.jpg" alt="" width="1070" height="323" srcset="img/uploads/2019/10/Xdebug.jpg 1070w, img/uploads/2019/10/Xdebug-300x91.jpg 300w, img/uploads/2019/10/Xdebug-1024x309.jpg 1024w, img/uploads/2019/10/Xdebug-768x232.jpg 768w, img/uploads/2019/10/Xdebug-150x45.jpg 150w" sizes="(max-width: 1070px) 100vw, 1070px" />](img/uploads/2019/10/Xdebug.jpg)
+[<img class="aligncenter wp-image-653 size-full" src="/img/uploads/2019/10/Xdebug.jpg" alt="" width="1070" height="323" srcset="/img/uploads/2019/10/Xdebug.jpg 1070w, /img/uploads/2019/10/Xdebug-300x91.jpg 300w, /img/uploads/2019/10/Xdebug-1024x309.jpg 1024w, /img/uploads/2019/10/Xdebug-768x232.jpg 768w, /img/uploads/2019/10/Xdebug-150x45.jpg 150w" sizes="(max-width: 1070px) 100vw, 1070px" />](/img/uploads/2019/10/Xdebug.jpg)
 
 ### **Bước 4.** Add config cho project PHP và sử dụng
 
@@ -67,7 +67,7 @@ Link: <https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-debu
 
 - Bây giờ có thể đặt breakpoint và bấm vào nút mũi tên xanh để bắt đầu debug.
 
-[<img class="wp-image-655 size-full aligncenter" src="img/uploads/2019/10/Xdebug3.jpg" alt="" width="1090" height="377" srcset="img/uploads/2019/10/Xdebug3.jpg 1090w, img/uploads/2019/10/Xdebug3-300x104.jpg 300w, img/uploads/2019/10/Xdebug3-1024x354.jpg 1024w, img/uploads/2019/10/Xdebug3-768x266.jpg 768w, img/uploads/2019/10/Xdebug3-150x52.jpg 150w" sizes="(max-width: 1090px) 100vw, 1090px" />](img/uploads/2019/10/Xdebug3.jpg)
+[<img class="wp-image-655 size-full aligncenter" src="/img/uploads/2019/10/Xdebug3.jpg" alt="" width="1090" height="377" srcset="/img/uploads/2019/10/Xdebug3.jpg 1090w, /img/uploads/2019/10/Xdebug3-300x104.jpg 300w, /img/uploads/2019/10/Xdebug3-1024x354.jpg 1024w, /img/uploads/2019/10/Xdebug3-768x266.jpg 768w, /img/uploads/2019/10/Xdebug3-150x52.jpg 150w" sizes="(max-width: 1090px) 100vw, 1090px" />](/img/uploads/2019/10/Xdebug3.jpg)
 
 # Cài đặt XDebug để Remote Debug
 

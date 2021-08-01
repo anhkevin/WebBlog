@@ -15,7 +15,7 @@ authors:
 ---
 **Admin bar** là một khu vực ở trên cùng của màn hình được hiển thị cho người dùng đã đăng nhập vào WordPress. Đây là một thanh ngang dài có chứa các phím tắt tới các phần khác nhau của màn hình WordPress admin.
 
-<img class="aligncenter wp-image-84 size-full" src="img/uploads/2019/09/hide_admin_bar_imeshare.png" alt="" width="752" height="34" srcset="img/uploads/2019/09/hide_admin_bar_imeshare.png 752w, img/uploads/2019/09/hide_admin_bar_imeshare-300x14.png 300w, img/uploads/2019/09/hide_admin_bar_imeshare-150x7.png 150w" sizes="(max-width: 752px) 100vw, 752px" /> 
+<img class="aligncenter wp-image-84 size-full" src="/img/uploads/2019/09/hide_admin_bar_imeshare.png" alt="" width="752" height="34" srcset="/img/uploads/2019/09/hide_admin_bar_imeshare.png 752w, /img/uploads/2019/09/hide_admin_bar_imeshare-300x14.png 300w, /img/uploads/2019/09/hide_admin_bar_imeshare-150x7.png 150w" sizes="(max-width: 752px) 100vw, 752px" /> 
 
 Để xóa menu trên thanh **admin bar** sử dụng action: **wp\_before\_admin\_bar\_render**
 
@@ -49,7 +49,7 @@ add_action( 'wp_before_admin_bar_render', 'remove_menu_in_admin_bar' );
 **B1.** Nhấn chuột phải vào thanh admin bar và bấm inspect (hoặc bấm Ctrl + Shift + I)
 
 **B2.** Dò đến đoạn html của thanh admin bar và chú ý có đoạn <span style="color: #333399;"><li id="wp-admin-bar-<strong>xxxxx</strong>" &#8230;..</span> .**xxxxx** chính là <span class="st_h">NAME_MENU. </span>  
-<img class="aligncenter wp-image-85 size-full" src="img/uploads/2019/09/viewcode_hide_admin_bar_imeshare.png" alt="" width="466" height="306" srcset="img/uploads/2019/09/viewcode_hide_admin_bar_imeshare.png 466w, img/uploads/2019/09/viewcode_hide_admin_bar_imeshare-300x197.png 300w, img/uploads/2019/09/viewcode_hide_admin_bar_imeshare-150x98.png 150w" sizes="(max-width: 466px) 100vw, 466px" /> 
+<img class="aligncenter wp-image-85 size-full" src="/img/uploads/2019/09/viewcode_hide_admin_bar_imeshare.png" alt="" width="466" height="306" srcset="/img/uploads/2019/09/viewcode_hide_admin_bar_imeshare.png 466w, /img/uploads/2019/09/viewcode_hide_admin_bar_imeshare-300x197.png 300w, /img/uploads/2019/09/viewcode_hide_admin_bar_imeshare-150x98.png 150w" sizes="(max-width: 466px) 100vw, 466px" /> 
 
 **B3.** Sử dụng hàm trên với <span class="st_h">NAME_MENU</span> vừa tìm ở B2 => Thế là xong
 

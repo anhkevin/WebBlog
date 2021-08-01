@@ -15,7 +15,7 @@ authors:
 ---
 
 <span style="text-decoration: underline;"><span style="font-size: 14pt;"><strong>Git cheat sheet - Bảng các lệnh Git cơ bản</strong></span></span>  
-[<img class="alignleft wp-image-552 size-full" src="img/uploads/2019/10/git-cheat-sheet-ime-share-blog.jpg" alt="" width="1200" height="1697" srcset="img/uploads/2019/10/git-cheat-sheet-ime-share-blog.jpg 1200w, img/uploads/2019/10/git-cheat-sheet-ime-share-blog-212x300.jpg 212w, img/uploads/2019/10/git-cheat-sheet-ime-share-blog-724x1024.jpg 724w, img/uploads/2019/10/git-cheat-sheet-ime-share-blog-768x1086.jpg 768w, img/uploads/2019/10/git-cheat-sheet-ime-share-blog-1086x1536.jpg 1086w, img/uploads/2019/10/git-cheat-sheet-ime-share-blog-106x150.jpg 106w, img/uploads/2019/10/git-cheat-sheet-ime-share-blog-300x424.jpg 300w" sizes="(max-width: 1200px) 100vw, 1200px" />](img/uploads/2019/10/git-cheat-sheet-ime-share-blog.jpg)
+[<img class="alignleft wp-image-552 size-full" src="/img/uploads/2019/10/git-cheat-sheet-ime-share-blog.jpg" alt="" width="1200" height="1697" srcset="/img/uploads/2019/10/git-cheat-sheet-ime-share-blog.jpg 1200w, /img/uploads/2019/10/git-cheat-sheet-ime-share-blog-212x300.jpg 212w, /img/uploads/2019/10/git-cheat-sheet-ime-share-blog-724x1024.jpg 724w, /img/uploads/2019/10/git-cheat-sheet-ime-share-blog-768x1086.jpg 768w, /img/uploads/2019/10/git-cheat-sheet-ime-share-blog-1086x1536.jpg 1086w, /img/uploads/2019/10/git-cheat-sheet-ime-share-blog-106x150.jpg 106w, /img/uploads/2019/10/git-cheat-sheet-ime-share-blog-300x424.jpg 300w" sizes="(max-width: 1200px) 100vw, 1200px" />](/img/uploads/2019/10/git-cheat-sheet-ime-share-blog.jpg)
 
 **<span style="font-size: 14pt;">- Thiết lập thông tin user</span>**
 

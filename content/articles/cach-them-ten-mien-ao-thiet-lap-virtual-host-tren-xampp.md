@@ -24,19 +24,19 @@ authors:
 <span>Vào đường dẫn: <strong>C:\Windows\System32\drivers\etc</strong> (trên window) </span>
 
 
-![hosts_imeshare.png](img/uploads/2019/09/hosts_imeshare.png)
+![hosts_imeshare.png](/img/uploads/2019/09/hosts_imeshare.png)
 
 <span>Mở file <strong>hosts</strong> và trỏ domain ảo về IP của localhost (ví dụ domain dưới hình là: domain.com)</span>
 
 
-![domain_hosts_imeshare.png](img/uploads/2019/09/domain_hosts_imeshare.png)
+![domain_hosts_imeshare.png](/img/uploads/2019/09/domain_hosts_imeshare.png)
 
 <span><strong>Bước 3:</strong> Cấu hình vhosts trên Xampp</span>
 
 <span>Vào đường dẫn: <strong>C:\xampp\apache\conf\extra</strong> (do khi cài đặt Xampp đặt tên thư mục là xampp, nếu đặt tên khác thì phải thay đổi tên thư mục) và mở file <strong>httpd-vhosts</strong> lên</span>
 
 
-![vhosts_imeshare.png](img/uploads/2019/09/vhosts_imeshare.png)
+![vhosts_imeshare.png](/img/uploads/2019/09/vhosts_imeshare.png)
 
 <span>Sau đó thêm đoạn code bên dưới vào trong file:</span>
 

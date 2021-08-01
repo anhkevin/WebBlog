@@ -25,7 +25,7 @@ Ví dụ khi thêm **add\_image\_size()** mới lúc này tất cả các ảnh 
 
 **Bước 2.** Để sử dụng plugin vào: **Tools** (công cụ) > **Regenerate Thumbnails**
 
-[<img class="aligncenter wp-image-641 size-full" src="img/uploads/2019/12/regenerate_thumbnails.jpg" alt="" width="1168" height="296" srcset="img/uploads/2019/12/regenerate_thumbnails.jpg 1168w, img/uploads/2019/12/regenerate_thumbnails-300x76.jpg 300w, img/uploads/2019/12/regenerate_thumbnails-1024x260.jpg 1024w, img/uploads/2019/12/regenerate_thumbnails-768x195.jpg 768w, img/uploads/2019/12/regenerate_thumbnails-150x38.jpg 150w" sizes="(max-width: 1168px) 100vw, 1168px" />](img/uploads/2019/12/regenerate_thumbnails.jpg)
+[<img class="aligncenter wp-image-641 size-full" src="/img/uploads/2019/12/regenerate_thumbnails.jpg" alt="" width="1168" height="296" srcset="/img/uploads/2019/12/regenerate_thumbnails.jpg 1168w, /img/uploads/2019/12/regenerate_thumbnails-300x76.jpg 300w, /img/uploads/2019/12/regenerate_thumbnails-1024x260.jpg 1024w, /img/uploads/2019/12/regenerate_thumbnails-768x195.jpg 768w, /img/uploads/2019/12/regenerate_thumbnails-150x38.jpg 150w" sizes="(max-width: 1168px) 100vw, 1168px" />](/img/uploads/2019/12/regenerate_thumbnails.jpg)
 
 + **Skip regenerating existing correctly sized thumbnails (faster):** chọn cái này nếu muốn bỏ qua những hình ảnh đã tạo đầy đủ các thumbnail rồi.
 
