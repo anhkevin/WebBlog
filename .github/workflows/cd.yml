@@ -26,12 +26,6 @@ jobs:
       - name: Generate
         run: yarn run generate
 
-      - name: Install Push
-        run: yarn add push-dir
-
-      - name: Push
-        run: yarn run deploy
-
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:

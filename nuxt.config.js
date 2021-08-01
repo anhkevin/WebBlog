@@ -107,30 +107,40 @@ export default {
   },
 
   generate: {
-    async routes () {
-      const { $content } = require('@nuxt/content')
+    // async routes () {
+    //   const { $content } = require('@nuxt/content')
 
-      // post
-      const data_post = await $content('articles').only(['slug', 'tags']).fetch()
-      const route_post = data_post.map(myroute => myroute.slug === '/index' ? '/' : '/' + myroute.slug)
+    //   // post
+    //   const data_post = await $content('articles').only(['slug', 'tags']).fetch()
+    //   const route_post = data_post.map(myroute => myroute.slug === '/index' ? '/' : '/' + myroute.slug)
       
-      // video
-      const data_video = await $content('video').only(['slug']).fetch()
-      const route_video = data_video.map(myroute => myroute.slug === '/index' ? '/' : '/video/' + myroute.slug)
+    //   // video
+    //   const data_video = await $content('video').only(['slug']).fetch()
+    //   const route_video = data_video.map(myroute => myroute.slug === '/index' ? '/' : '/video/' + myroute.slug)
 
-      // tags
-      const postTags = [];
-      data_post.forEach(data => {
-        data.tags.forEach(tag => {
-          postTags.push('/tags/' + tag);
-        });
+    //   // tags
+    //   const postTags = [];
+    //   data_post.forEach(data => {
+    //     data.tags.forEach(tag => {
+    //       postTags.push('/tags/' + tag);
+    //     });
+    //   });
+    //   const route_tag = postTags.filter(function(elem, index, self) {
+    //     return index === self.indexOf(elem);
+    //   })
+
+    //   const dynamicRoutes = route_post.concat(route_video, route_tag);
+    //   return dynamicRoutes
+    // },
+    routes: function() {
+      const fs = require('fs');
+      const path = require('path');
+      return fs.readdirSync('./content/articles').map(file => {
+        return {
+          route: `/${path.parse(file).name}`, // Return the slug
+          payload: require(`./content/articles/${file}`),
+        };
       });
-      const route_tag = postTags.filter(function(elem, index, self) {
-        return index === self.indexOf(elem);
-      })
-
-      const dynamicRoutes = route_post.concat(route_video, route_tag);
-      return dynamicRoutes
     },
   },
 
