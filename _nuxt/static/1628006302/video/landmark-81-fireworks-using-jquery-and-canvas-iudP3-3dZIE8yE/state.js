@@ -1,1 +1,0 @@
-window.__NUXT__=(function(a){return {staticAssetsBase:"\u002F_nuxt\u002Fstatic\u002F1628006302",layout:"default",error:a,state:{search:""},serverRendered:true,routePath:"\u002Fvideo\u002Flandmark-81-fireworks-using-jquery-and-canvas-iudP3-3dZIE8yE\u002F",config:{_app:{basePath:"\u002F",assetsPath:"\u002F_nuxt\u002F",cdnURL:a},content:{dbHash:"1e09b48f"}}}}(null));
