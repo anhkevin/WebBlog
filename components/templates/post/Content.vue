@@ -55,7 +55,7 @@ export default {
     data() {
         return {
             sharing: {
-                url: process.env.baseUrl + "/" + this.post.slug,
+                url: process.env.baseUrl + "/" + this.post.slug + "/",
                 title: this.post.title,
                 description: this.post.description,
                 quote: '',
