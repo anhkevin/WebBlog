@@ -1,0 +1,1 @@
+window.__NUXT__=(function(a){return {staticAssetsBase:"\u002F_nuxt\u002Fstatic\u002F1628008466",layout:"default",error:a,state:{search:""},serverRendered:true,routePath:"\u002Fvideo\u002Fnew-logo-xiaomi-by-kenya-hara-alive-html-and-css-iudPFTv6O0cOwQ\u002F",config:{_app:{basePath:"\u002F",assetsPath:"\u002F_nuxt\u002F",cdnURL:a},content:{dbHash:"61defc4e"}}}}(null));
