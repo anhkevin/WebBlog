@@ -23,7 +23,7 @@
       try {
         article = await $content('articles', params.slug).fetch()
       } catch (e) {
-        redirect('/404')
+        redirect('/404/')
       }
 
       return { article }
