@@ -13,7 +13,7 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'A blog or notebook for the developer in my experience, TianDev' },
       { name: 'format-detection', content: 'telephone=no' },
-      { name: 'google-site-verification', content: 'VFwsFln5L0OvdhrurvM387vBBdo8FI-l10NX4A-4rt8' },
+      { name: 'google-site-verification', content: 'qdcZOoSAayf1c2-iruOw1pnz-BDzHmir7xZmTNs6ajk' },
       { hid: 'og:site_name', property: 'og:site_name', content: 'TianDev | Developer Blog' },
       { hid: 'og:type', property: 'og:type', content: 'website' },
       { hid: 'fb:app_id', property: 'fb:app_id', content: '399524598269268' },
