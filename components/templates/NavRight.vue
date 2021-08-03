@@ -7,7 +7,7 @@
                 <nuxt-link 
                   v-for="(tag, id) in listTags"
                   :key="id" 
-                  :to="{ path: '/tags/' + tag[0]}" 
+                  :to="{ path: '/tags/' + tag[0] + '/'}" 
                   class="post-tag"
                   >
                   {{ tag[0] }}

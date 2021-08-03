@@ -12,7 +12,7 @@
                             <div id="tags" class="d-flex flex-wrap ml-xl-2 mr-xl-2">
                                 <div v-for="(tag, id) in listTags" :key="id"> 
                                     <nuxt-link 
-                                        :to="{ path: '/tags/' + tag[0]}" 
+                                        :to="{ path: '/tags/' + tag[0] + '/'}" 
                                         class="tag"
                                         >
                                         {{ tag[0] }}

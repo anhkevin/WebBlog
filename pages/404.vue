@@ -39,6 +39,48 @@
             }
             return false;
         }
+    },
+    head() {
+      const title = "404 Not Found | TianDev"
+      const description = "Page Not Found"
+      return {
+        title,
+        link: [{ hid: 'canonical', rel: 'canonical', href: process.env.baseUrl + "/404/" }],
+        meta: [
+          {
+            hid: 'description',
+            name: 'description',
+            content: description
+          },
+          // Open Graph
+          {
+            hid: "og:url",
+            property: "og:url",
+            content: process.env.baseUrl + "/404/",
+          },
+          {
+            hid: 'og:title',
+            property: 'og:title',
+            content: title
+          },
+          {
+            hid: 'og:description',
+            property: 'og:description',
+            content: description
+          },
+          // // Twitter Card
+          {
+            hid: 'twitter:title',
+            name: 'twitter:title',
+            content: title
+          },
+          {
+            hid: 'twitter:description',
+            name: 'twitter:description',
+            content: description
+          }
+        ]
+      }
     }
   }
 </script>

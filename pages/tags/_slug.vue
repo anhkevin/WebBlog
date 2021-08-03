@@ -34,7 +34,7 @@
 
 <script>
   export default {
-    async asyncData({ $content, params }) {
+    async asyncData({ $content, params, route }) {
         const tagName = params.slug
         const linkbre = [
             {
@@ -43,7 +43,7 @@
             }
         ]
 
-        const currentPage = $nuxt.$route.query.page ? parseInt($nuxt.$route.query.page) : 1;
+        const currentPage = route.query.page ? parseInt(route.query.page) : 1;
         const perPage = 20;
         const allArticles = await $content("articles")
         .where({
