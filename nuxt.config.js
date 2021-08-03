@@ -149,7 +149,7 @@ export default {
 
   generate: {
     fallback: true,
-    routes: ['/', '404']
+    routes: ['/', '404', '/video/']
   },
 
   router: {
