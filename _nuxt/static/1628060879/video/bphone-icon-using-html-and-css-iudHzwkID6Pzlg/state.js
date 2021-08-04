@@ -1,0 +1,1 @@
+window.__NUXT__=(function(a){return {staticAssetsBase:"\u002F_nuxt\u002Fstatic\u002F1628060879",layout:"default",error:a,state:{search:""},serverRendered:true,routePath:"\u002Fvideo\u002Fbphone-icon-using-html-and-css-iudHzwkID6Pzlg\u002F",config:{_app:{basePath:"\u002F",assetsPath:"\u002F_nuxt\u002F",cdnURL:a},content:{dbHash:"755c081e"}}}}(null));
