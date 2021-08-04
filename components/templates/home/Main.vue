@@ -9,7 +9,7 @@
                         <div id="post-list">
                             <div v-for="article of articles" :key="article.slug" class="post-preview">
                                 <div class="d-flex justify-content-between pr-xl-2">
-                                    <h1><a :href="setUrlPost(article.slug)">{{ article.title }}</a></h1>
+                                    <h2><a :href="setUrlPost(article.slug)">{{ article.title }}</a></h2>
                                 </div>
                                 <div class="post-content">
                                     <p>{{ article.description }}</p>

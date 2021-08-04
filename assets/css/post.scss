@@ -332,3 +332,8 @@ $prompt-newer: "{{ site.data.label.post.button.next }}";
   }
 
 }
+
+#post-list .post-preview h2{
+  padding: 0;
+  margin: 0;
+}
