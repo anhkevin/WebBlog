@@ -169,6 +169,6 @@
   }
 </script>
 <style scoped>
-  @import 'assets/css/about.css';
-  @import 'assets/css/youtube.css';
+  @import '@/assets/css/about.scss';
+  @import '@/assets/css/youtube.scss';
 </style>

@@ -18,7 +18,7 @@
                 <div class="col-8 offset-2">
                   <div class="post pl-1 pb-3 pr-1 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4">
                     <div class="post-content">
-                      <nuxt-content :document="video" />
+                      <NuxtContent :document="video" />
                     </div>
                   </div>
                 </div>

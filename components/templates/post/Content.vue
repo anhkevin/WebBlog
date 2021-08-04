@@ -13,7 +13,7 @@
                               </div>
                           </div>
                           <div class="post-content">
-                              <nuxt-content :document="post" />
+                              <NuxtContent :document="post" />
                           </div>
 
                           <div class="text-muted">
