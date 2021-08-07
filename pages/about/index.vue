@@ -4,25 +4,6 @@
     <div id="main-wrapper">
       <div id="main-about">
         <div class="row">
-<!-- <div class="containers col-lg-6 col-md-6">
-  
-  <div class="pic"></div>
-  
-  <div class="box1"></div>
-  <div class="box2"></div>
-  
-  <div class="social1">
-    <i class="fa fa-facebook" aria-hidden="true"></i> 
-  </div>
-  <div class="social2">
-  <i class="fa fa-dribbble" aria-hidden="true"></i>
-  </div>
-  <div class="social3">
-    <i class="fa fa-codepen" aria-hidden="true"></i>
-  </div>
-</div> -->
-
-<!-- <div class="content col-md-offset-6 col-lg-offset-6"> -->
   <div class=" col-lg-6 col-md-6 offset-md-3 offset-lg-3">
   <center><h1 class="contentHead">ABOUT ME</h1></center>
   

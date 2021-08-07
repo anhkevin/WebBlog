@@ -1,5 +1,5 @@
 <template>
-    <div id="sidebar" class="d-flex flex-column">
+    <div id="sidebar" class="d-flex flex-column" v-bind:class="{'sidebar-sp':isShowMenu}">{{isShowMenu}}
         <div id="nav-wrapper">
             <div id="profile-wrapper" class="d-flex flex-column">
                 <div id="avatar" class="d-flex justify-content-center"> <a :href="baseUrl" alt="avatar"> <img src="/img/tiandev_logo.png" alt="avatar"> </a></div>
@@ -50,7 +50,14 @@ export default {
             { name: 'Youtube', link: 'https://www.youtube.com/c/tiandev', target: '_blank', icon_class: 'fab fa-youtube' },
             // { name: 'feed', link: '/feed.xml', target: '_self', icon_class: 'fas fa-rss' },
         ]
+    },
+    isShowMenu() {
+        if (this.$store.state.menu) {
+            return true
+        }
+
+        return false
     }
-  }
+  },
 }
 </script>

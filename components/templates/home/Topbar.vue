@@ -8,6 +8,9 @@
                 </template>
                 <span>{{ pageName }}</span> 
             </span>
+            <i id="sidebar-trigger" class="fas fa-bars fa-fw" @click="clickMenu"></i>
+            <div id="topbar-title">{{ name_site }}</div>
+            <i id="search-trigger" class="fas fa-search fa-fw"></i>
             <div v-if="!isHideSearch" id="search-wrapper" class="align-items-center"> 
                 <i class="fas fa-search fa-fw"></i> 
                 <input
@@ -72,7 +75,21 @@ export default {
             }
             const url = "/" + path + "/"
             return url;
+        },
+        clickMenu() {
+            if (this.$store.state.menu) {
+                this.$store.commit('setMenu', false)
+                console.log("true");
+            } else {
+                this.$store.commit('setMenu', true)
+                console.log("false");
+            }
         }
+    },
+    computed: {
+        name_site() {
+            return process.env.namePage
+        },
     },
     data() {
       return {

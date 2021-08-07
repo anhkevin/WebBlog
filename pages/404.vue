@@ -29,6 +29,12 @@
 </template>
 <script>
   export default {
+    props: {
+      error: {
+        type: Object,
+        required: true
+      }
+    },
     computed: {
         tagName() {
             return "404 Not Found"

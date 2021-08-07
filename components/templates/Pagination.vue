@@ -90,7 +90,7 @@
             return Math.ceil(this.total/this.pageSize);
       },
       pagination_number() {
-          return 5;
+          return 4;
       }
     },
     methods:{

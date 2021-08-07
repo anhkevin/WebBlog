@@ -1008,6 +1008,14 @@ table {
       -moz-transition: none;
       transition: none;
     }
+
+    &.sidebar-sp {
+      transform: none;
+      -webkit-transform: none;
+      margin-top: 48px;
+      height: calc(100% - 48px);
+      width: 100%;
+    }
   }
 
   #topbar-wrapper {
