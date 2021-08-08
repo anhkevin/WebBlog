@@ -1,1 +1,0 @@
-window.__NUXT__=(function(a){return {staticAssetsBase:"\u002F_nuxt\u002Fstatic\u002F1628421769",layout:"default",error:a,state:{search:""},serverRendered:true,routePath:"\u002Fvideo\u002Fhow-to-create-netflix-logo-using-html-and-css-iudvSuv4yDybbw\u002F",config:{_app:{basePath:"\u002F",assetsPath:"\u002F_nuxt\u002F",cdnURL:a},content:{dbHash:"450f7a7e"}}}}(null));
