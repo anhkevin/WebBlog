@@ -153,7 +153,7 @@ export default {
   },
 
   router: {
-    middleware: 'user-agent',
+    // middleware: 'user-agent',
     linkActiveClass: 'active',
     trailingSlash: true
   },
