@@ -1,10 +1,6 @@
 <template>
-    <footer class="d-flex w-100 justify-content-center">
-        <div class="d-flex justify-content-between align-items-center">
-            <div class="footer-center">
-            <p class="mb-0"> © 2021 - <a :href="baseUrl">{{ namePage }}</a></p>
-            </div>
-        </div>
+    <footer class="footer text-center py-4">
+        <small class="copyright">Copyright © 2021 - <a :href="baseUrl" target="_blank">{{ namePage }}</a></small>
     </footer>
 </template>
 

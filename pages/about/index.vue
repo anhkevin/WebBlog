@@ -1,91 +1,53 @@
 <template>
-  <div>
-    <Siderbar />
-    <div id="main-wrapper">
-      <div id="main-about">
-        <div class="row">
-  <div class=" col-lg-6 col-md-6 offset-md-3 offset-lg-3">
-  <center><h1 class="contentHead">ABOUT ME</h1></center>
-  
-  <h2>Hi, you guys <br/><br/>
-    My name is TianDev. 
-    <br>I live and work in VietNam
-    <br>I describe myself as a passionate developer who loves coding on the web platform ❤️.
-    <br><br>
-  </h2>
-</div>
-
-  <div class="col-md-11 main-about-youtube">
-<div class="container">
-   <div class="row no-gutters justify-content-between align-items-center mt-3">
-      <div class="profile-image">
-         <img src="/img/tiandev_logo.png" alt="">
-      </div>
-      <div class="col-3 profile-name">
-         TianDev
-      </div>
-      <div class="col profile-recomended">
-         Recommended channel for you
-      </div>
-      <div class="col-2">
-         <a href="https://www.youtube.com/c/TianDev?sub_confirmation=1" target="_blank"><div class="subscribe">Subscribe</div></a>
-      </div>
-      <div class="profile-delete col-1">
-         <button><img src="data:image/svg+xml;base64,
-            PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDM1NyAzNTciIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDM1NyAzNTc7IiB4bWw6c3BhY2U9InByZXNlcnZlIj48Zz48Zz4KCTxnIGlkPSJjbGVhciI+CgkJPHBvbHlnb24gcG9pbnRzPSIzNTcsMzUuNyAzMjEuMywwIDE3OC41LDE0Mi44IDM1LjcsMCAwLDM1LjcgMTQyLjgsMTc4LjUgMCwzMjEuMyAzNS43LDM1NyAxNzguNSwyMTQuMiAzMjEuMywzNTcgMzU3LDMyMS4zICAgICAyMTQuMiwxNzguNSAgICIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgY2xhc3M9ImFjdGl2ZS1wYXRoIiBzdHlsZT0iZmlsbDojOTA5MDkwIiBkYXRhLW9sZF9jb2xvcj0iIzAwMDAwMCI+PC9wb2x5Z29uPgoJPC9nPgo8L2c+PC9nPiA8L3N2Zz4=" /></button>
-      </div>
-   </div>
-   <div class="row no-gutters mt-4">
-      <div class="col">
-         <a href="https://www.youtube.com/watch?v=HzwkID6Pzlg" target="_blank"><img src="https://img.youtube.com/vi/HzwkID6Pzlg/maxresdefault.jpg" class="profile-video" alt=""></a>
-         <div id="profile-video_title1" class="profile-video_title mt-2">
-            Bphone Icon - HTML & CSS
-         </div>
-         <!-- <div class="profile-video_name">ASAPROCKYUPTOWN</div>
-         <div class="profile-video_stats">9.6M views 	
-            &#183; 2 months ago
-         </div> --><br>
-      </div>
-      <div class="col">
-         <a href="https://www.youtube.com/watch?v=PFTv6O0cOwQ" target="_blank"><img src="https://img.youtube.com/vi/PFTv6O0cOwQ/maxresdefault.jpg" class="profile-video" alt=""></a>
-         <div id="profile-video_title2" class="profile-video_title mt-2">
-            Xiaomi Logo - HTML & CSS
-         </div>
-         <!-- <div class="profile-video_name">ASAPROCKYUPTOWN</div>
-         <div class="profile-video_stats">9.6M views 	
-            &#183; 2 months ago
-         </div> --><br>
-      </div>
-      <div class="col">
-         <a href="https://www.youtube.com/watch?v=oXrQvYoUXis" target="_blank"><img src="https://img.youtube.com/vi/oXrQvYoUXis/maxresdefault.jpg" class="profile-video" alt=""></a>
-         <div id="profile-video_title3" class="profile-video_title mt-2">
-            Youtube Logo - HTML & CSS
-         </div>
-         <!-- <div class="profile-video_name">ASAPROCKYUPTOWN</div>
-         <div class="profile-video_stats">9.6M views 	
-            &#183; 2 months ago
-         </div> --><br>
-      </div>
-      <div class="col">
-         <a href="https://www.youtube.com/watch?v=oe3-MLVg4eI" target="_blank"><img src="https://img.youtube.com/vi/oe3-MLVg4eI/maxresdefault.jpg" class="profile-video" alt=""></a>
-         <div id="profile-video_title4" class="profile-video_title mt-2">
-            Twitter - HTML & CSS
-         </div>
-         <!-- <div class="profile-video_name">ASAPROCKYUPTOWN</div>
-         <div class="profile-video_stats">9.6M views 	
-            &#183; 2 months ago
-         </div> -->
-         <br>
+   <div>
+      <Siderbar />
+      <div class="main-wrapper">
+         <section class="about-me-section p-3 p-lg-5 theme-bg-light">
+            <div class="container">
+               <div class="profile-teaser row">
+                  <div class="col">
+                     <h2 class="name font-weight-bold mb-1">TianDev</h2>
+                     <div class="tagline mb-3">Web Developer</div>
+                     <div class="bio mb-4">
+                        Xin chào!
+                        Tôi là Ánh (nickname khác là TianDev hoặc Ánh Kevin) và là một web developer.<br>
+                        Vào thời gian rãnh rỗi tôi thích viết ra những kinh nghiệm hay sai lầm của mình và blog này chính là một "Developer notes" của tôi
+                     </div>
+                     <h2 class="section-title font-weight-bold mb-3">Về blog TianDev</h2>
+                     <div class="section-intro mb-5">
+                        Với nhiều năm trong lĩnh vực lập trình cá nhân tôi nhận thấy kiến thức lập trình là vô hạn. Một số kiến thức và kinh nghiệm tích lũy được nếu không được ứng dụng thường xuyên sẽ dần bị phai mờ đi sau một thời gian.<br>
+                        Cụ thể tôi đã từng mất rất nhiều thời gian để research lại một vấn đề gì đó đã từng gặp phải hoặc đã từng research rất lâu trước đó<br>
+                        <br>
+                        Đó là lý do blog này của tôi ra đời mục đích lưu trữ lại một số kiến thức research được hoặc những kinh nghiệm trải qua vào blog này, không chỉ lưu trữ lại mà còn giúp tôi một lần nữa khắc sâu hơn.
+                        <br><br>
+                        Tôi mong rằng đây không chỉ là "Developer notes" cho cá nhân tôi mà có thể là nguồn tham khảo cho ai đó cần.
+                     </div>
+                     <!--//bio-->
+                     <!-- <div class="mb-4">
+                        <a class="btn btn-primary me-2 mb-3" href="portfolio.html">
+                           <svg class="svg-inline--fa fa-arrow-alt-circle-right fa-w-16 me-2" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-alt-circle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                              <path fill="currentColor" d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zM140 300h116v70.9c0 10.7 13 16.1 20.5 8.5l114.3-114.9c4.7-4.7 4.7-12.2 0-16.9l-114.3-115c-7.6-7.6-20.5-2.2-20.5 8.5V212H140c-6.6 0-12 5.4-12 12v64c0 6.6 5.4 12 12 12z"></path>
+                           </svg>
+                           <span class="d-none d-md-inline">View</span> Portfolio
+                        </a>
+                        <a class="btn btn-secondary mb-3" href="resume.html">
+                           <svg class="svg-inline--fa fa-file-alt fa-w-12 me-2" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="file-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg="">
+                              <path fill="currentColor" d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"></path>
+                           </svg>
+                           <span class="d-none d-md-inline">View</span> Resume
+                        </a>
+                     </div> -->
+                  </div>
+                  <!--//col-->
+                  <div class="col-md-5 col-lg-5">
+                     <img class="profile-image img-fluid mb-3 mb-lg-0 me-md-0" src="/img/avatar_tiandev2.png" alt="avatar tiandev">
+                  </div>
+               </div>
+            </div>
+         </section>
+         <Footer />
       </div>
    </div>
-    </div> </div>
-</div>   
-
-<Footer />
-</div>   
-
-    </div>
-  </div>
 </template>
 
 <script>
@@ -149,7 +111,3 @@
     }
   }
 </script>
-<style scoped>
-  @import '@/assets/css/about.scss';
-  @import '@/assets/css/youtube.scss';
-</style>

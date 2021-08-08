@@ -1,37 +1,43 @@
 <template>
-<div>
-    <HomeTopbar :pageName="slogan" :showHome="false" />
-    <div id="main-wrapper">
-        <div id="main" :class="isHideMain == true?'hidden':''">
-            <div class="row">
-                <div class="col-12 col-lg-11 col-xl-8">
-                    <div id="page" class="post pb-5 pl-1 pr-1 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4 mb-md-4">
-                        <div id="post-list">
-                            <div v-for="article of articles" :key="article.slug" class="post-preview">
-                                <div class="d-flex justify-content-between pr-xl-2">
-                                    <h2><a :href="setUrlPost(article.slug)">{{ article.title }}</a></h2>
-                                </div>
-                                <div class="post-content">
-                                    <p>{{ article.description }}</p>
-                                </div>
-                                <div class="post-meta text-muted">
-                                    <i class="far fa-clock fa-fw"></i> <span class="timeago">{{ formatDateByLocale(article.date) }}</span>
-                                </div>
-                            </div>
+    <div class="main-wrapper">
+        <section class="cta-section theme-bg-light py-3">
+            <div class="container text-center">
+                <h2 class="heading">Cuộc Sống là những hành trình Tìm Kiếm</h2>
+                <div class="single-form-max-width pt-3 mx-auto">
+                    <form class="signup-form row g-2 g-lg-2 align-items-center">
+                        <div class="col-12">
+                            <input 
+                                v-model="searchQuery"
+                                autocomplete="off"
+                                type="text" 
+                                id="search" 
+                                name="search" 
+                                class="form-control me-md-1 search" 
+                                placeholder="Vui lòng nhập từ khóa Tìm Kiếm ...">
                         </div>
-                        
-                        <Pagination
-                            :current-page="currentPage"
-                            :total="total"
-                            v-if="totalPages > 1" />
-                    </div>
+                    </form>
                 </div>
-                <NavRight />
             </div>
-            <Footer />
-        </div>
+            <!--//container-->
+        </section>
+        <section class="blog-list px-3 py-5 p-md-5">
+            <div class="container">
+                <div v-if="searchQuery != ''">
+                    <HomeArticle :articles="articles_search" />
+                </div>
+                <div v-else>
+                    <HomeArticle :articles="articles" />
+                </div>
+                <!--//row-->
+                <Pagination
+                    :pageSize="perPage"
+                    :current-page="currentPage"
+                    :total="total"
+                    v-if="totalPages > 1 && searchQuery == ''" />
+            </div>
+        </section>
+        <Footer />
     </div>
-</div>
 </template>
 
 <script>
@@ -51,19 +57,6 @@ export default {
             default: 5,
         },
     },
-    methods: {
-        formatDateByLocale(d) {
-            const options = { year: 'numeric', month: 'long', day: 'numeric' }
-            return new Date(d).toLocaleDateString('en', options)
-        },
-        setUrlPost(path) {
-            if (!path) {
-                return path;
-            }
-            const url = "/" + path + "/"
-            return url;
-        }
-    },
     computed: {
         slogan() {
             return process.env.slogan
@@ -80,6 +73,26 @@ export default {
             }
             return false;
         }
+    },
+    data() {
+      return {
+        searchQuery: '',
+        articles_search: []
+      }
+    },
+    watch: {
+      async searchQuery(searchQuery) {
+        this.$store.commit('setSearch', searchQuery)
+        if (!searchQuery) {
+          this.articles_search = this.articles
+          return
+        }
+        this.articles_search = await this.$content('articles')
+          .only(['title', 'description', 'date', 'slug', 'tags'])
+          .limit(6)
+          .search(searchQuery)
+          .fetch()
+      }
     }
 }
 </script>

@@ -1,41 +1,32 @@
 <template>
-  <div>
-      <HomeTopbar :pageName="post.title" :showHome="true" />
-      <div id="main-wrapper">
-          <div id="main" :class="isHideMain == true?'hidden':''">
-              <div class="row">
-                  <div id="post-wrapper" class="col-12 col-lg-11 col-xl-8">
-                      <div class="post pl-1 pr-1 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4">
-                          <h1>{{ post.title }}</h1>
-                          <div class="post-meta text-muted d-flex flex-column">
-                              <div>
-                                  Posted <span class="timeago">{{ formatDateByLocale(post.date) }}</span> by <span class="author"> {{ post.authors[0].name }} </span>
-                              </div>
-                          </div>
-                          <div class="post-content">
-                              <NuxtContent :document="post" />
-                          </div>
-
-                          <div class="text-muted">
-                              <div v-if="hasTags" class="post-tags mb-3">
-                                  <i class="fa fa-tags fa-fw mr-1"></i> 
-                                  <nuxt-link 
-                                  v-for="(tag, id) in post.tags"
-                                  :key="id" 
-                                  :to="{ path: '/tags/' + tag}" 
-                                  class="post-tag no-text-decoration"
-                                  >{{ tag }}</nuxt-link>
-                              </div>
-                              <Share :sharing="data.sharing" />
-                          </div>
-                          <PostComment :sharing="data.sharing" />
-                      </div>
-                  </div>
-                  <NavRight />
-              </div>
-              <Footer />
-          </div>
-      </div>
+    <div class="main-wrapper">
+        <article class="blog-post px-3 py-5 p-md-5">
+            <div class="container single-col-max-width">
+                <header class="blog-post-header">
+                    <h2 class="title mb-2">{{ post.title }}</h2>
+                    <div class="meta mb-3">
+                        <span class="date">Posted: {{ formatDateByLocale(post.date) }}</span> by <span class="author"> {{ post.authors[0].name }} </span></div>
+                </header>
+                <div class="blog-post-body">
+                    <NuxtContent :document="post" />
+                </div>
+                <div class="blog-nav nav nav-justified my-5">
+                    <div v-if="hasTags" class="post-tags mb-3">
+                        <span class="fw-bold">Tags: </span> 
+                        <nuxt-link 
+                        v-for="(tag, id) in post.tags"
+                        :key="id" 
+                        :to="{ path: '/tags/' + tag}" 
+                        class="post-tag no-text-decoration"
+                        ><span class="badge bg-light text-dark">{{ tag }}</span></nuxt-link>
+                    </div>
+                </div>
+                <div class="blog-comments-section">
+                    <Disqus />
+                </div>
+            </div>
+        </article>
+        <Footer />
     </div>
 </template>
 

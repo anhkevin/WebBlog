@@ -1,35 +1,31 @@
 <template>
   <div>
     <Siderbar />
-    <HomeTopbar :pageName="tagName" :showHome="true" />
-    <div id="main-wrapper">
-        <div id="main" :class="isHideMain == true?'hidden':''">
-            <div class="row">
-                <div class="col-12 col-lg-11 col-xl-8">
-                    <div id="page" class="post pb-5 pl-1 pr-1 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4 mb-md-4">
-                        <h1 class="dynamic-title">Tags</h1>
-                        <div class="post-content">
-                            <div id="tags" class="d-flex flex-wrap ml-xl-2 mr-xl-2">
-                                <div v-for="(tag, id) in listTags" :key="id"> 
-                                    <nuxt-link 
-                                        :to="{ path: '/tags/' + tag[0] + '/'}" 
-                                        class="tag"
-                                        >
-                                        {{ tag[0] }}
-                                            <span class="text-muted">({{ tag[1] }})</span>
-                                    </nuxt-link>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <NavRight />
-            </div>
-            <Footer />
-        </div>
+      <div class="main-wrapper">
+          <section class="cta-section theme-bg-light py-5">
+              <div class="container text-center single-col-max-width">
+                  <h2 class="heading">Tags</h2>
+                  <div class="intro">
+                  <p>Welcome to Hashtags for #development </p>
+                  
+                  </div>
+                  <div class="list-tags mt-5">
+                    <nuxt-link 
+                        v-for="(tag, id) in listTags" 
+                        :key="id"
+                        :to="{ path: '/tags/' + tag[0] + '/'}" 
+                        class="btn btn-outline-primary position-relative me-4 mb-3"
+                        >
+                        {{ tag[0] }}
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">{{ tag[1] }}</span>
+                    </nuxt-link>
+                  </div>
+              </div>
+              <!--//container-->
+          </section>
+          <Footer />
+      </div>
     </div>
-    <Bottom />
-  </div>
 </template>
 
 <script>

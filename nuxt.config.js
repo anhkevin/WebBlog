@@ -3,6 +3,7 @@ export default {
   target: 'static',
 
   // Global page headers: https://go.nuxtjs.dev/config-head
+  globalName: 'tiandev',
   head: {
     title: 'TianDev | Developer Blog',
     htmlAttrs: {
@@ -51,17 +52,13 @@ export default {
     ],
     link: [
       { hid: 'canonical', rel: 'canonical', href: 'https://tiandev.net' },
-      { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css' },
-      { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css' },
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
     ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    // '@/assets/css/bootstrap/css/bootstrap.min.css',
-    '@/assets/css/style.scss',
-    // '@/assets/css/lib/bootstrap-toc.min.css'
+    '@/assets/css/style.scss'
   ],
 
   content: {
@@ -72,6 +69,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    '~/plugins/disqus'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -145,6 +143,7 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    extractCSS: true,
     publicPath: '/public/'
   },
 
@@ -154,6 +153,8 @@ export default {
   },
 
   router: {
+    middleware: 'user-agent',
+    linkActiveClass: 'active',
     trailingSlash: true
   },
 

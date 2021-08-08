@@ -2,7 +2,6 @@
   <div>
     <Siderbar />
     <PostContent :post="article" />
-    <Bottom />
   </div>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
-    <div id="panel-wrapper" class="col-xl-3 pl-2 text-muted topbar-down">
-        <div id="toc-wrapper" class="pl-2 pr-4 mb-5">
+    <div id="panel-wrapper" class="col-xl-4 pl-2 text-muted topbar-down">
+        <div id="toc-wrapper" class="pl-2 pr-4 ms-2 ms-md-5">
             <div id="access-tags">
               <h3 class="pl-3 pt-2 mb-2">Trending Tags</h3>
               <div class="d-flex flex-wrap mt-3 mb-1 mr-3"> 

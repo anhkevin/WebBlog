@@ -1,8 +1,7 @@
 <template>
   <div>
     <Siderbar />
-    <HomeMain :articles="articles" :total="totalArticles" />
-    <Bottom />
+    <HomeMain :articles="articles" :total="totalArticles" :perPage="perPage" />
   </div>
 </template>
 
@@ -10,7 +9,7 @@
   export default {
     async asyncData({ $content, route }) {
       const currentPage = route.query.page ? parseInt(route.query.page) : 1;
-      const perPage = 10;
+      const perPage = 9;
       const allArticles = await $content("articles").fetch();
       const totalArticles = allArticles.length;
 
@@ -31,13 +30,14 @@
       };
 
       const articles = await $content('articles')
-        .only(['title', 'description', 'date', 'slug'])
+        .only(['title', 'description', 'date', 'slug', 'tags'])
         .sortBy('date', 'desc')
         .limit(perPage)
         .skip(skipNumber())
         .fetch()
 
       return {
+        perPage,
         articles,
         totalArticles
       }

@@ -1,72 +1,39 @@
 <template>
-    <div>
-        <ul class="pagination mt-4 mb-0 pl-lg-2 d-flex justify-content-center">
+    <nav class="py-5">
+        <ul class="pagination justify-content-center">
             <li class="page-item" :class="currentPage<=1?' disabled':''">
-                <nuxt-link class="page-link btn-box-shadow"
+                <nuxt-link class="page-link"
                  :disabled="currentPage<=1"
                  :to="{path: '/',query:{page:currentPage-1}}">
-                    <i class="fas fa-angle-left"></i>
+                    <span aria-hidden="true">&laquo;</span>
                 </nuxt-link>
             </li>
 
-            <template v-if="count<pagination_number">
-                <li v-for="item in count" :key="item" class="page-item" :class="currentPage===item?'active':''">
-                    <nuxt-link class="page-link btn-box-shadow"
-                            :to="{path: '/',query:{page:item}}" v-on:click.native="refresh">{{item}}</nuxt-link>
+            <template v-for="pageNumber in count">
+                <li class="page-item disabled" :key="pageNumber" v-if="((pageNumber-1) == count - 1 && Math.abs((pageNumber) - currentPage) > 3)">
+                    <nuxt-link class="page-link" :to="{path: '/'}">...</nuxt-link>
                 </li>
-            </template>
-            <template v-else>
-                <template v-if="currentPage <= Math.ceil(pagination_number/2)">
-                    <li v-for="item in (pagination_number - 1)" :key="item" class="page-item" :class="currentPage===item?'active':''">
-                        <nuxt-link class="page-link btn-box-shadow"
-                            :to="{path: '/',query:{page:item}}" v-on:click.native="refresh">{{item}}</nuxt-link>
-                    </li>
-                    <li v-if="currentPage != (pagination_number-2)" class="page-item disabled">
-                        <nuxt-link class="page-link btn-box-shadow" :to="{path: '/'}">...</nuxt-link>
-                    </li>
-                    <li class="page-item">
-                        <nuxt-link class="page-link btn-box-shadow" v-if="count>=(pagination_number)" :to="{path: '/',query:{page:count}}" v-on:click.native="refresh">{{count}}</nuxt-link>
-                    </li>
-                </template>
-                <template v-else>
-                    <li class="page-item">
-                        <nuxt-link class="page-link btn-box-shadow" :to="{path: '/',query:{page:'1'}}" v-on:click.native="refresh">1</nuxt-link>
-                    </li>
-                    <li class="page-item disabled">
-                        <nuxt-link class="page-link btn-box-shadow" :to="{path: '/'}">...</nuxt-link>
-                    </li>
-                    <template v-if="(currentPage + Math.floor(pagination_number/2)) < count">
-                        <li v-for="item in getArr(currentPage,currentPage+(Math.floor(pagination_number/2)-1))" :key="item" class="page-item" :class="currentPage===item?'active':''">
-                            <nuxt-link class="page-link btn-box-shadow"
-                                    :to="{path: '/',query:{page:item}}" v-on:click.native="refresh">{{item}}</nuxt-link>
-                        </li>
-                        <li class="page-item disabled">
-                            <nuxt-link class="page-link btn-box-shadow" :to="{path: '/'}">...</nuxt-link>
-                        </li>
-                        <li class="page-item">
-                            <nuxt-link class="page-link btn-box-shadow" :to="{path: '/',query:{page:count}}" v-on:click.native="refresh">{{count}}</nuxt-link>
-                        </li>
-                    </template>
-                    <template v-else>
-                        <li v-for="item in getArr(count-(pagination_number-2),count)" :key="item" class="page-item" :class="currentPage===item?'active':''">
-                            <nuxt-link class="page-link btn-box-shadow"
-                                :to="{path: '/',query:{page:item}}" v-on:click.native="refresh">{{item}}</nuxt-link>
-                        </li>
-                    </template>
-                </template>
+                <li class="page-item" :key="pageNumber" :class="currentPage===pageNumber?'active':''"
+                v-if="(pageNumber > (currentPage-2) && Math.abs((pageNumber) - currentPage) < 3) || (pageNumber-1) == count - 1 || (pageNumber-1) == 0">
+                    <nuxt-link class="page-link" :to="{path: '/',query:{page:pageNumber}}" 
+                        v-on:click.native="refresh">
+                        {{pageNumber}}</nuxt-link>
+                </li>
+                <li class="page-item disabled" :key="pageNumber" v-if="((pageNumber-1) == 0 && Math.abs((pageNumber) - currentPage) > 2)">
+                    <nuxt-link class="page-link" :to="{path: '/'}">...</nuxt-link>
+                </li>
             </template>
             
             <li class="page-item" :class="currentPage===count?' disabled':''">
-                <nuxt-link class="page-link btn-box-shadow"
+                <nuxt-link class="page-link"
                     :disabled="currentPage===count"
                     tag="button"
                     :to="{path: '/',query:{page:currentPage+1}}" v-on:click.native="refresh">
-                        <i class="fas fa-angle-right"></i>
+                        <span aria-hidden="true">&raquo;</span>
                 </nuxt-link>
             </li>
         </ul>
-
-    </div>
+    </nav>
 </template>
 
 <script>
@@ -102,7 +69,7 @@
         return arr;
       },
       refresh(e) {
-        this.$nuxt.refresh()
+        this.$tiandev.refresh()
         window.scrollTo({ top: 0, behavior: 'smooth' })
       }
     }

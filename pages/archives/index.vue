@@ -1,33 +1,36 @@
 <template>
   <div>
     <Siderbar />
-    <HomeTopbar :pageName="tagName" :showHome="true" />
-    <div id="main-wrapper">
-        <div id="main" :class="isHideMain == true?'hidden':''">
-            <div class="row">
-                <div class="col-12 col-lg-11 col-xl-8">
-                    <div id="page" class="post pb-5 pl-1 pr-1 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4 mb-md-4">
-                        <h1 class="dynamic-title">Archives</h1>
-                        <div class="post-content">
-                            <div id="archives" class="pl-xl-2">
-                                <div v-for="(archives, id) in listArchives" :key="id">
-                                  <span class="lead">{{archives[0]}}</span>
-                                  <ul class="list-unstyled">
-                                      <li v-for="(item, id2) in archives[1]" :key="id2">
-                                        <div> <span class="date day">{{formatDateByLocale(item.date, { day: 'numeric' })}}</span> <span class="date month small text-muted">{{formatDateByLocale(item.date, { month: 'short' })}}</span> <a :href="setUrlPost(item.slug)">{{ item.title }}</a></div>
-                                      </li>
-                                  </ul>
-                                </div>
-                            </div>
-                        </div>
-                        </div>
-                </div>
-                <NavRight />
-            </div>
-            <Footer />
+    <div class="main-wrapper">
+      <section class="cta-section theme-bg-light px-3 py-5 p-md-5">
+        <div class="container text-left">
+          <h2 class="heading"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="briefcase" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="" class="svg-inline--fa fa-briefcase fa-w-16 fa-fw me-2"><path fill="currentColor" d="M320 336c0 8.84-7.16 16-16 16h-96c-8.84 0-16-7.16-16-16v-48H0v144c0 25.6 22.4 48 48 48h416c25.6 0 48-22.4 48-48V288H320v48zm144-208h-80V80c0-25.6-22.4-48-48-48H176c-25.6 0-48 22.4-48 48v48H48c-25.6 0-48 22.4-48 48v80h512v-80c0-25.6-22.4-48-48-48zm-144 0H192V96h128v32z"></path></svg>
+            {{ tagName }}</h2>
         </div>
-    </div>
-    <Bottom />
+      </section>
+      <section class="blog-list py-2 p-md-4">
+        <div class="container">
+          <div class="row">
+              <div class="col-12 col-lg-11 col-xl-8">
+                <div id="archives" class="pl-xl-2">
+                    <div v-for="(archives, id) in listArchives" :key="id">
+                      <span class="lead">{{archives[0]}}</span>
+                      <ul class="list-unstyled">
+                          <li v-for="(item, id2) in archives[1]" :key="id2">
+                            <div> <span class="date day">{{formatDateByLocale(item.date, { day: 'numeric' })}}</span> <span class="date month small text-muted">{{formatDateByLocale(item.date, { month: 'short' })}}</span> <a :href="setUrlPost(item.slug)">{{ item.title }}</a></div>
+                          </li>
+                      </ul>
+                    </div>
+                </div>
+              </div>
+
+              <NavRight />
+
+            </div>
+          </div>
+        </section>
+      </div>
+      <Footer />
   </div>
 </template>
 

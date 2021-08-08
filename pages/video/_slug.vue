@@ -1,30 +1,24 @@
 <template>
   <div>
     <Siderbar />
-    <HomeTopbar :pageName="video.title" :showHome="true" :isHideSearch="true" />
-    <div id="main-wrapper">
-        <div id="main">
-            <div class="row">
-              <div id="post-wrapper" class="col-12">
-                <div class="post pl-1 pb-3 pr-1 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4 text-center">
-                  <h1>{{video.title}}</h1>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-                <div class="col-12 d-flex align-items-center justify-content-center">
-                    <iframe width="720" height="405" :src="linkVideo" :title="tagName" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                <div class="col-8 offset-2">
-                  <div class="post pl-1 pb-3 pr-1 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4">
-                    <div class="post-content">
-                      <NuxtContent :document="video" />
+    <div class="main-wrapper">
+        <article class="blog-post px-3 py-5 p-md-5">
+            <div class="container single-col-max-width">
+                <header class="blog-post-header">
+                    <h2 class="title mb-5">{{ video.title }}</h2>
+                </header>
+                <div class="blog-post-body">
+                    <div class="col-12 d-flex align-items-center justify-content-center mb-5">
+                      <iframe width="720" height="405" :src="linkVideo" :title="tagName" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
-                  </div>
+                    <NuxtContent :document="video" />
+                </div>
+                <div class="blog-comments-section">
+                    <Disqus />
                 </div>
             </div>
-            <Footer />
-        </div>
+        </article>
+        <Footer />
     </div>
   </div>
 </template>
