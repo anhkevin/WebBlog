@@ -44,7 +44,8 @@
 img {
     height: auto;
     max-width: 100%;
-    vertical-align: middle;
+    margin: 0 auto;
+    display: block;
 }
 
 /* Custom Post Style */
@@ -70,6 +71,13 @@ img {
         }
         h6 {
             font-size: 12px;
+        }
+    }
+    .blog-nav {
+        .post-tags {
+            .post-tag {
+                margin-left: 10px;
+            }
         }
     }
 }
