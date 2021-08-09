@@ -10,8 +10,8 @@
                      <div class="tagline mb-3">Web Developer</div>
                      <div class="bio mb-4">
                         Xin chào!<br>
-                        Tôi là Ánh (nickname khác là TianDev hoặc Ánh Kevin) và là một web developer.<br>
-                        Vào thời gian rãnh rỗi tôi thích viết lại kinh nghiệm hay vấn đề đã từng vấp phải và blog này chính là một "Developer notes" của tôi
+                        Tôi là TianDev (hoặc gọi là Ánh hoặc Ánh Kevin) và là một Web Developer.<br>
+                        Vào thời gian rãnh rỗi tôi thích viết lại kinh nghiệm hay vấn đề đã từng vấp phải và blog này chính là một "developer notes" của tôi
                      </div>
                      <h2 class="section-title font-weight-bold mb-3">Về blog TianDev</h2>
                      <div class="section-intro mb-5">
