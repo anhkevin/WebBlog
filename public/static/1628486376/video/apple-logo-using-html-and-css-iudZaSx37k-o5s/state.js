@@ -1,0 +1,1 @@
+window.__TIANDEV__=(function(a){return {staticAssetsBase:"\u002Fpublic\u002Fstatic\u002F1628486376",layout:"default",error:a,state:{search:"",menu:false},serverRendered:true,routePath:"\u002Fvideo\u002Fapple-logo-using-html-and-css-iudZaSx37k-o5s\u002F",config:{_app:{basePath:"\u002F",assetsPath:"\u002Fpublic\u002F",cdnURL:a},content:{dbHash:"68a1d831"}}}}(null));
