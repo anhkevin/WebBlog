@@ -27,7 +27,7 @@ Sau đây là cách dùng thử nhiều lần **khi hết hạn dùng thử** m�
 
 <!-- wp:paragraph -->
 
-**Bước 1:** Tìm đến thư mục setting của SmartGit
+**Bước 1:** Tắt SmartGit và tìm đến thư mục setting của SmartGit
 
 <!-- /wp:paragraph -->
 
@@ -37,16 +37,15 @@ Sau đây là cách dùng thử nhiều lần **khi hết hạn dùng thử** m�
   * Trên OS X: <span style="color: red;">~/Library/Preferences/SmartGit/</span>
   * Trên Unix/Linux: <span style="color: red;">~/.smartgit/</span>
 
-Sau đó chọn thư mục là phiên bản SmartGit đang dùng (_thường là phiên bản lớn nhất_).
-
 <!-- /wp:list -->
 
 <!-- wp:paragraph -->
 
 **Bước 2:** Giữ lại file "smartgit.vmoptions", còn lại các file và thư mục khác thì <span style="color: red;">xóa</span> hết
 
-**Bước 3:** Mở SmartGit lên sẽ hiển thị màn hình giống lúc bạn cài đặt -> nếu không tùy chỉnh gì khác thì cứ để default và bấm next và next là xong 
-(lúc này lại được dùng thử 30 ngày giống như cài đặt lúc đầu).
+**Bước 3:** Mở lại SmartGit lên sẽ hiển thị màn hình giống lúc bạn cài đặt <br>
+-> nếu không tùy chỉnh gì khác thì cứ để default và bấm next và next là xong <br>
+(_lúc này lại được dùng thử 30 ngày giống như cài đặt lúc đầu_).
 
 <!-- /wp:paragraph -->
 
