@@ -1,0 +1,1 @@
+window.__TIANDEV__=(function(a){return {staticAssetsBase:"\u002Fpublic\u002Fstatic\u002F1648037305",layout:"default",error:a,state:{search:"",menu:false},serverRendered:true,routePath:"\u002Fham-basename-dung-de-lay-phan-duoi-cua-duong-dan\u002F",config:{_app:{basePath:"\u002F",assetsPath:"\u002Fpublic\u002F",cdnURL:a},content:{dbHash:"fae4b463"}}}}(null));
