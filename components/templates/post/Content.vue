@@ -16,7 +16,7 @@
                         <nuxt-link 
                         v-for="(tag, id) in post.tags"
                         :key="id" 
-                        :to="{ path: '/tags/' + tag}" 
+                        :to="{ path: '/tags/' + tag + '/'}" 
                         class="post-tag no-text-decoration"
                         ><span class="badge bg-light text-dark">{{ tag }}</span></nuxt-link>
                     </div>
