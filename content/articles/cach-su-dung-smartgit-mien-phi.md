@@ -33,7 +33,7 @@ Sau đây là cách dùng thử nhiều lần **khi hết hạn dùng thử** m�
 
 <!-- wp:list -->
 
-  * Trên Windows: <span style="color: red;">%APPDATA%\syntevo\SmartGit\</span>
+  * Trên Windows: <span style="color: red;">%APPDATA%/syntevo/SmartGit/</span>
   * Trên OS X: <span style="color: red;">~/Library/Preferences/SmartGit/</span>
   * Trên Unix/Linux: <span style="color: red;">~/.smartgit/</span>
 
@@ -43,21 +43,10 @@ Sau đó chọn thư mục là phiên bản SmartGit đang dùng (_thường là
 
 <!-- wp:paragraph -->
 
-**Bước 2:** Xóa file license
-* Trước <span style="color: #ff0000;">version 19</span> ở thư mục <code>\smart-git-version\ </code> xóa file: 
-  * <span style="color: #ff0000;"><code>setting.xml</code></span>
-* Từ <span style="color: #ff0000;">version 19</span> trở đi:  
-  * Thư mục: <code>\smart-git-version\ </code> xóa file:
-    * <span style="color: #ff0000;"><code>preferences.yml</code></span>
-    * <span style="color: #ff0000;"><code>license</code></span>
-  * Thư mục: <code>\smart-git-version\ .backup</code> xóa file:
-    * <span style="color: #ff0000;"><code>preferences.yml</code></span>
+**Bước 2:** Giữ lại file "smartgit.vmoptions", còn lại các file và thư mục khác thì <span style="color: red;">xóa</span> hết
 
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-
-**Bước 3:** Mở SmartGit lên sẽ hiển thị màn hình giống lúc bạn cài đặt -> nếu không tùy chỉnh gì khác thì cứ để default và bấm next và next là xong (lúc này lại được dùng thử 30 ngày giống như cài đặt lúc đầu).
+**Bước 3:** Mở SmartGit lên sẽ hiển thị màn hình giống lúc bạn cài đặt -> nếu không tùy chỉnh gì khác thì cứ để default và bấm next và next là xong 
+(lúc này lại được dùng thử 30 ngày giống như cài đặt lúc đầu).
 
 <!-- /wp:paragraph -->
 
