@@ -5,22 +5,13 @@
          <section class="about-me-section p-3 p-lg-5 theme-bg-light">
             <div class="container">
                <div class="profile-teaser row">
-                  <div class="col">
+                  <div class="col-md-6 col-lg-6">
                      <h2 class="name font-weight-bold mb-1">TianDev</h2>
                      <div class="tagline mb-3">Web Developer</div>
                      <div class="bio mb-4">
                         Xin chào!<br>
-                        Tôi là TianDev (hoặc gọi là Ánh hoặc Ánh Kevin) và là một Web Developer.<br>
+                        Tôi là TianDev và là một Web Developer.<br>
                         Vào thời gian rãnh rỗi tôi thích viết lại kinh nghiệm hay vấn đề đã từng vấp phải và blog này chính là một "developer notes" của tôi
-                     </div>
-                     <h2 class="section-title font-weight-bold mb-3">Về blog TianDev</h2>
-                     <div class="section-intro mb-5">
-                        Với nhiều năm trong lĩnh vực lập trình cá nhân tôi nhận thấy kiến thức lập trình là vô hạn. Một số kiến thức và kinh nghiệm tích lũy được nếu không được ứng dụng thường xuyên sẽ dần bị phai mờ đi sau một thời gian.<br>
-                        Cụ thể tôi đã từng mất rất nhiều thời gian để research lại một vấn đề gì đó đã từng gặp phải hoặc đã từng research rất lâu trước đó<br>
-                        <br>
-                        Đó là lý do blog này của tôi ra đời mục đích lưu trữ lại một số kiến thức research được hoặc những kinh nghiệm trải qua vào blog này, không chỉ lưu trữ lại mà còn giúp tôi một lần nữa khắc sâu hơn.
-                        <br><br>
-                        Tôi mong rằng đây không chỉ là "Developer notes" cho cá nhân tôi mà có thể là nguồn tham khảo cho ai đó cần.
                      </div>
                      <!--//bio-->
                      <!-- <div class="mb-4">
@@ -39,10 +30,23 @@
                      </div> -->
                   </div>
                   <!--//col-->
-                  <div class="col-md-5 col-lg-5">
-                     <img class="profile-image img-fluid mb-3 mb-lg-0 me-md-0" src="/img/avatar_tiandev2.png" alt="avatar tiandev">
+                  <div class="col-md-6 col-lg-6 mb-3">
+                     <img src="/img/tiandev_card.png" alt="avatar tiandev">
                   </div>
                </div>
+               <div class="profile-teaser row">
+                <div class="col">
+                   <h2 class="section-title font-weight-bold mb-3">Về blog TianDev</h2>
+                   <div class="section-intro mb-5">
+                      Với nhiều năm trong lĩnh vực lập trình cá nhân tôi nhận thấy kiến thức lập trình là vô hạn. Một số kiến thức và kinh nghiệm tích lũy được nếu không được ứng dụng thường xuyên sẽ dần bị phai mờ đi sau một thời gian.<br>
+                      Cụ thể tôi đã từng mất rất nhiều thời gian để research lại một vấn đề gì đó đã từng gặp phải hoặc đã từng research rất lâu trước đó<br>
+                      <br>
+                      Đó là lý do blog này của tôi ra đời mục đích lưu trữ lại một số kiến thức research được hoặc những kinh nghiệm trải qua vào blog này, không chỉ lưu trữ lại mà còn giúp tôi một lần nữa khắc sâu hơn.
+                      <br><br>
+                      Tôi mong rằng đây không chỉ là "Developer notes" cho cá nhân tôi mà có thể là nguồn tham khảo cho ai đó cần.
+                   </div>
+                </div>
+             </div>
             </div>
          </section>
          <Footer />
