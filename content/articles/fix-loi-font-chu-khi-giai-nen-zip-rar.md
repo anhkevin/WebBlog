@@ -9,7 +9,7 @@ authors:
   - name: 'anhkevin'
 ---
 
-Nếu bạn đang gặp phải tình trạng tên file (có chứa kí tự Tiếng Nhật, Tiếng Thái, Tiếng Hàn, ...) bị lỗi khi giải nén (extract) file Zip/RAR như dưới đây:
+Nếu gặp phải tình trạng tên file (có chứa kí tự Tiếng Nhật, Tiếng Thái, Tiếng Hàn, ...) bị lỗi khi giải nén (extract) file Zip/RAR như dưới đây:
 <p><img src="/img/uploads/2021/error_font_folder.png" />
 <img src="/img/uploads/2021/error_font_folder_0.png" /></p>
 
@@ -22,8 +22,7 @@ Nếu bạn đang gặp phải tình trạng tên file (có chứa kí tự Ti�
 Chọn: Options > Name encoding > Japanese Shift JIS</p>
 <img src="/img/uploads/2021/error_font_folder_2.png" />
 
-### **Bước 3:** Giải nén (extract) ra thư mục
-**Note:** Chọn "Extract To" để giải nén ra thư mục
+### **Bước 3:** Bấm vào "Extract To" để giải nén (extract) ra thư mục
 
 ### **Kết Quả:**
 <img src="/img/uploads/2021/error_font_folder_4.png" />
