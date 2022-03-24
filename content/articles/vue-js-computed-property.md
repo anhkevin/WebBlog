@@ -1,6 +1,6 @@
 ---
 title: VueJS - Computed Property
-date: 2020-03-01
+date: 2020-03-03
 author: Ime Share
 description: Computed Property trong VueJS thể hiện dưới dạng một phương thức hoặc một đối tượng (object) chứa các phương thức setter và getter dùng để thiết lập dữ liệu và lấy dữ liệu đưa ra template
 layout: post
