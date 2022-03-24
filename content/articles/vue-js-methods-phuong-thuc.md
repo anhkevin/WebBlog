@@ -1,6 +1,6 @@
 ---
 id: 753
-title: Vue.js Methods (phương thức)
+title: VueJS - Methods (phương thức)
 date: 2019-12-28
 author: Ime Share
 description: |

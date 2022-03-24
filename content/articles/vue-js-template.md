@@ -1,6 +1,6 @@
 ---
 id: 735
-title: Vue.js Template
+title: VueJS - Template
 date: 2019-12-22
 author: Ime Share
 description: 'Vue.js sử dụng ngôn ngữ HTML tạo template. Bất kỳ HTML nào cũng sử dụng được Vue.js và ngoài ra Vue.js cung cấp hai thứ mạnh mẽ: nội suy và directive.'

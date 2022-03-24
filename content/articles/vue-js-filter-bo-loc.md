@@ -1,6 +1,6 @@
 ---
 id: 803
-title: Vue.js Filter (bộ lọc)
+title: VueJS - Filter (bộ lọc)
 date: 2020-02-17
 author: Ime Share
 description: Vue cho phép định nghĩa các filter trong các định dạng văn bản thường gặp

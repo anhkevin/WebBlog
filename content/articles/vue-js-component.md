@@ -1,6 +1,6 @@
 ---
 id: 865
-title: Vue.js component
+title: VueJS - Components
 date: 2020-02-29
 author: Ime Share
 description: Component là các đối tượng Vue có thể sử dụng lại được, có thể dùng component như là một phần tử bên trong đối tượng Vue gốc được tạo bởi new Vue
