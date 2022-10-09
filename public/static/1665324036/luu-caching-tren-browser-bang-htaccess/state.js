@@ -1,0 +1,1 @@
+window.__TIANDEV__=(function(a){return {staticAssetsBase:"\u002Fpublic\u002Fstatic\u002F1665324036",layout:"default",error:a,state:{search:"",menu:false},serverRendered:true,routePath:"\u002Fluu-caching-tren-browser-bang-htaccess\u002F",config:{_app:{basePath:"\u002F",assetsPath:"\u002Fpublic\u002F",cdnURL:a},content:{dbHash:"71ee9025"}}}}(null));
