@@ -9,7 +9,8 @@ authors:
   - name: 'anhkevin'
 ---
 
-[![Watch the video](https://i.ytimg.com/vi/yNAPRKxXIwM/hq720_2.jpg?sqp=-oaymwEdCJUDENAFSFXyq4qpAw8IARUAAIhCcAHAAQbQAQE=&rs=AOn4CLDGBLINx7ct_LxZZyRdfxTxgqyOKA)](https://youtu.be/yNAPRKxXIwM)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yNAPRKxXIwM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ***
 **HTML:**
 ```html
