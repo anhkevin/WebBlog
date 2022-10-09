@@ -1,0 +1,1 @@
+window.__TIANDEV__=(function(a){return {staticAssetsBase:"\u002Fpublic\u002Fstatic\u002F1665323615",layout:"default",error:a,state:{search:"",menu:false},serverRendered:true,routePath:"\u002Ftoi-uu-va-tang-toc-wordpress-bang-plugin-autoptimize\u002F",config:{_app:{basePath:"\u002F",assetsPath:"\u002Fpublic\u002F",cdnURL:a},content:{dbHash:"76593f2c"}}}}(null));
