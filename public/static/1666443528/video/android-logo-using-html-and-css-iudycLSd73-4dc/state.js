@@ -1,0 +1,1 @@
+window.__TIANDEV__=(function(a){return {staticAssetsBase:"\u002Fpublic\u002Fstatic\u002F1666443528",layout:"default",error:a,state:{search:"",menu:false},serverRendered:true,routePath:"\u002Fvideo\u002Fandroid-logo-using-html-and-css-iudycLSd73-4dc\u002F",config:{_app:{basePath:"\u002F",assetsPath:"\u002Fpublic\u002F",cdnURL:a},content:{dbHash:"ec2430f7"}}}}(null));
