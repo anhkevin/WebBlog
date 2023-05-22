@@ -1,0 +1,1 @@
+window.__TIANDEV__=(function(a){return {staticAssetsBase:"\u002Fpublic\u002Fstatic\u002F1684771740",layout:"default",error:a,state:{search:"",menu:false},serverRendered:true,routePath:"\u002Fvideo\u002Fhow-to-create-google-logo-using-html-and-css-iud1Key-fHfiRk\u002F",config:{_app:{basePath:"\u002F",assetsPath:"\u002Fpublic\u002F",cdnURL:a},content:{dbHash:"d72c4f10"}}}}(null));
