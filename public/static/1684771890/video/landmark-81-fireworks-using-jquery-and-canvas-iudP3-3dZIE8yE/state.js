@@ -1,1 +1,0 @@
-window.__TIANDEV__=(function(a){return {staticAssetsBase:"\u002Fpublic\u002Fstatic\u002F1684771890",layout:"default",error:a,state:{search:"",menu:false},serverRendered:true,routePath:"\u002Fvideo\u002Flandmark-81-fireworks-using-jquery-and-canvas-iudP3-3dZIE8yE\u002F",config:{_app:{basePath:"\u002F",assetsPath:"\u002Fpublic\u002F",cdnURL:a},content:{dbHash:"48ffe51c"}}}}(null));
