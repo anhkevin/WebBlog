@@ -10,7 +10,7 @@ authors:
 ---
 
 <div class="text-center">
-  <iframe width="800" height="800" src="https://www.youtube.com/embed/yNAPRKxXIwM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe width="800" height="500" src="https://www.youtube.com/embed/yNAPRKxXIwM?autoplay=1" allow="autoplay" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ***
@@ -25,6 +25,7 @@ authors:
 </div>
 ```
 
+***
 **CSS:**
 ```css
 .bg-gradient {
