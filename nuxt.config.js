@@ -27,17 +27,17 @@ export default {
       {
         hid: "og:url",
         property: "og:url",
-        content: "https://tiandev.net",
+        content: "https://anhkevin.github.io",
       },
       {
         hid: 'og:image',
         property: 'og:image',
-        content: 'https://tiandev.net/img/tiandev_card.png'
+        content: 'https://anhkevin.github.io/img/tiandev_card.png'
       },
       {
         hid: 'og:image:secure_url',
         property: 'og:image:secure_url',
-        content: 'https://tiandev.net/img/tiandev_card.png'
+        content: 'https://anhkevin.github.io/img/tiandev_card.png'
       },
       {
         hid: 'og:image:alt',
@@ -47,11 +47,11 @@ export default {
       {
         hid: 'twitter:image',
         name: 'twitter:image',
-        content: 'https://tiandev.net/img/tiandev_card.png'
+        content: 'https://anhkevin.github.io/img/tiandev_card.png'
       }
     ],
     link: [
-      { hid: 'canonical', rel: 'canonical', href: 'https://tiandev.net' },
+      { hid: 'canonical', rel: 'canonical', href: 'https://anhkevin.github.io' },
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
     ]
   },
@@ -98,11 +98,11 @@ export default {
   robots: {
     UserAgent: '*',
     Disallow: '/norobots',
-    Sitemap: 'https://tiandev.net/sitemap.xml'
+    Sitemap: 'https://anhkevin.github.io/sitemap.xml'
   },
 
   sitemap: {
-    hostname: 'https://tiandev.net',
+    hostname: 'https://anhkevin.github.io',
     gzip: true,
     filter ({ routes }) {
       return routes.map(route => {
@@ -172,7 +172,7 @@ export default {
   },
 
   env: {
-    baseUrl: (process.env.NODE_ENV == 'production') ? 'https://tiandev.net' : 'http://localhost:3000',
+    baseUrl: (process.env.NODE_ENV == 'production') ? 'https://anhkevin.github.io' : 'http://localhost:3000',
     namePage: 'TianDev',
     description: 'A blog or notebook for the developer in my experience, TianDev',
     slogan: 'Sống Để Trải Nghiệm - Cứ Cho Đi Sẽ Nhận Lại Được Hơn Thế !'
