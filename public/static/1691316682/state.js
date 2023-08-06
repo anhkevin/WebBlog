@@ -1,0 +1,1 @@
+window.__TIANDEV__=(function(a,b){return {staticAssetsBase:"\u002Fpublic\u002Fstatic\u002F1691316682",layout:"default",error:a,state:{search:"",menu:false},serverRendered:true,routePath:b,config:{_app:{basePath:b,assetsPath:"\u002Fpublic\u002F",cdnURL:a},content:{dbHash:"82b7325b"}}}}(null,"\u002F"));

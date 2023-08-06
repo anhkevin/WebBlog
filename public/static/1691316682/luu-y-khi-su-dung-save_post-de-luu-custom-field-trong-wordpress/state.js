@@ -1,0 +1,1 @@
+window.__TIANDEV__=(function(a){return {staticAssetsBase:"\u002Fpublic\u002Fstatic\u002F1691316682",layout:"default",error:a,state:{search:"",menu:false},serverRendered:true,routePath:"\u002Fluu-y-khi-su-dung-save_post-de-luu-custom-field-trong-wordpress\u002F",config:{_app:{basePath:"\u002F",assetsPath:"\u002Fpublic\u002F",cdnURL:a},content:{dbHash:"82b7325b"}}}}(null));
