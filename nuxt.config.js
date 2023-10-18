@@ -168,7 +168,7 @@ export default {
   },
 
   googleAnalytics: {
-    id: 'UA-148797549-3'
+    id: 'G-GX2FH4CMP2'
   },
 
   env: {
