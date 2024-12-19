@@ -2,7 +2,7 @@
     <div class="main-wrapper">
         <section class="cta-section theme-bg-light py-3">
             <div class="container text-center">
-                <h2 class="heading">Cuộc Sống là những hành trình Tìm Kiếm</h2>
+                <h2 class="heading">Life is a Journey of Exploration</h2>
                 <div class="single-form-max-width pt-3 mx-auto">
                     <form class="signup-form row g-2 g-lg-2 align-items-center">
                         <div class="col-12">
@@ -13,7 +13,7 @@
                                 id="search" 
                                 name="search" 
                                 class="form-control me-md-1 search" 
-                                placeholder="Vui lòng nhập từ khóa Tìm Kiếm ...">
+                                placeholder="Please enter search keywords ...">
                         </div>
                     </form>
                 </div>
