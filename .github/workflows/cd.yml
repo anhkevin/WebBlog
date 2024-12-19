@@ -7,7 +7,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
-        node: [16, 18] # Added Node.js 18 to the matrix
+        node: [18]
 
     steps:
       - name: Checkout
