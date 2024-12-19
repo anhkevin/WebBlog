@@ -1,6 +1,6 @@
 {
   "name": "tiandev.net",
-  "version": "1.0.1", // Changed the version as well
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "nuxt",
@@ -10,24 +10,24 @@
     "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "dependencies": {
-    "@nuxt/content": "^1.20.0",
-    "@nuxtjs/pwa": "^3.3.7",
-    "@nuxtjs/robots": "^2.5.1",
-    "@nuxtjs/sitemap": "^2.4.1",
-    "core-js": "^3.29.1",
-    "nuxt": "^2.16.0",
-    "vue-disqus": "^4.0.2",
-    "vue-social-sharing": "^3.0.9",
-    "vuejs-paginate": "^2.1.1",
-    "vuex": "^3.7.0"
+    "@nuxt/content": "^1.14.0",
+    "@nuxtjs/pwa": "^3.3.5",
+    "@nuxtjs/robots": "^2.5.0",
+    "@nuxtjs/sitemap": "^2.4.0",
+    "core-js": "^3.15.1",
+    "nuxt": "^2.15.7",
+    "vue-disqus": "^4.0.1",
+    "vue-social-sharing": "^3.0.8",
+    "vuejs-paginate": "^2.1.0",
+    "vuex": "^3.6.2"
   },
   "devDependencies": {
-    "@nuxt/types": "^2.16.0",
-    "@nuxt/typescript-build": "^2.1.1",
-    "@nuxtjs/google-analytics": "^2.4.1",
-    "fibers": "^5.0.3",
-    "push-dir": "^0.4.2",
-    "sass": "^1.66.0",
-    "sass-loader": "^10.4.1"
+    "@nuxt/types": "^2.15.7",
+    "@nuxt/typescript-build": "^2.1.0",
+    "@nuxtjs/google-analytics": "^2.4.0",
+    "fibers": "^5.0.0",
+    "push-dir": "^0.4.1",
+    "sass": "^1.35.2",
+    "sass-loader": "^10.2.0"
   }
 }
