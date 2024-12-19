@@ -10,24 +10,24 @@
     "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "dependencies": {
-    "@nuxt/content": "^1.18.0",
-    "@nuxtjs/pwa": "^3.4.0",
-    "@nuxtjs/robots": "^3.0.0",
-    "@nuxtjs/sitemap": "^3.0.0",
-    "core-js": "^3.28.0",
-    "nuxt": "^2.16.0",
-    "vue-disqus": "^4.1.0",
-    "vue-social-sharing": "^3.1.0",
-    "vuejs-paginate": "^2.2.0",
-    "vuex": "^3.7.0"
+    "@nuxt/content": "^latest_version",
+    "@nuxtjs/pwa": "^latest_version",
+    "@nuxtjs/robots": "^latest_version",
+    "@nuxtjs/sitemap": "^latest_version",
+    "core-js": "^latest_version",
+    "nuxt": "^latest_version",
+    "vue-disqus": "^latest_version",
+    "vue-social-sharing": "^latest_version",
+    "vuejs-paginate": "^latest_version",
+    "vuex": "^latest_version"
   },
   "devDependencies": {
-    "@nuxt/types": "^2.16.0",
-    "@nuxt/typescript-build": "^2.2.0",
-    "@nuxtjs/google-analytics": "^2.5.0",
-    "fibers": "^5.0.2",
-    "push-dir": "^0.4.2",
-    "sass": "^1.58.0",
-    "sass-loader": "^12.0.0"
+    "@nuxt/types": "^latest_version",
+    "@nuxt/typescript-build": "^latest_version",
+    "@nuxtjs/google-analytics": "^latest_version",
+    "fibers": "^latest_version",
+    "push-dir": "^latest_version",
+    "sass": "^latest_version",
+    "sass-loader": "^latest_version"
   }
 }
