@@ -10,8 +10,6 @@
                      <div class="bio mb-4">
                         I’m TianDev, a developer with 9 years of experience. I specialize in creating bespoke web solutions that not only meet client expectations but also set new standards for innovation and excellence.
                      </div>
-                     <div class="tagline mb-3">Web Development</div>
-                     <p>Proficient in crafting responsive and interactive websites that deliver seamless user experiences across all devices.</p>
                   </div>
                   <!--//col-->
                   <div class="col-md-6 col-lg-6 mb-3">
