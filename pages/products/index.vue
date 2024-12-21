@@ -14,7 +14,7 @@
                         <div class="col-12 col-lg-6 col-xl-12">
                             <div class="template-card d-xl-flex">
                                 <picture class="flex-shrink-0">
-                                    <img src="/img/product/lapos_food_app.png" class="img-fluid" alt="iLanding - Bootstrap Landing Page Template" width="800" height="600"> 
+                                    <img src="/img/product/banner_food.jpg" class="img-fluid" alt="iLanding - Bootstrap Landing Page Template" width="800" height="600"> 
                                 </picture>
                                 <div class="details">
                                     <h2><a href="https://lapos.io.vn/food-app" target="_blank" rel="bookmark">Office Lunch Ordering App</a></h2>
@@ -30,7 +30,7 @@
                         <div class="col-12 col-lg-6 col-xl-12">
                             <div class="template-card d-xl-flex">
                                 <picture class="flex-shrink-0">
-                                    <img src="/img/product/lapos_fund_app.png" class="img-fluid" alt="iLanding - Bootstrap Landing Page Template" width="800" height="600"> 
+                                    <img src="/img/product/banner_fund.jpg" class="img-fluid" alt="iLanding - Bootstrap Landing Page Template" width="800" height="600"> 
                                 </picture>
                                 <div class="details">
                                     <h2><a href="https://lapos.io.vn/funds-app" target="_blank" rel="bookmark">Transparent &amp; Secure Fund Management</a></h2>
