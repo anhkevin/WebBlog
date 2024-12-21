@@ -13,16 +13,22 @@
 .social-list {
     display: none;
 }
+.tiandev-header .blog-name {
+    display: none;
+}
 @media (min-width: 992px) {
     .social-list {
         display: block;
         position: absolute;
         bottom: 0;
         width: 100%;
-    }
+    } 
 }
 @media (max-width: 991.98px){
     .show .social-list {
+        display: block;
+    }
+    .tiandev-header .blog-name {
         display: block;
     }
 }

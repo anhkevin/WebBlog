@@ -5,17 +5,17 @@ export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   globalName: 'tiandev',
   head: {
-    title: 'TianDev | Developer Blog',
+    title: 'TianDev | Developer',
     htmlAttrs: {
       lang: 'en'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'A blog or notebook for the developer in my experience, TianDev' },
+      { hid: 'description', name: 'description', content: 'At TianDev, we excel in delivering innovative software solutions tailored to your needs. Our team is dedicated to turning your vision into reality with cutting-edge technology and expertise.' },
       { name: 'format-detection', content: 'telephone=no' },
       { name: 'google-site-verification', content: 'qdcZOoSAayf1c2-iruOw1pnz-BDzHmir7xZmTNs6ajk' },
-      { hid: 'og:site_name', property: 'og:site_name', content: 'TianDev | Developer Blog' },
+      { hid: 'og:site_name', property: 'og:site_name', content: 'TianDev | Developer' },
       { hid: 'og:type', property: 'og:type', content: 'website' },
       { hid: 'fb:app_id', property: 'fb:app_id', content: '399524598269268' },
       { hid: 'twitter:site', name: 'twitter:site', content: '@TianDev' },
@@ -162,19 +162,19 @@ export default {
   pwa: {
     manifest: {
       name: 'TianDev',
-      description: 'Developer Blog',
+      description: 'Developer',
       theme_color: '#00C58E'
     }
   },
 
   googleAnalytics: {
-    id: 'G-GX2FH4CMP2'
+    id: 'GT-55KX94T'
   },
 
   env: {
     baseUrl: (process.env.NODE_ENV == 'production') ? 'https://anhkevin.github.io' : 'http://localhost:3000',
     namePage: 'TianDev',
-    description: 'A blog or notebook for the developer in my experience, TianDev',
-    slogan: 'Sống Để Trải Nghiệm - Cứ Cho Đi Sẽ Nhận Lại Được Hơn Thế !'
+    description: 'At TianDev, we excel in delivering innovative software solutions tailored to your needs. Our team is dedicated to turning your vision into reality with cutting-edge technology and expertise.',
+    slogan: 'Innovating Tomorrow, Today'
   }
 }

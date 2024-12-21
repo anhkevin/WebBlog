@@ -1,5 +1,5 @@
 <template>
-    <header class="header text-center">
+    <header class="header text-center tiandev-header">
         <div class="force-overflow">
             <h1 class="blog-name pt-lg-4 mb-0">
                 <a class="no-text-decoration" :href="baseUrl">{{ namePage }}</a>
@@ -12,7 +12,7 @@
                     <div class="profile-section pt-3 pt-lg-0">
                         <img class="profile-image mb-3 rounded-circle mx-auto" src="/img/tiandev_logo.png" alt="avatar" width="90" height="90">			
                         <div class="bio mb-3">
-                            Welcome to Tiandev! 
+                            Welcome to Tiandev!<br>
                             Dive into the world of endless possibilities with us.
                         </div>
                         <hr>
