@@ -19,6 +19,11 @@
                                 <div class="details">
                                     <h2><a href="https://lapos.io.vn/food-app" target="_blank" rel="bookmark">Office Lunch Ordering App</a></h2>
                                     <div>Order office meals quickly and easily, with convenient online payment options!</div>
+                                    <ul>
+                                        <li>Easy Group Ordering and Tracking</li>
+                                        <li>Fast and Secure Payments</li>
+                                        <li>Flexible Restaurant Selection</li>
+                                    </ul>
                                     <div>Keep your team well-fed and focused by streamlining lunch orders, receiving timely notifications, and enjoying hassle-free payments. Make lunchtime the easiest part of the workday!</div>
                                     <div class="buttons mt-5">
                                         <a href="javascript:void(0);" @click="showImagePopup('/img/product/lapos_food_app.png')" rel="nofollow" class="demo me-5"><span title="View Design">View Design</span></a>
