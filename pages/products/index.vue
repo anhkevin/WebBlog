@@ -175,3 +175,91 @@ export default {
     }
 }
 </script>
+<style scoped>
+    .template-card {
+            transition: .3s ease-in-out;
+            height: 100%;
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            z-index: 1;
+            border: 1px solid #eee;
+        }
+    .flex-shrink-0 {
+        flex-shrink: 0 !important;
+    }
+    .template-card picture {
+        width: 100%;
+        overflow: hidden;
+    }
+
+        .img-fluid {
+        max-width: 100%;
+        height: auto;
+    }
+    .template-card .details {
+        padding: 40px;
+        border-left: 1px solid #eee;
+    }
+    .template-card h2 {
+        margin: 0;
+        padding: 0 0 25px 0;
+        font-size: 20px;
+        font-weight: 600;
+        font-family: Poppins, sans-serif;
+    }
+    .template-card h2 a {
+        color: #035195;
+        transition: .3s;
+        text-decoration: none;
+    }
+    .template-card p {
+        color: #555;
+        margin: 0 0 25px 0;
+        overflow: hidden;
+    }
+    .template-card .buttons {
+        position: relative;
+        z-index: 2;
+    }
+    .template-card .buttons a {
+        display: inline-flex;
+        align-items: center;
+        padding: 10px 30px;
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: .3px;
+        border-radius: 4px;
+        color: #023b6d;
+        transition: all .3s;
+        flex-grow: 1;
+        flex-basis: auto;
+        justify-content: center;
+        border: 1px solid #cfd4e4;
+        margin: 0 2px 12px 2px;
+        text-decoration: none;
+    }
+
+    .template-card .buttons a:hover {
+        border-color: #009bd9;
+        color: #009bd9;
+        text-decoration: none;
+    }
+    .template-card:hover {
+        box-shadow: 0 0 40px rgba(2, 59, 109, .1);
+    }
+    .page-products a {
+        outline: 0;
+        text-decoration: none;
+    }
+
+@media (min-width: 1200px) {
+    .template-card picture {
+        width: 380px;
+    }
+    .template-card .buttons a:first-child {
+        margin-left: 0;
+    }
+}
+</style>

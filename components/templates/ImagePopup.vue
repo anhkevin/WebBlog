@@ -49,11 +49,13 @@
     z-index: 1000;
   }
   .modal-content {
-    position: relative;
     background-color: #fff;
-    padding: 20px;
     border-radius: 8px;
+    padding: 50px 10px 10px 10px;
+    position: relative;
     text-align: center;
+    max-width: 1200px;
+    width: 80%;
   }
   img {
     max-width: 100%;
