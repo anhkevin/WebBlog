@@ -1,1 +1,0 @@
-window.__TIANDEV__=(function(a){return {staticAssetsBase:"\u002Fpublic\u002Fstatic\u002F1734752298",layout:"default",error:a,state:{search:"",menu:false},serverRendered:true,routePath:"\u002Fbuoc-don-rac-tren-windows-mang-hieu-qua-cao\u002F",config:{_app:{basePath:"\u002F",assetsPath:"\u002Fpublic\u002F",cdnURL:a},content:{dbHash:"5f8db8d7"}}}}(null));
