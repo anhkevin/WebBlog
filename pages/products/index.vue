@@ -21,7 +21,7 @@
                                     <div>Order office meals quickly and easily, with convenient online payment options!</div>
                                     <div>Keep your team well-fed and focused by streamlining lunch orders, receiving timely notifications, and enjoying hassle-free payments. Make lunchtime the easiest part of the workday!</div>
                                     <div class="buttons mt-5">
-                                        <a href="javascript:void(0);" @click="showImagePopup('/img/product/lapos_food_app.png')" rel="nofollow" target="_blank" class="demo me-5"><span title="View Design">View Design</span></a>
+                                        <a href="javascript:void(0);" @click="showImagePopup('/img/product/lapos_food_app.png')" rel="nofollow" class="demo me-5"><span title="View Design">View Design</span></a>
                                         <a href="https://lapos.io.vn/food-app" rel="nofollow" class="demo" target="_blank"><span title="Go to Product">Go to Product</span></a>
                                     </div>
                                 </div>
@@ -42,7 +42,7 @@
                                     </ul>
                                     <div>Experience professional and reliable fund management today!</div>
                                     <div class="buttons mt-5">
-                                        <a href="javascript:void(0);" @click="showImagePopup('/img/product/lapos_fund_app.png')" rel="nofollow" target="_blank" class="demo me-5"><span title="View Design">View Design</span></a>
+                                        <a href="javascript:void(0);" @click="showImagePopup('/img/product/lapos_fund_app.png')" rel="nofollow" class="demo me-5"><span title="View Design">View Design</span></a>
                                         <a href="https://lapos.io.vn/funds-app" rel="nofollow" class="demo" target="_blank"><span title="Go to Product">Go to Product</span></a>
                                     </div>
                                 </div>
@@ -51,6 +51,8 @@
                     </div>
                 </div>
             </section>
+
+            <ImagePopup ref="imagePopup" :imageSrc="currentImage" />
         </div>
         <Footer />
     </div>
