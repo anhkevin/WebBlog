@@ -14,6 +14,26 @@
                         <div class="col-12 col-lg-6 col-xl-12">
                             <div class="template-card d-xl-flex">
                                 <picture class="flex-shrink-0">
+                                    <img src="/img/product/banner_feedback.jpg" class="img-fluid" alt="iLanding - Bootstrap Landing Page Template" width="800" height="600"> 
+                                </picture>
+                                <div class="details">
+                                    <h2><a href="https://45.76.19.61/demo-feedback" target="_blank" rel="bookmark">WP Plugin: Website Feedback Optimizer Plugin</a></h2>
+                                    <div>Enhance your website's user experience with the "Website Feedback Optimizer" plugin</div>
+                                    <ul>
+                                        <li>Filter and Sort Feedback Data</li>
+                                        <li>Configure Plugin Settings</li>
+                                        <li>Customize Feedback Display Locations</li>
+                                    </ul>
+                                    <div>With this tool, receiving and managing user feedback has never been easier!</div>
+                                    <div class="buttons mt-4">
+                                        <a href="https://45.76.19.61/demo-feedback" rel="nofollow" class="demo me-5 ms-5" target="_blank"><span title="Live Demo">Live Demo</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 col-xl-12">
+                            <div class="template-card d-xl-flex">
+                                <picture class="flex-shrink-0">
                                     <img src="/img/product/banner_food.jpg" class="img-fluid" alt="iLanding - Bootstrap Landing Page Template" width="800" height="600"> 
                                 </picture>
                                 <div class="details">
@@ -25,8 +45,8 @@
                                         <li>Flexible Restaurant Selection</li>
                                     </ul>
                                     <div>Keep your team well-fed and focused by streamlining lunch orders, receiving timely notifications, and enjoying hassle-free payments. Make lunchtime the easiest part of the workday!</div>
-                                    <div class="buttons mt-5">
-                                        <a href="javascript:void(0);" @click="showImagePopup('/img/product/lapos_food_app.png')" rel="nofollow" class="demo me-5"><span title="View Design">View Design</span></a>
+                                    <div class="buttons mt-4">
+                                        <a href="javascript:void(0);" @click="showImagePopup('/img/product/lapos_food_app.png')" rel="nofollow" class="demo me-5 ms-5"><span title="View Design">View Design</span></a>
                                         <a href="https://lapos.io.vn/food-app" rel="nofollow" class="demo" target="_blank"><span title="Go to Product">Go to Product</span></a>
                                     </div>
                                 </div>
@@ -46,8 +66,8 @@
                                         <li>Detailed activity reports</li>
                                     </ul>
                                     <div>Experience professional and reliable fund management today!</div>
-                                    <div class="buttons mt-5">
-                                        <a href="javascript:void(0);" @click="showImagePopup('/img/product/lapos_fund_app.png')" rel="nofollow" class="demo me-5"><span title="View Design">View Design</span></a>
+                                    <div class="buttons mt-4">
+                                        <a href="javascript:void(0);" @click="showImagePopup('/img/product/lapos_fund_app.png')" rel="nofollow" class="demo me-5 ms-5"><span title="View Design">View Design</span></a>
                                         <a href="https://lapos.io.vn/funds-app" rel="nofollow" class="demo" target="_blank"><span title="Go to Product">Go to Product</span></a>
                                     </div>
                                 </div>
@@ -204,12 +224,15 @@ export default {
         height: auto;
     }
     .template-card .details {
-        padding: 40px;
+        padding: 20px;
         border-left: 1px solid #eee;
+    }
+    .template-card .details ul {
+        margin: 0;
     }
     .template-card h2 {
         margin: 0;
-        padding: 0 0 25px 0;
+        padding: 0 0 10px 0;
         font-size: 20px;
         font-weight: 600;
         font-family: Poppins, sans-serif;
@@ -261,7 +284,7 @@ export default {
 
 @media (min-width: 1200px) {
     .template-card picture {
-        width: 380px;
+        max-width: 300px;
     }
     .template-card .buttons a:first-child {
         margin-left: 0;
