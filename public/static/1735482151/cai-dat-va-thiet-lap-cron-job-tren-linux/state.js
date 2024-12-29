@@ -1,0 +1,1 @@
+window.__TIANDEV__=(function(a){return {staticAssetsBase:"\u002Fpublic\u002Fstatic\u002F1735482151",layout:"default",error:a,state:{search:"",menu:false},serverRendered:true,routePath:"\u002Fcai-dat-va-thiet-lap-cron-job-tren-linux\u002F",config:{_app:{basePath:"\u002F",assetsPath:"\u002Fpublic\u002F",cdnURL:a},content:{dbHash:"1a2f8f82"}}}}(null));
