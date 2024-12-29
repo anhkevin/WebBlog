@@ -10,7 +10,7 @@
                 </button>
                 <div id="navigation" class="collapse navbar-collapse flex-column" v-bind:class="{'show':isShowMenu}">
                     <div class="profile-section pt-3 pt-lg-0">
-                        <img class="profile-image mb-3 rounded-circle mx-auto" src="/img/tiandev_logo.png" alt="avatar" width="90" height="90">			
+                        <img class="profile-image mb-3 rounded-circle mx-auto" src="/img/tiandev_logo.png" alt="avatar">			
                         <div class="bio mb-3">
                             Welcome to Tiandev!<br>
                             Dive into the world of endless possibilities with us.
