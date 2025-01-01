@@ -1,0 +1,1 @@
+window.__TIANDEV__=(function(a){return {staticAssetsBase:"\u002Fpublic\u002Fstatic\u002F1735740447",layout:"default",error:a,state:{search:"",menu:false},serverRendered:true,routePath:"\u002Fwidget-tren-flutter-la-gi\u002F",config:{_app:{basePath:"\u002F",assetsPath:"\u002Fpublic\u002F",cdnURL:a},content:{dbHash:"012f952b"}}}}(null));
